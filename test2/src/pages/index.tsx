@@ -1,4 +1,5 @@
-import Navbar from "./components/Navbar"
+import About from "@/components/container/About"
+import Navbar from "../components/Navbar"
 
 
  const index = () => {
@@ -7,6 +8,7 @@ import Navbar from "./components/Navbar"
    return (
      <div>
       <Navbar />
+      <About />
      </div>
    )
  }
