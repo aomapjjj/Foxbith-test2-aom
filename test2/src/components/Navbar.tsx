@@ -42,7 +42,7 @@ function ResponsiveAppBar() {
       position="static"
       sx={{
         bgcolor: "white",
-        boxShadow:0,
+        boxShadow: 0,
         py: 3
       }}
     >
