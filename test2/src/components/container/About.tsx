@@ -43,6 +43,7 @@ const About = () => {
             variant="h3"
             noWrap
             component="a"
+            fontWeight={700}
             href="#app-bar-with-responsive-menu"
             sx={{
               mr: 2,
@@ -92,6 +93,7 @@ const About = () => {
           noWrap
           component="a"
           href="#app-bar-with-responsive-menu"
+          fontWeight={700}
           sx={{
             mt: 15,
             p: 5,
@@ -100,6 +102,7 @@ const About = () => {
             color: "#0E204E",
             textDecoration: "none",
             textWrap: "wrap"
+            
           }}
         >
           About

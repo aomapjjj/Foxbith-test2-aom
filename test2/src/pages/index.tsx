@@ -1,15 +1,14 @@
 import About from "@/components/container/About"
 import Navbar from "../components/Navbar"
+import WhatWeDo from "@/components/container/WhatWeDo"
 
-
- const index = () => {
-
-
-   return (
-     <div>
+const index = () => {
+  return (
+    <div>
       <Navbar />
       <About />
-     </div>
-   )
- }
- export default index
+      <WhatWeDo />
+    </div>
+  )
+}
+export default index
