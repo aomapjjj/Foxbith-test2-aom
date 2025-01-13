@@ -1,6 +1,10 @@
-import Navbar from "./Navbar"
+import { createTheme } from "@mui/material"
+import Navbar from "./components/Navbar"
+
 
  const index = () => {
+
+
    return (
      <div>
       <Navbar />

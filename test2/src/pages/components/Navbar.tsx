@@ -42,7 +42,7 @@ function ResponsiveAppBar() {
       position="static"
       sx={{
         bgcolor: "white",
-        py: 3,
+        py: 3
       }}
     >
       <Container maxWidth="xl">
@@ -58,7 +58,7 @@ function ResponsiveAppBar() {
               fontFamily: "Playfair Display",
               fontWeight: 700,
               color: "#0E204E",
-              textDecoration: "none",
+              textDecoration: "none"
             }}
           >
             Pineapple <br />
@@ -71,12 +71,12 @@ function ResponsiveAppBar() {
               anchorEl={anchorElNav}
               anchorOrigin={{
                 vertical: "bottom",
-                horizontal: "left",
+                horizontal: "left"
               }}
               keepMounted
               transformOrigin={{
                 vertical: "top",
-                horizontal: "left",
+                horizontal: "left"
               }}
               open={Boolean(anchorElNav)}
               onClose={handleCloseNavMenu}
@@ -93,7 +93,7 @@ function ResponsiveAppBar() {
           <Box
             sx={{
               flexGrow: 1,
-              display: { xs: "none", md: "flex", justifyContent: "center" },
+              display: { xs: "none", md: "flex", justifyContent: "center" }
             }}
           >
             {pages.map((page) => (
@@ -102,7 +102,14 @@ function ResponsiveAppBar() {
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: "#0E204E", display: "block", ml: 4 }}
               >
-                {page}
+                <Typography
+                  sx={{
+                    fontFamily: "Manrope",
+                    textTransform: "none"
+                  }}
+                >
+                  {page}
+                </Typography>
               </Button>
             ))}
           </Box>
@@ -118,10 +125,10 @@ function ResponsiveAppBar() {
                   display: {
                     xs: "flex",
                     md: "none",
-                    justifyContent: "flex-end",
+                    justifyContent: "flex-end"
                   },
                   mr: 1,
-                  color: "#0E204E",
+                  color: "#0E204E"
                 }}
               >
                 <MenuIcon />
@@ -137,13 +144,23 @@ function ResponsiveAppBar() {
                 display: {
                   xs: "none",
                   md: "flex",
-                  justifyContent: "flex-end",
+                  justifyContent: "flex-end"
                 },
                 mr: 1,
-                color: "#0E204E",
+                color: "#0E204E"
               }}
             >
-              <MenuIcon />
+              <Button
+                variant="contained"
+                sx={{
+                  fontFamily: "Manrope",
+                  textTransform: "none",
+                  borderRadius: 0,
+                  backgroundColor:"#0E204E"
+                }}
+              >
+                Get in Touch
+              </Button>
             </IconButton>
             <Menu
               sx={{ mt: "45px" }}
@@ -151,12 +168,12 @@ function ResponsiveAppBar() {
               anchorEl={anchorElUser}
               anchorOrigin={{
                 vertical: "top",
-                horizontal: "right",
+                horizontal: "right"
               }}
               keepMounted
               transformOrigin={{
                 vertical: "top",
-                horizontal: "right",
+                horizontal: "right"
               }}
               open={Boolean(anchorElUser)}
               onClose={handleCloseUserMenu}
