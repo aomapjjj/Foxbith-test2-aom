@@ -8,7 +8,7 @@ import Menu from "@mui/material/Menu"
 import MenuIcon from "@mui/icons-material/Menu"
 import Container from "@mui/material/Container"
 import Avatar from "@mui/material/Avatar"
-import Button from "@mui/material/Button"
+import { Button } from "@mui/material"
 import Tooltip from "@mui/material/Tooltip"
 import MenuItem from "@mui/material/MenuItem"
 import AdbIcon from "@mui/icons-material/Adb"
@@ -134,34 +134,24 @@ function ResponsiveAppBar() {
                 <MenuIcon />
               </IconButton>
             </Tooltip>
-            <IconButton
-              size="large"
-              aria-label="account of current user"
-              aria-controls="menu-appbar"
-              aria-haspopup="true"
-              onClick={handleOpenNavMenu}
+
+            <Button
+              variant="contained"
               sx={{
+                fontFamily: "Manrope",
+                textTransform: "none",
+                borderRadius: 0,
+                backgroundColor: "#0E204E",
                 display: {
                   xs: "none",
                   md: "flex",
                   justifyContent: "flex-end"
-                },
-                mr: 1,
-                color: "#0E204E"
+                }
               }}
             >
-              <Button
-                variant="contained"
-                sx={{
-                  fontFamily: "Manrope",
-                  textTransform: "none",
-                  borderRadius: 0,
-                  backgroundColor:"#0E204E"
-                }}
-              >
-                Get in Touch
-              </Button>
-            </IconButton>
+              Get in Touch
+            </Button>
+
             <Menu
               sx={{ mt: "45px" }}
               id="menu-appbar"
