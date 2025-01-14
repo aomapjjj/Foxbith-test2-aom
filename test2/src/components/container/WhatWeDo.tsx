@@ -25,11 +25,11 @@ const WhatWeDo = () => {
           variant="h2"
           noWrap
           component="a"
-          href="#app-bar-with-responsive-menu"
           fontWeight={700}
           sx={{
-            mt: 15,
+            mt: 30,
             p: 6,
+            ml: 20,
             display: { xs: "none", md: "flex" },
             fontFamily: "Playfair Display",
             color: "white",
