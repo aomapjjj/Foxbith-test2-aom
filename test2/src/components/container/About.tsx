@@ -84,7 +84,6 @@ const About = () => {
         sx={{
           display: { xs: "none", md: "flex" },
           justifyContent: "center",
-
           mb: 12
         }}
       >

@@ -1,6 +1,6 @@
-import Tree from "./../../public/imgs/Tree.png"
-import Wifi from "./../../public/imgs/Wifi.png"
-import Money from "./../../public/imgs/Money.png"
+import System from "./../../public/imgs/System.png"
+import Ligth from "./../../public/imgs/Ligth.png"
+import Lock from "./../../public/imgs/Lock.png"
 import Image from "next/image"
 import { Box } from "@mui/material"
 
@@ -8,39 +8,40 @@ const FrameLogo = () => {
   return (
     <>
       <Box >
-        <Image
+      <Image
           alt="home about"
-          src={Tree}
+          src={System}
           quality={100}
           priority={true}
           style={{
             marginLeft: "80px",
-            width: "107px",
+            width: "180px",
             height: "157px"
           }}
         />
         <Image
           alt="home about"
-          src={Wifi}
+          src={Lock}
           quality={100}
           priority={true}
           style={{
             marginLeft: "80px",
-            width: "107px",
+            width: "139px",
             height: "157px"
           }}
         />
         <Image
           alt="home about"
-          src={Money}
+          src={Ligth}
           quality={100}
           priority={true}
           style={{
             marginLeft: "80px",
-            width: "107px",
+            width: "131px",
             height: "157px"
           }}
         />
+        
       </Box>
     </>
   )

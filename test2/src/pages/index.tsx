@@ -1,6 +1,7 @@
 import About from "@/components/container/About"
 import Navbar from "../components/Navbar"
 import WhatWeDo from "@/components/container/WhatWeDo"
+import Galleries from "@/components/container/Galleries"
 
 const index = () => {
   return (
@@ -8,6 +9,7 @@ const index = () => {
       <Navbar />
       <About />
       <WhatWeDo />
+      <Galleries />
     </div>
   )
 }
