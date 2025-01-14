@@ -16,7 +16,6 @@ const WhatWeDo = () => {
           height: "708px",
           bgcolor: "#0E204E",
           position: "relative",
-
           clipPath:
             "polygon(50% 0%, 100% 0, 100% 100%, 84% 93%, 60% 80%, 0 100%, 0 0)"
         }}

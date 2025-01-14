@@ -52,7 +52,6 @@ function ResponsiveAppBar() {
             variant="h6"
             noWrap
             component="a"
-            href="#app-bar-with-responsive-menu"
             fontWeight={700}
             sx={{
               mr: 2,

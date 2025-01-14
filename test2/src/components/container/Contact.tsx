@@ -1,4 +1,4 @@
-import { Box, Grid2, TextField, Typography } from "@mui/material"
+import { Box, Button, Grid2, TextField, Typography } from "@mui/material"
 
 const Contact = () => {
   return (
@@ -108,6 +108,31 @@ const Contact = () => {
                 }
               }}
             />
+          </Grid2>
+          <Grid2
+            size={8}
+            sx={{
+              display: {
+                xs: "none",
+                md: "flex",
+                
+              },
+              mr:20,
+              justifyContent: "center"
+            }}
+          >
+            <Button
+              variant="contained"
+              sx={{
+                fontFamily: "Manrope",
+                textTransform: "none",
+                width: "120px",
+                borderRadius: 0,
+                backgroundColor: "#0E204E"
+              }}
+            >
+              Send
+            </Button>
           </Grid2>
         </Grid2>
       </Box>
