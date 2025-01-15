@@ -3,7 +3,6 @@ import { Box, Button, Grid2, TextField, Typography } from "@mui/material"
 const Contact = () => {
   return (
     <>
-   
       <Typography
         variant="h2"
         noWrap
@@ -11,7 +10,7 @@ const Contact = () => {
         fontWeight={700}
         sx={{
           mb: 3,
-          display: { xs: "none", md:"none" , lg: "flex" },
+          display: { xs: "none", md: "none", lg: "flex" },
           fontFamily: "Playfair Display",
           color: "#0E204E",
           textDecoration: "none",
@@ -26,7 +25,7 @@ const Contact = () => {
         noWrap
         component="a"
         sx={{
-          display: { xs: "none", md:"none" , lg: "flex" },
+          display: { xs: "none", md: "none", lg: "flex" },
           fontFamily: "Manrope",
           color: "#0E204E",
           textDecoration: "none",
@@ -40,7 +39,7 @@ const Contact = () => {
       <Box>
         <Grid2
           sx={{
-            display: { sm: "none", md:"none" , lg: "flex" },
+            display: { sm: "none", md: "none", lg: "flex" },
             justifyContent: "center",
             mb: 10,
             ml: 20
@@ -48,11 +47,12 @@ const Contact = () => {
           container
           rowSpacing={5}
         >
-          <Grid2 size={8}  sx={
-          {
-            display: { xs: "none", md:"none" , lg: "flex" },
-          }
-        }>
+          <Grid2
+            size={8}
+            sx={{
+              display: { xs: "none", md: "none", lg: "flex" }
+            }}
+          >
             <TextField
               name="name"
               id="outlined-basic"
@@ -66,11 +66,12 @@ const Contact = () => {
               }}
             />
           </Grid2>
-          <Grid2 size={8}  sx={
-          {
-            display: { xs: "none", md:"none" , lg: "flex" },
-          }
-        }>
+          <Grid2
+            size={8}
+            sx={{
+              display: { xs: "none", md: "none", lg: "flex" }
+            }}
+          >
             <TextField
               name="Phone No"
               id="outlined-basic"
@@ -84,11 +85,12 @@ const Contact = () => {
               }}
             />
           </Grid2>
-          <Grid2 size={8}  sx={
-          {
-            display: { xs: "none", md:"none" , lg: "flex" },
-          }
-        }>
+          <Grid2
+            size={8}
+            sx={{
+              display: { xs: "none", md: "none", lg: "flex" }
+            }}
+          >
             <TextField
               name="Email"
               id="outlined-basic"
@@ -102,11 +104,12 @@ const Contact = () => {
               }}
             />
           </Grid2>
-          <Grid2 size={8}  sx={
-          {
-            display: { xs: "none", md:"none" , lg: "flex" },
-          }
-        }>
+          <Grid2
+            size={8}
+            sx={{
+              display: { xs: "none", md: "none", lg: "flex" }
+            }}
+          >
             <TextField
               name="Message"
               id="outlined-basic"
@@ -131,10 +134,10 @@ const Contact = () => {
             sx={{
               display: {
                 xs: "none",
-                md:"none" , lg: "flex",
-                
+                md: "none",
+                lg: "flex"
               },
-              mr:20,
+              mr: 20,
               justifyContent: "center"
             }}
           >
@@ -153,6 +156,8 @@ const Contact = () => {
           </Grid2>
         </Grid2>
       </Box>
+
+     
     </>
   )
 }

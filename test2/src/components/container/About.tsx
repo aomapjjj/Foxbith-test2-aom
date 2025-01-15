@@ -93,7 +93,6 @@ const About = () => {
           variant="h2"
           noWrap
           component="a"
-          href="#app-bar-with-responsive-menu"
           fontWeight={700}
           sx={{
             mt: 15,
@@ -218,13 +217,13 @@ const About = () => {
             textWrap: "wrap",
             color: "white",
             textDecoration: "none",
-            letterSpacing: 2
+            
           }}
         >
           Pineapple Island:
         </Typography>
         <Typography
-          variant="h6"
+          variant="h5"
           component="a"
           fontWeight={700}
           sx={{
@@ -235,7 +234,7 @@ const About = () => {
             textWrap: "wrap",
             color: "white",
             textDecoration: "none",
-            letterSpacing: 2
+            
           }}
         >
           GenZ and Millenial Abode
@@ -280,7 +279,7 @@ const About = () => {
         }}
       >
         <Typography
-          variant="h6"
+          variant="h4"
           component="a"
           fontWeight={700}
           sx={{
@@ -290,7 +289,7 @@ const About = () => {
             textWrap: "wrap",
             color: "#0E204E",
             textDecoration: "none",
-            letterSpacing: 2,
+            
             textAlign: "center"
           }}
         >

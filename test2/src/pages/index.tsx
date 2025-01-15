@@ -5,6 +5,7 @@ import Galleries from "@/components/container/Galleries"
 import Project from "@/components/container/Project"
 import Contact from "@/components/container/Contact"
 import Footer from "@/components/container/Footer"
+import Galleries1 from "@/components/container/Galleries1"
 
 const index = () => {
   return (
@@ -13,6 +14,7 @@ const index = () => {
       <About />
       <WhatWeDo />
       <Galleries />
+      <Galleries1 />
       <Project />
       <Contact />
       <Footer />
