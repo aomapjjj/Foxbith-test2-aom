@@ -9,20 +9,20 @@ const Project = () => {
     <>
       <Box
         sx={{
-          display: { xs: "none", md: "flex" },
+          display: { xs: "none",  md:"none" , lg: "flex" },
           ml: 10
         }}
       >
         <Grid2
           sx={{
-            display: { sm: "none", md: "flex" },
+            display: { sm: "none",  md:"none" , lg: "flex" },
             mb: 10
           }}
         >
           <Grid2
             size={6}
             sx={{
-              display: { sm: "none", md: "flex" },
+              display: { sm: "none",  md:"none" , lg: "flex" },
               mt: 20
             }}
           >
@@ -61,7 +61,7 @@ const Project = () => {
                 sx={{
                   mb: 3,
                   ml: 20,
-                  display: { xs: "none", md: "flex" },
+                  display: { xs: "none",  md:"none" , lg: "flex" },
                   fontFamily: "Playfair Display",
                   color: "#0E204E",
                   textDecoration: "none",
@@ -78,14 +78,14 @@ const Project = () => {
       </Box>
       <Box
         sx={{
-          display: { xs: "none", md: "flex" },
+          display: { xs: "none",  md:"none" , lg: "flex" },
           ml: 10,
           mb:30
         }}
       >
         <Grid2
           sx={{
-            display: { sm: "none", md: "flex" },
+            display: { sm: "none",  md:"none" , lg: "flex" },
             mb: 10
           }}
         >
@@ -111,7 +111,7 @@ const Project = () => {
                 fontWeight={700}
                 sx={{
                   mb: 3,
-                  display: { xs: "none", md: "flex" },
+                  display: { xs: "none",  md:"none" , lg: "flex" },
                   fontFamily: "Playfair Display",
                   color: "#0E204E",
                   textDecoration: "none",
@@ -147,7 +147,7 @@ const Project = () => {
                   mt: 4,
                   display: {
                     xs: "none",
-                    md: "flex",
+                     md:"none" , lg: "flex",
 
                     width: "239px",
                     height: "62px"
@@ -161,7 +161,7 @@ const Project = () => {
           <Grid2
             size={6}
             sx={{
-              display: { sm: "none", md: "flex" },
+              display: { sm: "none",  md:"none" , lg: "flex" },
               m: 10
             }}
           >

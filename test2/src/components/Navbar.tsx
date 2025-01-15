@@ -49,13 +49,15 @@ function ResponsiveAppBar() {
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Typography
-            variant="h6"
+            variant="h4"
             noWrap
             component="a"
             fontWeight={700}
             sx={{
               mr: 2,
-              display: { xs: "flex", md: "flex" },
+              pt:5,
+              display: { xs: "flex" 
+                , md:"flex" , lg: "flex" },
               fontFamily: "Playfair Display",
               fontWeight: 700,
               color: "#0E204E",
@@ -66,7 +68,7 @@ function ResponsiveAppBar() {
             Island
           </Typography>
 
-          <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
+          <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "flex", lg: "none" } }}>
             <Menu
               id="menu-appbar"
               anchorEl={anchorElNav}
@@ -81,7 +83,7 @@ function ResponsiveAppBar() {
               }}
               open={Boolean(anchorElNav)}
               onClose={handleCloseNavMenu}
-              sx={{ display: { xs: "block", md: "none", color: "#0E204E" } }}
+              sx={{ display: { xs: "block",md: "block" , lg: "none", color: "#0E204E" } }}
             >
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
@@ -94,7 +96,7 @@ function ResponsiveAppBar() {
           <Box
             sx={{
               flexGrow: 1,
-              display: { xs: "none", md: "flex", justifyContent: "center" }
+              display: { xs: "none", md:"none" , lg: "flex", justifyContent: "center" }
             }}
           >
             {pages.map((page) => (
@@ -123,9 +125,12 @@ function ResponsiveAppBar() {
                 aria-haspopup="true"
                 onClick={handleOpenNavMenu}
                 sx={{
+                  pt:5,
                   display: {
                     xs: "flex",
-                    md: "none",
+                    md: "flex",
+                    lg: "none",
+
                     justifyContent: "flex-end"
                   },
                   mr: 1,
@@ -145,7 +150,7 @@ function ResponsiveAppBar() {
                 backgroundColor: "#0E204E",
                 display: {
                   xs: "none",
-                  md: "flex",
+                  md:"none" , lg: "flex",
                   justifyContent: "flex-end"
                 }
               }}

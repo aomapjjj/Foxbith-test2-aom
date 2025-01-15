@@ -1,16 +1,18 @@
 import Image from "next/image"
 import home1 from "../../../public/imgs/home1.png"
 import home2 from "../../../public/imgs/home2.png"
-import { Box, Typography } from "@mui/material"
+import homecrop from "../../../public/imgs/homecrop.png"
+import { Box, Button, Typography } from "@mui/material"
 import left from "../../../public/imgs/left.png"
 import rigth from "../../../public/imgs/rigth.png"
+import homes from "../../../public/imgs/homes.png"
 
 const About = () => {
   return (
     <>
       <Box
         sx={{
-          display: { xs: "none", md: "flex" },
+          display: { xs: "none", md: "none", lg: "flex" },
           justifyContent: "flex-end",
           ml: 4,
           mb: 12
@@ -47,7 +49,7 @@ const About = () => {
             href="#app-bar-with-responsive-menu"
             sx={{
               mr: 2,
-              display: { xs: "flex", md: "flex" },
+              display: { xs: "none", md: "none", lg: "flex" },
               fontFamily: "Playfair Display",
               fontWeight: 700,
               color: "white",
@@ -66,7 +68,7 @@ const About = () => {
             sx={{
               ml: 6,
               mt: 2,
-              display: { xs: "none", md: "flex" },
+              display: { xs: "none", md: "none", lg: "flex" },
               fontFamily: "Manrope",
               color: "white",
               textDecoration: "none",
@@ -82,7 +84,7 @@ const About = () => {
 
       <Box
         sx={{
-          display: { xs: "none", md: "flex" },
+          display: { xs: "none", md: "none", lg: "flex" },
           justifyContent: "center",
           mb: 12
         }}
@@ -96,12 +98,11 @@ const About = () => {
           sx={{
             mt: 15,
             p: 5,
-            display: { xs: "none", md: "flex" },
+            display: { xs: "none", md: "none", lg: "flex" },
             fontFamily: "Playfair Display",
             color: "#0E204E",
             textDecoration: "none",
             textWrap: "wrap"
-            
           }}
         >
           About
@@ -162,7 +163,7 @@ const About = () => {
               ml: 6,
               mt: 8,
               p: 5,
-              display: { xs: "none", md: "flex" },
+              display: { xs: "none", md: "none", lg: "flex" },
               fontFamily: "Manrope",
               color: "white",
               textDecoration: "none",
@@ -177,6 +178,161 @@ const About = () => {
             happiness.
           </Typography>
         </Box>
+      </Box>
+
+      <Box
+        sx={{
+          display: { xs: "flex", md: "flex", lg: "none" }
+        }}
+      >
+        <Image
+          alt="home about"
+          src={homecrop}
+          quality={100}
+          priority={true}
+          style={{
+            paddingLeft: "40px",
+            paddingRight: "40px",
+            position: "static",
+            width: "100%",
+            height: "50%",
+            filter: "brightness(0.60)"
+          }}
+        />
+      </Box>
+      <Box
+        sx={{
+          display: { xs: "flex", md: "flex", lg: "none" },
+          justifyContent: "center",
+          mt: -55
+        }}
+      >
+        <Typography
+          variant="h5"
+          component="a"
+          fontWeight={700}
+          sx={{
+            fontFamily: "Playfair Display",
+            position: "absolute",
+            fontWeight: 700,
+            textWrap: "wrap",
+            color: "white",
+            textDecoration: "none",
+            letterSpacing: 2
+          }}
+        >
+          Pineapple Island:
+        </Typography>
+        <Typography
+          variant="h6"
+          component="a"
+          fontWeight={700}
+          sx={{
+            fontFamily: "Playfair Display",
+            mt: 4,
+            position: "absolute",
+            fontWeight: 700,
+            textWrap: "wrap",
+            color: "white",
+            textDecoration: "none",
+            letterSpacing: 2
+          }}
+        >
+          GenZ and Millenial Abode
+        </Typography>
+
+        <Typography
+          component="a"
+          sx={{
+            fontFamily: "Manrope",
+            mt: 10,
+            position: "absolute",
+            ml: 6,
+            pr: 5,
+            textWrap: "pretty",
+            color: "white",
+            textDecoration: "none",
+
+            textAlign: "center"
+          }}
+        >
+          a community that gives you a taste of happiness, a place you’ll love
+          to live and an opportunity to build a home.
+        </Typography>
+        <Button
+          variant="contained"
+          sx={{
+            fontFamily: "Manrope",
+            textTransform: "none",
+            color: "black",
+            bgcolor: "white",
+            mt: 25
+          }}
+        >
+          Get in Touch
+        </Button>
+      </Box>
+      <Box
+        sx={{
+          display: { xs: "flex", md: "flex", lg: "none" },
+          justifyContent: "center",
+          mt: 30
+        }}
+      >
+        <Typography
+          variant="h6"
+          component="a"
+          fontWeight={700}
+          sx={{
+            fontFamily: "Playfair Display",
+            position: "absolute",
+            fontWeight: 900,
+            textWrap: "wrap",
+            color: "#0E204E",
+            textDecoration: "none",
+            letterSpacing: 2,
+            textAlign: "center"
+          }}
+        >
+          About <br /> Pineapple Island
+        </Typography>
+        <Image
+          alt="home about"
+          src={homes}
+          quality={100}
+          priority={true}
+          style={{
+            marginTop: "100px",
+            paddingLeft: "40px",
+            paddingRight: "40px",
+            width: "100%",
+            height: "80%",
+            filter: "brightness(0.60)"
+          }}
+        />
+        <Typography
+          component="a"
+          sx={{
+            fontFamily: "Lato",
+            mt: 17,
+            position: "absolute",
+            ml: 12,
+            pr: 10,
+            textWrap: "pretty",
+            color: "white",
+            textDecoration: "none",
+
+            textAlign: "center"
+          }}
+        >
+          Pineapple Island is the most sought-after community in Ibadan that
+          values and puts the needs of their clients first. It is a territory
+          with loft complexes that creates a country life and homely feeling
+          that is integrated with industrial development. A perfect,
+          professional built abode that gives you the true taste of beauty and
+          happiness.
+        </Typography>
+       
       </Box>
     </>
   )

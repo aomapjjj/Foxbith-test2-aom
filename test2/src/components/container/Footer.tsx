@@ -4,12 +4,10 @@ import { red } from "@mui/material/colors"
 const Footer = () => {
   return (
     <>
-      {/* <Box sx={{}}>
-       
-      </Box> */}
+   
       <Box
         sx={{
-          display: { xs: "none", md: "flex" },
+          display: { xs: "none", md:"none" , lg: "flex" },
           width: "1920px",
           height: "396px",
           bgcolor: "#0E204E",
@@ -31,7 +29,7 @@ const Footer = () => {
             component="a"
             fontWeight={500}
             sx={{
-              display: { xs: "none", md: "flex" },
+              display: { xs: "none", md:"none" , lg: "flex" },
               mb: 2,
               fontFamily: "Manrope",
               color: "white",
@@ -67,7 +65,7 @@ const Footer = () => {
             component="a"
             fontWeight={500}
             sx={{
-              display: { xs: "none", md: "flex" },
+              display: { xs: "none", md:"none" , lg: "flex" },
               mb: 2,
               fontFamily: "Playfair Display",
               color: "white",
