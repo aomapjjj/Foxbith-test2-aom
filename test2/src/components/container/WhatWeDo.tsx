@@ -62,7 +62,7 @@ const WhatWeDo = () => {
           }}
         >
           <Typography
-            variant="h4"
+            variant="h6"
             noWrap
             component="a"
             href="#app-bar-with-responsive-menu"
@@ -236,7 +236,7 @@ const WhatWeDo = () => {
         }}
       >
         <Typography
-          variant="h4"
+          variant="h6"
           component="a"
           fontWeight={700}
           sx={{
@@ -246,7 +246,7 @@ const WhatWeDo = () => {
             textWrap: "wrap",
             color: "#0E204E",
             textDecoration: "none",
-           
+            letterSpacing: 2,
             textAlign: "center"
           }}
         >
@@ -257,7 +257,7 @@ const WhatWeDo = () => {
           component="a"
           sx={{
             fontFamily: "Lato",
-            mt: 12,
+            mt: 10,
             position: "absolute",
             ml: 6,
             pr: 6,
@@ -297,7 +297,7 @@ const WhatWeDo = () => {
       >
        
         <Typography
-          variant="h4"
+          variant="h6"
           component="a"
           fontWeight={700}
           sx={{
@@ -307,7 +307,7 @@ const WhatWeDo = () => {
             textWrap: "wrap",
             color: "#0E204E",
             textDecoration: "none",
-           
+            letterSpacing: 2,
             textAlign: "center"
           }}
         >
