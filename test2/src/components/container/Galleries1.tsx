@@ -38,6 +38,7 @@ const Galleries1 = () => {
         </Typography>
         <Typography
           component="a"
+          fontWeight={300}
           sx={{
             fontFamily: "Lato",
             mt: 6,

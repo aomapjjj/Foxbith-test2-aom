@@ -1,13 +1,13 @@
 import { Box, Button, TextField, Typography } from "@mui/material"
 import { red } from "@mui/material/colors"
-
+import Group from "../../../public/imgs/FrameLogo/Group.svg"
+import Image from "next/image"
 const Footer = () => {
   return (
     <>
-   
       <Box
         sx={{
-          display: { xs: "none", md:"none" , lg: "flex" },
+          display: { xs: "none", md: "none", lg: "flex" },
           width: "1920px",
           height: "396px",
           bgcolor: "#0E204E",
@@ -29,7 +29,7 @@ const Footer = () => {
             component="a"
             fontWeight={500}
             sx={{
-              display: { xs: "none", md:"none" , lg: "flex" },
+              display: { xs: "none", md: "none", lg: "flex" },
               mb: 2,
               fontFamily: "Manrope",
               color: "white",
@@ -65,7 +65,7 @@ const Footer = () => {
             component="a"
             fontWeight={500}
             sx={{
-              display: { xs: "none", md:"none" , lg: "flex" },
+              display: { xs: "none", md: "none", lg: "flex" },
               mb: 2,
               fontFamily: "Playfair Display",
               color: "white",
@@ -119,6 +119,66 @@ const Footer = () => {
             Subscribe
           </Button>
         </Box>
+      </Box>
+      <Box
+        sx={{
+          display: { xs: "flex", md: "flex", lg: "none" },
+          width: "100%",
+          height: "90px",
+          bgcolor: "#0E204E",
+          mt: 5
+
+        }}
+      >
+        
+        <Typography
+          variant="h6"
+          component="a"
+          sx={{
+            fontFamily: "Lato",
+            color: "white",
+            textDecoration: "none",
+            textWrap: "pretty",
+            textAlign: "center",
+            ml: 18,
+            mt: 1
+          }}
+        >
+          Pineapple Island
+        </Typography>
+      </Box>
+      <Box
+        sx={{
+          display: { xs: "flex", md: "flex", lg: "none" },
+          mt: -6
+        }}
+      >
+        <Image
+          alt="copy rigth"
+          src={Group}
+          quality={100}
+          priority={true}
+          style={{
+          marginLeft:35,
+            marginTop:12,
+            width: "16px",
+            height: "16px",
+          }}
+        />
+        <Typography
+          component="a"
+          sx={{
+            fontFamily: "Lato",
+            color: "white",
+            textDecoration: "none",
+            textWrap: "pretty",
+            textAlign: "center",
+            ml:1,
+            mt: 1
+          }}
+        >
+         Copyright 2021 Glowdsgn All Rights Reserved
+        </Typography>
       </Box>
     </>
   )
