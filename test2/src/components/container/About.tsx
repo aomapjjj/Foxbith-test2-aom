@@ -12,16 +12,15 @@ const About = () => {
     <>
       <Box
         sx={{
-          display: { xs: "none", md: "none", lg: "flex" },
+          display: { xs: "none", md: "flex", lg: "flex" },
           justifyContent: "flex-end",
-          ml: 4,
+
           mb: 12
         }}
       >
         <Image
           alt="home about"
           src={home1}
-          quality={100}
           priority={true}
           style={{
             position: "relative",
@@ -36,7 +35,7 @@ const About = () => {
             bgcolor: "#0E204E",
             py: 10,
             position: "absolute",
-            ml: 4,
+            ml: 50,
             mt: 20,
             mr: 125
           }}
@@ -46,10 +45,9 @@ const About = () => {
             noWrap
             component="a"
             fontWeight={700}
-            href="#app-bar-with-responsive-menu"
             sx={{
               mr: 2,
-              display: { xs: "none", md: "none", lg: "flex" },
+              display: { xs: "none", md: "flex", lg: "flex" },
               fontFamily: "Playfair Display",
               fontWeight: 700,
               color: "white",
@@ -64,11 +62,10 @@ const About = () => {
           <Typography
             noWrap
             component="a"
-            href="#app-bar-with-responsive-menu"
             sx={{
               ml: 6,
               mt: 2,
-              display: { xs: "none", md: "none", lg: "flex" },
+              display: { xs: "none", md: "flex", lg: "flex" },
               fontFamily: "Manrope",
               color: "white",
               textDecoration: "none",
@@ -84,7 +81,7 @@ const About = () => {
 
       <Box
         sx={{
-          display: { xs: "none", md: "none", lg: "flex" },
+          display: { xs: "none", md: "flex", lg: "flex" },
           justifyContent: "center",
           mb: 12
         }}
@@ -97,7 +94,7 @@ const About = () => {
           sx={{
             mt: 15,
             p: 5,
-            display: { xs: "none", md: "none", lg: "flex" },
+            display: { xs: "none", md: "flex", lg: "flex" },
             fontFamily: "Playfair Display",
             color: "#0E204E",
             textDecoration: "none",
@@ -112,7 +109,6 @@ const About = () => {
           <Image
             alt="home about"
             src={left}
-            quality={100}
             priority={true}
             style={{
               width: "40px",
@@ -124,7 +120,6 @@ const About = () => {
           <Image
             alt="home about"
             src={home2}
-            quality={100}
             priority={true}
             style={{
               width: "728px",
@@ -134,7 +129,6 @@ const About = () => {
           <Image
             alt="home about"
             src={rigth}
-            quality={100}
             priority={true}
             style={{
               width: "40px",
@@ -157,12 +151,11 @@ const About = () => {
             variant="h6"
             noWrap
             component="a"
-            href="#app-bar-with-responsive-menu"
             sx={{
               ml: 6,
               mt: 8,
               p: 5,
-              display: { xs: "none", md: "none", lg: "flex" },
+              display: { xs: "none", md: "flex", lg: "flex" },
               fontFamily: "Manrope",
               color: "white",
               textDecoration: "none",
@@ -181,13 +174,12 @@ const About = () => {
 
       <Box
         sx={{
-          display: { xs: "flex", md: "flex", lg: "none" }
+          display: { xs: "flex", md: "none", lg: "none" }
         }}
       >
         <Image
           alt="home about"
           src={homecrop}
-          quality={100}
           priority={true}
           style={{
             paddingLeft: "40px",
@@ -201,7 +193,7 @@ const About = () => {
       </Box>
       <Box
         sx={{
-          display: { xs: "flex", md: "flex", lg: "none" },
+          display: { xs: "flex", md: "none", lg: "none" },
           justifyContent: "center",
           mt: -55
         }}
@@ -216,8 +208,7 @@ const About = () => {
             fontWeight: 700,
             textWrap: "wrap",
             color: "white",
-            textDecoration: "none",
-            
+            textDecoration: "none"
           }}
         >
           Pineapple Island:
@@ -233,8 +224,7 @@ const About = () => {
             fontWeight: 700,
             textWrap: "wrap",
             color: "white",
-            textDecoration: "none",
-            
+            textDecoration: "none"
           }}
         >
           GenZ and Millenial Abode
@@ -273,7 +263,7 @@ const About = () => {
       </Box>
       <Box
         sx={{
-          display: { xs: "flex", md: "flex", lg: "none" },
+          display: { xs: "flex", md: "none", lg: "none" },
           justifyContent: "center",
           mt: 30
         }}
@@ -289,7 +279,7 @@ const About = () => {
             textWrap: "wrap",
             color: "#0E204E",
             textDecoration: "none",
-            
+
             textAlign: "center"
           }}
         >
@@ -298,7 +288,6 @@ const About = () => {
         <Image
           alt="home about"
           src={homes}
-          quality={100}
           priority={true}
           style={{
             marginTop: "100px",
@@ -331,7 +320,6 @@ const About = () => {
           professional built abode that gives you the true taste of beauty and
           happiness.
         </Typography>
-       
       </Box>
     </>
   )

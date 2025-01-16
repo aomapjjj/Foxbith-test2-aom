@@ -10,166 +10,148 @@ import {
 const Contact = () => {
   return (
     <>
-      <Typography
-        variant="h2"
-        noWrap
-        component="a"
-        fontWeight={700}
+      <Grid2
         sx={{
-          mb: 3,
-          display: { xs: "none", md: "none", lg: "flex" },
-          fontFamily: "Playfair Display",
-          color: "#0E204E",
-          textDecoration: "none",
-          textWrap: "wrap",
-          justifyContent: "center"
-        }}
-      >
-        Stay In Touch
-      </Typography>
-
-      <Typography
-        noWrap
-        component="a"
-        sx={{
-          display: { xs: "none", md: "none", lg: "flex" },
-          fontFamily: "Manrope",
-          color: "#0E204E",
-          textDecoration: "none",
-          textWrap: "pretty",
+          display: { sm: "none", md: "flex", lg: "flex" },
           justifyContent: "center",
-          mb: 6
+          mr: 15
         }}
-      >
-        Are you curious about Pineapple Island? Send a message
-      </Typography>
+        container
+      ></Grid2>
+
       <Box>
         <Grid2
           sx={{
-            display: { sm: "none", md: "none", lg: "flex" },
+            display: { sm: "none", md: "flex", lg: "flex" },
             justifyContent: "center",
-            mb: 10,
+            mt: 5,
             ml: 20
           }}
           container
-          rowSpacing={5}
         >
-          <Grid2
-            size={8}
-            sx={{
-              display: { xs: "none", md: "none", lg: "flex" }
-            }}
-          >
-            <TextField
-              name="name"
-              id="outlined-basic"
-              label="Name"
-              variant="outlined"
+          <Box sx={{}}>
+            <Grid2
+              size={8}
               sx={{
-                width: "900px",
-                [`& fieldset`]: {
-                  borderRadius: 0
-                }
-              }}
-            />
-          </Grid2>
-          <Grid2
-            size={8}
-            sx={{
-              display: { xs: "none", md: "none", lg: "flex" }
-            }}
-          >
-            <TextField
-              name="Phone No"
-              id="outlined-basic"
-              label="Phone No"
-              variant="outlined"
-              sx={{
-                width: "900px",
-                [`& fieldset`]: {
-                  borderRadius: 0
-                }
-              }}
-            />
-          </Grid2>
-          <Grid2
-            size={8}
-            sx={{
-              display: { xs: "none", md: "none", lg: "flex" }
-            }}
-          >
-            <TextField
-              name="Email"
-              id="outlined-basic"
-              label="Email"
-              variant="outlined"
-              sx={{
-                width: "900px",
-                [`& fieldset`]: {
-                  borderRadius: 0
-                }
-              }}
-            />
-          </Grid2>
-          <Grid2
-            size={8}
-            sx={{
-              display: { xs: "none", md: "none", lg: "flex" }
-            }}
-          >
-            <TextField
-              name="Message"
-              id="outlined-basic"
-              label="Message"
-              variant="outlined"
-              inputProps={{
-                style: {
-                  height: "300px"
-                }
-              }}
-              sx={{
-                width: "900px",
-
-                [`& fieldset`]: {
-                  borderRadius: 0
-                }
-              }}
-            />
-          </Grid2>
-          <Grid2
-            size={8}
-            sx={{
-              display: {
-                xs: "none",
-                md: "none",
-                lg: "flex"
-              },
-              mr: 20,
-              justifyContent: "center"
-            }}
-          >
-            <Button
-              variant="contained"
-              sx={{
-                fontFamily: "Manrope",
-                textTransform: "none",
-                width: "120px",
-                borderRadius: 0,
-                backgroundColor: "#0E204E"
+                display: { xs: "none", md: "flex", lg: "flex" },
+                mb: 3
               }}
             >
-              Send
-            </Button>
-          </Grid2>
+              <TextField
+                name="name"
+                id="outlined-basic"
+                label="Name"
+                variant="outlined"
+                sx={{
+                  width: "900px",
+                  [`& fieldset`]: {
+                    borderRadius: 0
+                  }
+                }}
+              />
+            </Grid2>
+            <Grid2
+              size={8}
+              sx={{
+                display: { xs: "none", md: "flex", lg: "flex" },
+                mb: 3
+              }}
+            >
+              <TextField
+                name="Phone No"
+                id="outlined-basic"
+                label="Phone No"
+                variant="outlined"
+                sx={{
+                  width: "900px",
+                  [`& fieldset`]: {
+                    borderRadius: 0
+                  }
+                }}
+              />
+            </Grid2>
+            <Grid2
+              size={8}
+              sx={{
+                display: { xs: "none", md: "flex", lg: "flex" },
+                mb: 3
+              }}
+            >
+              <TextField
+                name="Email"
+                id="outlined-basic"
+                label="Email"
+                variant="outlined"
+                sx={{
+                  width: "900px",
+                  [`& fieldset`]: {
+                    borderRadius: 0
+                  }
+                }}
+              />
+            </Grid2>
+            <Grid2
+              size={8}
+              sx={{
+                display: { xs: "none", md: "flex", lg: "flex" },
+                mb: 3
+              }}
+            >
+              <TextField
+                name="Message"
+                id="outlined-basic"
+                label="Message"
+                variant="outlined"
+                inputProps={{
+                  style: {
+                    height: "300px"
+                  }
+                }}
+                sx={{
+                  width: "900px",
+
+                  [`& fieldset`]: {
+                    borderRadius: 0
+                  }
+                }}
+              />
+            </Grid2>
+            <Grid2
+              size={8}
+              sx={{
+                display: {
+                  xs: "none",
+                  md: "flex ",
+                  lg: "flex"
+                },
+                mr: 20,
+                justifyContent: "center"
+              }}
+            >
+              <Button
+                variant="contained"
+                sx={{
+                  fontFamily: "Manrope",
+                  textTransform: "none",
+                  width: "120px",
+                  borderRadius: 0,
+                  backgroundColor: "#0E204E"
+                }}
+              >
+                Send
+              </Button>
+            </Grid2>
+          </Box>
         </Grid2>
       </Box>
       <Box>
         <Box
           sx={{
-            display: { xs: "flex", md: "flex", lg: "none" },
+            display: { xs: "flex", md: "none", lg: "none" },
             width: "100%",
             height: "262px",
-            bgcolor: "#0E204E"
+            bgcolor: "#0E204E",
+            justifyContent: "center"
           }}
         >
           <Typography
@@ -179,8 +161,7 @@ const Contact = () => {
               mt: 4,
               fontFamily: "Playfair Display",
               color: "white",
-              textDecoration: "none",
-              ml: 15
+              textDecoration: "none"
             }}
           >
             Become an Agent
@@ -188,7 +169,8 @@ const Contact = () => {
         </Box>
         <Box
           sx={{
-            display: { xs: "flex", md: "flex", lg: "none" }
+            display: { xs: "flex", md: "none", lg: "none" },
+            justifyContent: "center"
           }}
         >
           <Typography
@@ -211,7 +193,7 @@ const Contact = () => {
         </Box>
         <Box
           sx={{
-            display: { xs: "flex", md: "flex", lg: "none" },
+            display: { xs: "flex", md: "none", lg: "none" },
             justifyContent: "center"
           }}
         >
@@ -232,7 +214,7 @@ const Contact = () => {
         </Box>
         <Box
           sx={{
-            display: { xs: "flex", md: "flex", lg: "none" },
+            display: { xs: "flex", md: "none", lg: "none" },
             justifyContent: "center"
           }}
         >
@@ -251,7 +233,7 @@ const Contact = () => {
         </Box>
         <Box
           sx={{
-            display: { xs: "flex", md: "flex", lg: "none" },
+            display: { xs: "flex", md: "none", lg: "none" },
             justifyContent: "center"
           }}
         >
@@ -270,115 +252,120 @@ const Contact = () => {
             Village, leave a message
           </Typography>
         </Box>
-        <Grid2
-          sx={{
-            display: { sm: "flex", md: "flex", lg: "none" },
-            ml: 12,
-            mt: 5
-          }}
-          container
-          rowSpacing={2}
-        >
-          <Grid2 size={12}>
-            <TextField
-              label="Name"
-              variant="standard"
-              sx={{
-                width: "275px"
-              }}
-              InputLabelProps={{
-                sx: {
-                  fontFamily: "Lato",
-                  fontSize: "17px"
-                }
-              }}
-            />
-          </Grid2>
-          <Grid2 size={12}>
-            <TextField
-              label="Phone No"
-              variant="standard"
-              sx={{
-                width: "275px"
-              }}
-              InputLabelProps={{
-                sx: {
-                  fontFamily: "Lato",
-                  fontSize: "17px"
-                }
-              }}
-            />
-          </Grid2>
-          <Grid2 size={12}>
-            <TextField
-              label="Email"
-              variant="standard"
-              sx={{
-                width: "275px"
-              }}
-              InputLabelProps={{
-                sx: {
-                  fontFamily: "Lato",
-                  fontSize: "17px"
-                }
-              }}
-            />
-          </Grid2>
+        <Box>
           <Grid2
-            size={12}
+            container
             sx={{
-              mt: 2
+              display: { sm: "flex", md: "none", lg: "none" },
+              justifyContent: "center",
+              mt: 5
             }}
+            rowSpacing={2}
           >
-            <FormLabel
-              style={{
-                fontFamily: "Lato"
-              }}
-            >
-              Message
-            </FormLabel>
-            <TextField
-              name="Message"
-              id="outlined-basic"
-              variant="outlined"
-              inputProps={{
-                style: {
-                  fontFamily: "Lato",
-                  height: "83px"
-                }
-              }}
-              sx={{
-                width: "275px",
-                mt: 1,
-                [`& fieldset`]: {
-                  borderRadius: 0
-                }
-              }}
-            />
+            <Box>
+              <Grid2 size={12} sx={{}}>
+                <TextField
+                  label="Name"
+                  variant="standard"
+                  sx={{
+                    width: "275px"
+                  }}
+                  InputLabelProps={{
+                    sx: {
+                      fontFamily: "Lato",
+                      fontSize: "17px"
+                    }
+                  }}
+                />
+              </Grid2>
+              <Grid2 size={12}>
+                <TextField
+                  label="Phone No"
+                  variant="standard"
+                  sx={{
+                    width: "275px"
+                  }}
+                  InputLabelProps={{
+                    sx: {
+                      fontFamily: "Lato",
+                      fontSize: "17px"
+                    }
+                  }}
+                />
+              </Grid2>
+              <Grid2 size={12}>
+                <TextField
+                  label="Email"
+                  variant="standard"
+                  sx={{
+                    width: "275px"
+                  }}
+                  InputLabelProps={{
+                    sx: {
+                      fontFamily: "Lato",
+                      fontSize: "17px"
+                    }
+                  }}
+                />
+              </Grid2>
+              <Grid2
+                size={12}
+                sx={{
+                  my: 2
+                }}
+              >
+                <FormLabel
+                  style={{
+                    fontFamily: "Lato"
+                  }}
+                >
+                  Message
+                </FormLabel>
+              </Grid2>
+              <Grid2 size={12} sx={{}}>
+                <TextField
+                  name="Message"
+                  id="outlined-basic"
+                  variant="outlined"
+                  inputProps={{
+                    style: {
+                      fontFamily: "Lato",
+                      height: "83px"
+                    }
+                  }}
+                  sx={{
+                    width: "275px",
+                    [`& fieldset`]: {
+                      borderRadius: 0
+                    }
+                  }}
+                />
+              </Grid2>
+              <Grid2
+                size={12}
+                sx={{
+                 
+                  mt: 2
+                }}
+              >
+                <Button
+                  variant="contained"
+                  sx={{
+                    fontFamily: "Lato",
+                    textTransform: "none",
+                    width: "82px",
+                    height: "40px",
+                    ml:10,
+                    backgroundColor: "#0E204E",
+                    color: "white"
+                  }}
+                >
+                  Send
+                </Button>
+              </Grid2>
+            </Box>
           </Grid2>
-          <Grid2
-            size={12}
-            sx={{
-              mt: 2,
-              
-            }}
-          >
-            <Button
-              variant="contained"
-              sx={{
-                fontFamily: "Lato",
-                textTransform: "none",
-                width: "82px",
-                height: "40px",
-                ml:12,
-                backgroundColor: "#0E204E",
-                color: "white"
-              }}
-            >
-              Send
-            </Button>
-          </Grid2>
-        </Grid2>
+        </Box>
       </Box>
     </>
   )

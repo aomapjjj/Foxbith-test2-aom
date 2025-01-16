@@ -13,7 +13,7 @@ const WhatWeDo = () => {
     <>
       <Box
         sx={{
-          display: { xs: "none", md: "none", lg: "flex" },
+          display: { xs: "none", md: "flex", lg: "flex" },
           width: "1920px",
           height: "708px",
           bgcolor: "#0E204E",
@@ -23,7 +23,7 @@ const WhatWeDo = () => {
         }}
       >
         <Typography
-          variant="h2"
+          variant="h3"
           noWrap
           component="a"
           fontWeight={700}
@@ -31,7 +31,7 @@ const WhatWeDo = () => {
             mt: 30,
             p: 6,
             ml: 20,
-            display: { xs: "none", md: "none", lg: "flex" },
+            display: { xs: "none", md: "flex", lg: "flex" },
             fontFamily: "Playfair Display",
             color: "white",
             textDecoration: "none",
@@ -46,10 +46,9 @@ const WhatWeDo = () => {
       </Box>
       <Box
         sx={{
-          display: { xs: "none", md: "none", lg: "flex" },
+          display: { xs: "none", md: "flex", lg: "flex" },
           ml: 70,
           mt: -75,
-
           position: "absolute"
         }}
       >
@@ -57,41 +56,40 @@ const WhatWeDo = () => {
           sx={{
             boxShadow: 2,
             width: "477px",
-            height: "634px",
-            bgcolor: "white"
+            bgcolor: "white",
+            display: { xs: "none", md: "flex", lg: "flex" },
+            alignItems: "center",
+            px:10
           }}
         >
-          <Typography
-            variant="h6"
-            noWrap
-            component="a"
-            href="#app-bar-with-responsive-menu"
-            sx={{
-              ml: 6,
-              mt: 12,
-              p: 7,
-              display: { xs: "none", md: "none", lg: "flex" },
-              fontFamily: "Manrope",
-              color: "#0E204E",
-              textDecoration: "none",
-              textWrap: "wrap"
-            }}
-          >
-            Pineapple Island is the most sought-after community in Ibadan that
-            values and puts the needs of their clients first. It is a territory
-            with loft complexes that creates a country life and homely feeling
-            that is integrated with industrial development. A perfect,
-            professional built abode that gives you the true taste of beauty and
-            happiness.
-          </Typography>
+          <Box>
+            <Typography
+              variant="h6"
+              noWrap
+              component="a"
+              sx={{
+               
+                fontFamily: "Manrope",
+                color: "#0E204E",
+                textDecoration: "none",
+                textWrap: "wrap"
+              }}
+            >
+              Pineapple Island is the most sought-after community in Ibadan that
+              values and puts the needs of their clients first. It is a
+              territory with loft complexes that creates a country life and
+              homely feeling that is integrated with industrial development. A
+              perfect, professional built abode that gives you the true taste of
+              beauty and happiness.
+            </Typography>
+          </Box>
         </Box>
         <Image
           alt="home about"
           src={room}
-          quality={100}
           priority={true}
           style={{
-            width: "709px",
+            width: "80%",
             height: "634px"
           }}
         />
@@ -100,12 +98,11 @@ const WhatWeDo = () => {
         variant="h3"
         noWrap
         component="a"
-        href="#app-bar-with-responsive-menu"
         fontWeight={700}
         sx={{
           mr: 2,
           mt: 20,
-          display: { xs: "none", md: "none", lg: "flex" },
+          display: { xs: "none", md: "flex", lg: "flex" },
           justifyContent: "center",
           fontFamily: "Playfair Display",
           fontWeight: 700,
@@ -117,20 +114,20 @@ const WhatWeDo = () => {
       </Typography>
       <Box
         sx={{
-          display: { xs: "none", md: "none", lg: "flex" },
+          display: { xs: "none", md: "flex", lg: "flex" },
           ml: 10
         }}
       >
         <Grid2
           sx={{
-            display: { sm: "none", md: "none", lg: "flex" },
+            display: { sm: "none", md: "flex", lg: "flex" },
             mb: 10
           }}
         >
           <Grid2
             size={6}
             sx={{
-              display: { sm: "none", md: "none", lg: "flex" },
+              display: { sm: "none", md: "flex", lg: "flex" },
               m: 10
             }}
           >
@@ -140,6 +137,7 @@ const WhatWeDo = () => {
                   width: "412px",
                   height: "358px",
                   bgcolor: "#0E204E",
+                  position: "relative",
                   py: 10,
                   ml: 50,
                   mt: 20
@@ -148,7 +146,7 @@ const WhatWeDo = () => {
               <Image
                 alt="home about"
                 src={garden1}
-                quality={100}
+    
                 priority={true}
                 style={{
                   margin: 50,
@@ -173,13 +171,13 @@ const WhatWeDo = () => {
       </Box>
       <Box
         sx={{
-          display: { xs: "none", md: "none", lg: "flex" },
+          display: { xs: "none", md: "flex", lg: "flex" },
           ml: 10
         }}
       >
         <Grid2
           sx={{
-            display: { sm: "none", md: "none", lg: "flex" },
+            display: { sm: "none", md: "flex", lg: "flex" },
             mb: 10
           }}
         >
@@ -195,7 +193,7 @@ const WhatWeDo = () => {
           <Grid2
             size={6}
             sx={{
-              display: { sm: "none", md: "none", lg: "flex" },
+              display: { sm: "none", md: "flex", lg: "flex" },
               m: 10
             }}
           >
@@ -206,19 +204,19 @@ const WhatWeDo = () => {
                   height: "358px",
                   bgcolor: "#0E204E",
                   py: 10,
-
+                  position: "relative",
                   mt: 20
                 }}
               ></Box>
               <Image
                 alt="home about"
                 src={garden2}
-                quality={100}
+    
                 priority={true}
                 style={{
                   margin: 50,
                   marginLeft: "200px",
-                  width: "567px",
+                  width: "568px",
                   height: "582px",
                   marginTop: "-500px",
                   position: "absolute"
@@ -230,13 +228,13 @@ const WhatWeDo = () => {
       </Box>
       <Box
         sx={{
-          display: { xs: "flex", md: "flex", lg: "none" },
+          display: { xs: "flex", md: "none", lg: "none" },
           justifyContent: "center",
           mt: 5
         }}
       >
         <Typography
-          variant="h6"
+          variant="h4"
           component="a"
           fontWeight={700}
           sx={{
@@ -257,11 +255,11 @@ const WhatWeDo = () => {
           component="a"
           sx={{
             fontFamily: "Lato",
-            mt: 10,
+            mt: 15,
             position: "absolute",
             ml: 6,
             pr: 6,
-            textWrap: "pretty",
+            textWrap: "wrap",
             color: "#0E204E",
             textDecoration: "none",
             textAlign: "center"
@@ -277,7 +275,6 @@ const WhatWeDo = () => {
         <Image
           alt="home about"
           src={livingroom}
-          quality={100}
           priority={true}
           style={{
             marginTop: "300px",
@@ -290,14 +287,13 @@ const WhatWeDo = () => {
       </Box>
       <Box
         sx={{
-          display: { xs: "flex", md: "flex", lg: "none" },
+          display: { xs: "flex", md: "none", lg: "none" },
           justifyContent: "center",
           mt: 5
         }}
       >
-       
         <Typography
-          variant="h6"
+          variant="h4"
           component="a"
           fontWeight={700}
           sx={{
@@ -316,7 +312,6 @@ const WhatWeDo = () => {
         <Image
           alt="home about"
           src={garden1}
-          quality={100}
           priority={true}
           style={{
             padding: "30px",
@@ -334,7 +329,7 @@ const WhatWeDo = () => {
             width: "320px",
             height: "247px",
             mt: 47,
-            display: { xs: "flex", md: "flex", lg: "none" },
+            display: { xs: "flex", md: "none", lg: "none" },
             justifyContent: "center"
           }}
         >

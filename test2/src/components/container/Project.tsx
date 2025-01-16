@@ -9,20 +9,20 @@ const Project = () => {
     <>
       <Box
         sx={{
-          display: { xs: "none",  md:"none" , lg: "flex" },
+          display: { xs: "none", md: "flex", lg: "flex" },
           ml: 10
         }}
       >
         <Grid2
           sx={{
-            display: { sm: "none",  md:"none" , lg: "flex" },
+            display: { sm: "none", md: "flex", lg: "flex" },
             mb: 10
           }}
         >
           <Grid2
             size={6}
             sx={{
-              display: { sm: "none",  md:"none" , lg: "flex" },
+              display: { sm: "none", md: "flex", lg: "flex" },
               mt: 20
             }}
           >
@@ -40,7 +40,6 @@ const Project = () => {
               <Image
                 alt="home about"
                 src={Chair}
-                quality={100}
                 priority={true}
                 style={{
                   margin: 50,
@@ -61,13 +60,12 @@ const Project = () => {
                 sx={{
                   mb: 3,
                   ml: 20,
-                  display: { xs: "none",  md:"none" , lg: "flex" },
+                  display: { xs: "none", md: "flex", lg: "flex" },
                   fontFamily: "Playfair Display",
                   color: "#0E204E",
                   textDecoration: "none",
                   textWrap: "wrap"
                 }}
-                
               >
                 Amazing Features
               </Typography>
@@ -78,14 +76,14 @@ const Project = () => {
       </Box>
       <Box
         sx={{
-          display: { xs: "none",  md:"none" , lg: "flex" },
+          display: { xs: "none", md: "flex", lg: "flex" },
           ml: 10,
-          mb:30
+          mb: 30
         }}
       >
         <Grid2
           sx={{
-            display: { sm: "none",  md:"none" , lg: "flex" },
+            display: { sm: "none", md: "flex", lg: "flex" },
             mb: 10
           }}
         >
@@ -98,10 +96,10 @@ const Project = () => {
           >
             <Box
               sx={{
-                
                 ml: 20,
                 width: "512px",
-                height: "258px"
+                height: "258px",
+                position: "relative",
               }}
             >
               <Typography
@@ -111,7 +109,7 @@ const Project = () => {
                 fontWeight={700}
                 sx={{
                   mb: 3,
-                  display: { xs: "none",  md:"none" , lg: "flex" },
+                  display: { xs: "none", md: "flex", lg: "flex" },
                   fontFamily: "Playfair Display",
                   color: "#0E204E",
                   textDecoration: "none",
@@ -147,8 +145,9 @@ const Project = () => {
                   mt: 4,
                   display: {
                     xs: "none",
-                     md:"none" , lg: "flex",
-
+                    md: "flex",
+                    lg: "flex",
+                   
                     width: "239px",
                     height: "62px"
                   }
@@ -161,24 +160,26 @@ const Project = () => {
           <Grid2
             size={6}
             sx={{
-              display: { sm: "none",  md:"none" , lg: "flex" },
+              display: { sm: "none", md: "flex", lg: "flex" },
               m: 10
             }}
           >
             <Box>
+
               <Box
                 sx={{
+                  
                   width: "412px",
                   height: "358px",
                   bgcolor: "#0E204E",
                   py: 10,
-                  mt: 20
+                  mt: 20,
+                 
                 }}
               ></Box>
               <Image
                 alt="home about"
                 src={Women}
-                quality={100}
                 priority={true}
                 style={{
                   margin: 50,

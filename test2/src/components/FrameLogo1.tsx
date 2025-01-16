@@ -11,7 +11,6 @@ const FrameLogo = () => {
       <Image
           alt="home about"
           src={System}
-          quality={100}
           priority={true}
           style={{
             marginLeft: "80px",
@@ -22,7 +21,6 @@ const FrameLogo = () => {
         <Image
           alt="home about"
           src={Lock}
-          quality={100}
           priority={true}
           style={{
             marginLeft: "80px",
@@ -33,7 +31,6 @@ const FrameLogo = () => {
         <Image
           alt="home about"
           src={Ligth}
-          quality={100}
           priority={true}
           style={{
             marginLeft: "80px",

@@ -43,17 +43,21 @@ function ResponsiveAppBar() {
       sx={{
         bgcolor: "white",
         boxShadow: 0,
-        py: 3
+        py: 3,
+       
       }}
     >
       <Container maxWidth="xl">
-        <Toolbar disableGutters>
+        <Toolbar disableGutters
+     
+        > 
           <Typography
             variant="h4"
             noWrap
             component="a"
             fontWeight={700}
             sx={{
+              
               mr: 2,
               pt:5,
               display: { xs: "flex" 

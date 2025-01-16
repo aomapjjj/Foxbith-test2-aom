@@ -11,7 +11,6 @@ const FrameLogo = () => {
         <Image
           alt="home about"
           src={Tree}
-          quality={100}
           priority={true}
           style={{
             marginLeft: "80px",
@@ -22,18 +21,16 @@ const FrameLogo = () => {
         <Image
           alt="home about"
           src={Wifi}
-          quality={100}
           priority={true}
           style={{
             marginLeft: "80px",
-            width: "107px",
+            width: "120px",
             height: "157px"
           }}
         />
         <Image
           alt="home about"
           src={Money}
-          quality={100}
           priority={true}
           style={{
             marginLeft: "80px",

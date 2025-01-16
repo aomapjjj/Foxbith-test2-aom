@@ -24,7 +24,6 @@ const FrramLogo2 = () => {
           <Image
             alt="home about"
             src={Tree}
-            quality={100}
             priority={true}
             style={{
               marginLeft: 4,
@@ -48,7 +47,6 @@ const FrramLogo2 = () => {
           <Image
             alt="home about"
             src={Network}
-            quality={100}
             priority={true}
             style={{
               width: "32px",
@@ -70,7 +68,6 @@ const FrramLogo2 = () => {
           <Image
             alt="home about"
             src={Money}
-            quality={100}
             priority={true}
             style={{
               width: "32px",
@@ -93,7 +90,6 @@ const FrramLogo2 = () => {
           <Image
             alt="home about"
             src={System}
-            quality={100}
             priority={true}
             style={{
               width: "32px",
@@ -115,7 +111,6 @@ const FrramLogo2 = () => {
           <Image
             alt="home about"
             src={Lock}
-            quality={100}
             priority={true}
             style={{
               width: "32px",
@@ -141,7 +136,6 @@ const FrramLogo2 = () => {
           <Image
             alt="home about"
             src={Light}
-            quality={100}
             priority={true}
             style={{
               marginLeft: 4,

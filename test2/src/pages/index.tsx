@@ -17,7 +17,7 @@ const index = () => {
       <Galleries1 />
       <Project />
       <Contact />
-      <Footer />
+      {/* <Footer /> */}
     </>
   )
 }
