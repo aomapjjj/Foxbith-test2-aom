@@ -10,14 +10,6 @@ import {
 const Contact = () => {
   return (
     <>
-      <Grid2
-        sx={{
-          display: { sm: "none", md: "flex", lg: "flex" },
-          justifyContent: "center",
-          mr: 15
-        }}
-        container
-      ></Grid2>
 
       <Box>
         <Grid2
@@ -29,7 +21,48 @@ const Contact = () => {
           }}
           container
         >
-          <Box sx={{}}>
+          <Box>
+            <Grid2
+              size={8}
+              sx={{
+                display: { xs: "none", md: "flex", lg: "flex" },
+                justifyContent: "center"
+              }}
+            >
+              <Typography
+                variant="h3"
+                fontWeight={700}
+                sx={{
+                  fontFamily: "Playfair Display",
+                  color: "#0E204E",
+                  textDecoration: "none"
+                }}
+              >
+                Stay In Touch
+              </Typography>
+            </Grid2>
+            <Grid2
+              size={8}
+              sx={{
+                display: { xs: "none", md: "flex", lg: "flex" },
+                justifyContent: "center"
+              }}
+            >
+              <Typography
+                fontWeight={300}
+                sx={{
+                  my: 3,
+                  fontFamily: "Lato",
+                  color: "#0E204E",
+                  
+                  textDecoration: "none",
+                  textAlign: "center"
+                }}
+              >
+                If you are interested in finding out more about The Discovery
+                Village, leave a message
+              </Typography>
+            </Grid2>
             <Grid2
               size={8}
               sx={{
@@ -212,6 +245,7 @@ const Contact = () => {
             Join Now
           </Button>
         </Box>
+
         <Box
           sx={{
             display: { xs: "flex", md: "none", lg: "none" },
@@ -344,7 +378,6 @@ const Contact = () => {
               <Grid2
                 size={12}
                 sx={{
-                 
                   mt: 2
                 }}
               >
@@ -355,7 +388,7 @@ const Contact = () => {
                     textTransform: "none",
                     width: "82px",
                     height: "40px",
-                    ml:10,
+                    ml: 10,
                     backgroundColor: "#0E204E",
                     color: "white"
                   }}

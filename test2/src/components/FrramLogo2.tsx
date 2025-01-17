@@ -12,149 +12,245 @@ const FrramLogo2 = () => {
     <>
       <Grid2
         container
-        spacing={{ xs: 3, md: 3 }}
-        columns={{ xs: 12, sm: 12, md: 12 }}
+        columns={4}
         sx={{
-          mt: 3,
-          ml: 4,
-          justifyContent: "center"
+          display: { xs: "flex", md: "none", lg: "none" },
+          mt: 5,
+          px: 3,
+          
         }}
       >
-        <Grid2 size={4}>
-          <Image
-            alt="home about"
-            src={Tree}
-            priority={true}
-            style={{
-              marginLeft: 4,
-              width: "32px",
-              height: "32px"
-            }}
-          />
-          <Typography
-            component="a"
-            sx={{
-              fontFamily: "Poppins",
-              color: "white",
-              pl: 2,
-               textAlign:"center"
-            }}
-          >
-            Eco Friendly
-          </Typography>
-        </Grid2>
-        <Grid2 size={4}>
-          <Image
-            alt="home about"
-            src={Network}
-            priority={true}
-            style={{
-              width: "32px",
-              height: "32px"
-            }}
-          />
-          <Typography
-            component="a"
-            sx={{
-              fontFamily: "Poppins",
-              color: "white",
-               textAlign:"center"
-            }}
-          >
-            Smart Homes
-          </Typography>
-        </Grid2>
-        <Grid2 size={4}>
-          <Image
-            alt="home about"
-            src={Money}
-            priority={true}
-            style={{
-              width: "32px",
-              height: "32px",
-              marginLeft: 4,
-            }}
-          />
-          <Typography
-            component="a"
-            sx={{
-              fontFamily: "Poppins",
-              color: "white",
-               textAlign:"center"
-            }}
-          >
-            Good Rates
-          </Typography>
-        </Grid2>
-        <Grid2 size={4}>
-          <Image
-            alt="home about"
-            src={System}
-            priority={true}
-            style={{
-              width: "32px",
-              height: "32px"
-            }}
-          />
-          <Typography
-            component="a"
-            sx={{
-              fontFamily: "Poppins",
-              color: "white",
-               textAlign:"center"
-            }}
-          >
-            Serviced Apartment
-          </Typography>
-        </Grid2>
-        <Grid2 size={4}>
-          <Image
-            alt="home about"
-            src={Lock}
-            priority={true}
-            style={{
-              width: "32px",
-              height: "32px"
-            }}
-          />
-          <Typography
-            component="a"
-            sx={{
-              fontFamily: "Poppins",
-              color: "white",
-               textAlign:"center"
+        <Box
+          sx={{
+            display: { xs: "flex", md: "none", lg: "none" },
+            justifyContent: "center"
+          }}
+        >
+          <Grid2 size={4}>
+            <Box
+              sx={{
+                ml: 2,
+                
+              }}
+            >
+              <Image
+                alt="Tree"
+                src={Tree}
+                priority={true}
+                style={{
+                  justifyContent: "center",
+                  width: "32px",
+                  height: "32px"
+                }}
+              />
+            </Box>
 
-            }}
-          >
-            Private Security
-          </Typography>
-        </Grid2>
+            <Box>
+              <Typography
+                sx={{
+                  fontSize: "12px",
+                  fontFamily: "Poppins",
+                  color: "white"
+                }}
+              >
+                Eco Friendly
+              </Typography>
+            </Box>
+          </Grid2>
+        </Box>
+        <Box
+          sx={{
+            ml:2
+          }}
+        >
+          <Grid2 size={4}>
+            <Box
+              sx={{
+                ml: 3
+              }}
+            >
+              <Image
+                alt="Network"
+                src={Network}
+                priority={true}
+                style={{
+                  justifyContent: "center",
+                  width: "32px",
+                  height: "32px"
+                }}
+              />
+            </Box>
 
-        <Grid2 size={4} sx={{
-            pr:2
-        }}>
-          <Image
-            alt="home about"
-            src={Light}
-            priority={true}
-            style={{
-              marginLeft: 4,
-              width: "32px",
-              height: "32px"
-            }}
-          />
-          <Typography
-            component="a"
-            sx={{
-              fontFamily: "Poppins",
-              color: "white",
-              textAlign:"center",
-            }}
-          >
-            24/7 Electricity
-          </Typography>
-        </Grid2>
+            <Box>
+              <Typography
+                sx={{
+                  fontSize: "12px",
+                  fontFamily: "Poppins",
+                  color: "white"
+                }}
+              >
+                Smart Homes
+              </Typography>
+            </Box>
+          </Grid2>
+        </Box>
+        <Box
+          sx={{
+            pl: 3
+          }}
+        >
+          <Grid2 size={4}>
+            <Box
+              sx={{
+                ml: 2
+              }}
+            >
+              <Image
+                alt="Money"
+                src={Money}
+                priority={true}
+                style={{
+                  justifyContent: "center",
+                  width: "32px",
+                  height: "32px"
+                }}
+              />
+            </Box>
+
+            <Box>
+              <Typography
+                sx={{
+                  fontSize: "12px",
+                  fontFamily: "Poppins",
+                  color: "white"
+                }}
+              >
+                Good Rates
+              </Typography>
+            </Box>
+          </Grid2>
+        </Box>
+        <Box
+          sx={{
+            mt: 4
+          }}
+        >
+          <Grid2 size={4}>
+            <Box
+              sx={{
+                ml: 2
+              }}
+            >
+              <Image
+                alt="System"
+                src={System}
+                priority={true}
+                style={{
+                  justifyContent: "center",
+                  width: "32px",
+                  height: "32px"
+                }}
+              />
+            </Box>
+
+            <Box>
+              <Typography
+                sx={{
+                  fontSize: "12px",
+                  fontFamily: "Poppins",
+                  color: "white",
+                  textAlign: "center"
+                }}
+              >
+                Serviced <br />
+                Apartment
+              </Typography>
+            </Box>
+          </Grid2>
+        </Box>
+        <Box
+          sx={{
+            mt: 4
+          }}
+        >
+          <Grid2 size={4}>
+            <Box
+              sx={{
+                ml: 5.5
+              }}
+            >
+              <Image
+                alt="Lock"
+                src={Lock}
+                priority={true}
+                style={{
+                  justifyContent: "center",
+                  width: "32px",
+                  height: "32px"
+                }}
+              />
+            </Box>
+
+            <Box sx={{}}>
+              <Typography
+                sx={{
+                  ml: 5,
+                  fontSize: "12px",
+                  fontFamily: "Poppins",
+                  color: "white",
+                  textAlign: "center"
+                }}
+              >
+                Private
+                <br />
+                Security
+              </Typography>
+            </Box>
+          </Grid2>
+        </Box>
+        <Box
+          sx={{
+            mt: 4
+          }}
+        >
+          <Grid2 size={4}>
+            <Box
+              sx={{
+                ml: 6
+              }}
+            >
+              <Image
+                alt="Light"
+                src={Light}
+                priority={true}
+                style={{
+                  justifyContent: "center",
+                  width: "32px",
+                  height: "32px",
+                  marginLeft:10
+                }}
+              />
+            </Box>
+
+            <Box>
+              <Typography
+                sx={{
+                  fontSize: "12px",
+                  fontFamily: "Poppins",
+                  color: "white",
+                  textAlign: "center",
+                  ml: 6
+                }}
+              >
+                24/7
+                <br />
+                Electricity
+              </Typography>
+            </Box>
+          </Grid2>
+        </Box>
       </Grid2>
+      
     </>
   )
 }

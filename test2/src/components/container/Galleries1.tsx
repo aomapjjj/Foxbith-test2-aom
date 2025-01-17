@@ -21,46 +21,55 @@ const Galleries1 = () => {
         sx={{
           display: { xs: "flex", md: "none", lg: "none" },
           justifyContent: "center",
-          ml: 10,
-          mt: 30
+          
         }}
       >
-        <Typography
-          variant="h4"
-          component="a"
-          fontWeight={700}
-          sx={{
-            fontFamily: "Playfair Display",
-            fontWeight: 700,
-            color: "#0E206E"
-          }}
-        >
-          Available Homes
-        </Typography>
-        <Typography
-          component="a"
-          fontWeight={300}
-          sx={{
-            fontFamily: "Lato",
-            mt: 6,
-            position: "absolute",
-            pr: 3,
-            mr: 6,
-            color: "#0E206E",
-            textDecoration: "none",
-            textAlign: "center"
-          }}
-        >
-          a community that gives you a taste of happiness, a place you’ll love
-          to live and an opportunity to build a home.
-        </Typography>
+        <Box>
+          <Typography
+            variant="h4"
+            component="a"
+            fontWeight={700}
+            sx={{
+              fontFamily: "Playfair Display",
+              
+              color: "#0E206E"
+            }}
+          >
+            Available Homes
+          </Typography>
+        </Box>
+      </Box>
+      <Box
+        sx={{
+          display: { xs: "flex", md: "none", lg: "none" },
+          justifyContent: "center",
+          mt: 2
+        }}
+      >
+        <Box>
+          <Typography
+            fontWeight={300}
+            sx={{
+              fontFamily: "Lato",
+              color: "#0E206E",
+              textDecoration: "none",
+              px: 6,
+              textAlign: "center"
+            }}
+          >
+            a community that gives you a taste of happiness, a place you’ll love
+            to live and an opportunity to build a home.
+          </Typography>
+        </Box>
       </Box>
 
       <Grid2
         container
         spacing={2}
         sx={{
-          display: { xs: "flex", md: "none", lg: "none" }
+          display: { xs: "flex", md: "none", lg: "none" },
+          mt: 2,
+          px: 4
         }}
       >
         <Grid2
@@ -122,7 +131,9 @@ const Galleries1 = () => {
         spacing={2}
         flexWrap={"wrap"}
         sx={{
-          display: { xs: "flex", md: "none", lg: "none" }
+          display: { xs: "flex", md: "none", lg: "none" },
+          mt: 2,
+          px: 4
         }}
       >
         <Grid2
@@ -173,7 +184,9 @@ const Galleries1 = () => {
         flexWrap={"wrap"}
         flexDirection={"row-reverse"}
         sx={{
-          display: { xs: "flex", md: "none", lg: "none" }
+          display: { xs: "flex", md: "none", lg: "none" },
+          mt: 2,
+          px: 4
         }}
       >
         <Grid2
@@ -184,7 +197,7 @@ const Galleries1 = () => {
         >
           <Image
             alt="home about"
-            src={five}
+            src={twe}
             priority={true}
             style={{ width: "100%", height: "100%" }}
           />
@@ -199,7 +212,7 @@ const Galleries1 = () => {
         >
           <Image
             alt="home about"
-            src={six}
+            src={eight}
             priority={true}
             style={{ width: "100%", height: "200%", position: "absolute" }}
           />
@@ -208,63 +221,6 @@ const Galleries1 = () => {
           size={6}
           sx={{
             display: { xs: "flex", md: "none", lg: "none" }
-          }}
-        >
-          <Image
-            alt="home about"
-            src={seven}
-            priority={true}
-            style={{ width: "100%", height: "100%" }}
-          />
-        </Grid2>
-      </Grid2>
-
-      {/* <Grid2
-        container
-        spacing={2}
-        flexWrap={"wrap"}
-        direction={"column"}
-        sx={{
-          display: { xs: "flex", md: "none", lg: "none" },
-          pl: 5.2,
-          height: 325,
-          pr: 5
-        }}
-      >
-        <Grid2
-          size={6}
-          sx={{
-            display: { xs: "flex", md: "none", lg: "none" },
-            justifyContent: "center"
-          }}
-        >
-          <Image
-            alt="home about"
-            src={eight}
-            priority={true}
-            style={{ width: "100%", height: "100%" }}
-          />
-        </Grid2>
-
-        <Grid2
-          size={6}
-          sx={{
-            display: { xs: "flex", md: "none", lg: "none" },
-            justifyContent: "center"
-          }}
-        >
-          <Image
-            alt="home about"
-            src={twe}
-            priority={true}
-            style={{ width: "100%", height: "100%" }}
-          />
-        </Grid2>
-        <Grid2
-          size={6}
-          sx={{
-            display: { xs: "flex", md: "none", lg: "none" },
-            justifyContent: "center"
           }}
         >
           <Image
@@ -280,15 +236,64 @@ const Galleries1 = () => {
         spacing={2}
         sx={{
           display: { xs: "flex", md: "none", lg: "none" },
-          pl: 5.2,
-          pr: 5
+          my: 2,
+          px: 4
         }}
       >
         <Grid2
           size={6}
           sx={{
+            display: { xs: "flex", md: "none", lg: "none" }
+          }}
+        >
+          <Image
+            alt="home about"
+            src={ten}
+            priority={true}
+            style={{ width: "100%", height: "100%" }}
+          />
+        </Grid2>
+        <Grid2
+          size={6}
+          sx={{
+            display: { xs: "flex", md: "none", lg: "none" }
+          }}
+        >
+          <Image
+            alt="home about"
+            src={ele}
+            priority={true}
+            style={{ width: "100%", height: "100%" }}
+          />
+        </Grid2>
+        <Grid2
+          size={12}
+          sx={{
+            display: { xs: "flex", md: "none", lg: "none" }
+          }}
+        >
+          <Image
+            alt="home about"
+            src={third}
+            priority={true}
+            style={{ width: "100%", height: "100%" }}
+          />
+        </Grid2>
+      </Grid2>
+      {/* <Grid2
+        container
+        spacing={2}
+        sx={{
+          display: { xs: "flex", md: "none", lg: "none" }
+        }}
+      >
+        <Grid2
+          container
+          spacing={2}
+          sx={{
             display: { xs: "flex", md: "none", lg: "none" },
-            justifyContent: "center"
+            mt: 15,
+            px:4
           }}
         >
           <Image

@@ -43,7 +43,7 @@ const About = () => {
           <Typography
             variant="h3"
             noWrap
-            component="a"
+            
             fontWeight={700}
             sx={{
               mr: 2,
@@ -61,7 +61,7 @@ const About = () => {
           </Typography>
           <Typography
             noWrap
-            component="a"
+            
             sx={{
               ml: 6,
               mt: 2,
@@ -86,10 +86,11 @@ const About = () => {
           mb: 12
         }}
       >
+        <Box>
         <Typography
           variant="h2"
-          noWrap
-          component="a"
+         
+          
           fontWeight={700}
           sx={{
             mt: 15,
@@ -105,6 +106,8 @@ const About = () => {
           <br /> Pineapple <br />
           Island
         </Typography>
+        </Box>
+        
         <Box>
           <Image
             alt="home about"
@@ -150,7 +153,7 @@ const About = () => {
           <Typography
             variant="h6"
             noWrap
-            component="a"
+            
             sx={{
               ml: 6,
               mt: 8,
@@ -184,7 +187,7 @@ const About = () => {
           style={{
             paddingLeft: "40px",
             paddingRight: "40px",
-            position: "static",
+            position: "relative",
             width: "100%",
             height: "50%",
             filter: "brightness(0.60)"
@@ -200,7 +203,7 @@ const About = () => {
       >
         <Typography
           variant="h5"
-          component="a"
+          
           fontWeight={700}
           sx={{
             fontFamily: "Playfair Display",
@@ -215,7 +218,7 @@ const About = () => {
         </Typography>
         <Typography
           variant="h5"
-          component="a"
+          
           fontWeight={700}
           sx={{
             fontFamily: "Playfair Display",
@@ -231,7 +234,7 @@ const About = () => {
         </Typography>
 
         <Typography
-          component="a"
+          
           sx={{
             fontFamily: "Manrope",
             mt: 10,
@@ -265,27 +268,36 @@ const About = () => {
         sx={{
           display: { xs: "flex", md: "none", lg: "none" },
           justifyContent: "center",
-          mt: 30
+          mt: 25,
+          mb:4
         }}
       >
         <Typography
           variant="h4"
-          component="a"
           fontWeight={700}
           sx={{
             fontFamily: "Playfair Display",
             position: "absolute",
-            fontWeight: 900,
+            
             textWrap: "wrap",
             color: "#0E204E",
             textDecoration: "none",
-
             textAlign: "center"
           }}
         >
           About <br /> Pineapple Island
         </Typography>
-        <Image
+        
+      </Box>
+      <Box
+        sx={{
+          display: { xs: "flex", md: "none", lg: "none" },
+          justifyContent: "center",
+          
+          mb:4,
+        }}
+      >
+       <Image
           alt="home about"
           src={homes}
           priority={true}
@@ -299,7 +311,7 @@ const About = () => {
           }}
         />
         <Typography
-          component="a"
+          
           sx={{
             fontFamily: "Lato",
             mt: 17,
@@ -309,7 +321,6 @@ const About = () => {
             textWrap: "pretty",
             color: "white",
             textDecoration: "none",
-
             textAlign: "center"
           }}
         >
@@ -320,6 +331,7 @@ const About = () => {
           professional built abode that gives you the true taste of beauty and
           happiness.
         </Typography>
+        
       </Box>
     </>
   )

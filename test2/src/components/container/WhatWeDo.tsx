@@ -59,7 +59,7 @@ const WhatWeDo = () => {
             bgcolor: "white",
             display: { xs: "none", md: "flex", lg: "flex" },
             alignItems: "center",
-            px:10
+            px: 10
           }}
         >
           <Box>
@@ -68,7 +68,6 @@ const WhatWeDo = () => {
               noWrap
               component="a"
               sx={{
-               
                 fontFamily: "Manrope",
                 color: "#0E204E",
                 textDecoration: "none",
@@ -146,7 +145,6 @@ const WhatWeDo = () => {
               <Image
                 alt="home about"
                 src={garden1}
-    
                 priority={true}
                 style={{
                   margin: 50,
@@ -211,7 +209,6 @@ const WhatWeDo = () => {
               <Image
                 alt="home about"
                 src={garden2}
-    
                 priority={true}
                 style={{
                   margin: 50,
@@ -233,57 +230,22 @@ const WhatWeDo = () => {
           mt: 5
         }}
       >
-        <Typography
-          variant="h4"
-          component="a"
-          fontWeight={700}
-          sx={{
-            fontFamily: "Playfair Display",
-            position: "absolute",
-            fontWeight: 900,
-            textWrap: "wrap",
-            color: "#0E204E",
-            textDecoration: "none",
-            letterSpacing: 2,
-            textAlign: "center"
-          }}
-        >
-          Why Choose <br /> Pineapple Island
-        </Typography>
-
-        <Typography
-          component="a"
-          sx={{
-            fontFamily: "Lato",
-            mt: 15,
-            position: "absolute",
-            ml: 6,
-            pr: 6,
-            textWrap: "wrap",
-            color: "#0E204E",
-            textDecoration: "none",
-            textAlign: "center"
-          }}
-        >
-          Pineapple Island is the most sought-after community in Ibadan that
-          values and puts the needs of their clients first. It is a territory
-          with loft complexes that creates a country life and homely feeling
-          that is integrated with industrial development. A perfect,
-          professional built abode that gives you the true taste of beauty and
-          happiness.
-        </Typography>
-        <Image
-          alt="home about"
-          src={livingroom}
-          priority={true}
-          style={{
-            marginTop: "300px",
-            paddingLeft: "40px",
-            paddingRight: "40px",
-            width: "100%",
-            height: "80%"
-          }}
-        />
+        <Box>
+          <Typography
+            variant="h4"
+            fontWeight={700}
+            sx={{
+              fontFamily: "Playfair Display",
+              textWrap: "wrap",
+              color: "#0E204E",
+              textDecoration: "none",
+              letterSpacing: 2,
+              textAlign: "center"
+            }}
+          >
+            Why Choose <br /> Pineapple Island
+          </Typography>
+        </Box>
       </Box>
       <Box
         sx={{
@@ -292,48 +254,96 @@ const WhatWeDo = () => {
           mt: 5
         }}
       >
-        <Typography
-          variant="h4"
-          component="a"
-          fontWeight={700}
-          sx={{
-            fontFamily: "Playfair Display",
-            position: "absolute",
-            fontWeight: 900,
-            textWrap: "wrap",
-            color: "#0E204E",
-            textDecoration: "none",
-            letterSpacing: 2,
-            textAlign: "center"
-          }}
-        >
-          Pineapple Island Offers
-        </Typography>
-        <Image
-          alt="home about"
-          src={garden1}
-          priority={true}
-          style={{
-            padding: "30px",
-            marginTop: 50,
-            width: "100%",
-            height: "387px",
-            objectFit: "cover",
-            position: "relative"
-          }}
-        />
-        <Box
-          bgcolor="#0E204E"
-          sx={{
-            position: "absolute",
-            width: "320px",
-            height: "247px",
-            mt: 47,
-            display: { xs: "flex", md: "none", lg: "none" },
-            justifyContent: "center"
-          }}
-        >
-          <FrramLogo2 />
+        <Box>
+          <Typography
+            sx={{
+              fontFamily: "Lato",
+              ml: 6,
+              pr: 6,
+              textWrap: "wrap",
+              color: "#0E204E",
+              textDecoration: "none",
+              textAlign: "center",
+              pb: 3
+            }}
+          >
+            Pineapple Island is the most sought-after community in Ibadan that
+            values and puts the needs of their clients first. It is a territory
+            with loft complexes that creates a country life and homely feeling
+            that is integrated with industrial development. A perfect,
+            professional built abode that gives you the true taste of beauty and
+            happiness.
+          </Typography>
+        </Box>
+      </Box>
+      <Box
+        sx={{
+          display: { xs: "flex", md: "none", lg: "none" },
+          justifyContent: "center",
+          
+        }}
+      >
+        <Box>
+          <Image
+            alt="home about"
+            src={livingroom}
+            priority={true}
+            style={{
+              width: "100%"
+            }}
+          />
+        </Box>
+      </Box>
+      <Box
+        sx={{
+          display: { xs: "flex", md: "none", lg: "none" },
+          justifyContent: "center",
+          mt: 5
+        }}
+      >
+        <Box sx={{}}>
+          <Typography
+            variant="h4"
+            fontWeight={700}
+            sx={{
+              fontFamily: "Playfair Display",
+              textWrap: "wrap",
+              color: "#0E204E",
+              textDecoration: "none",
+              textAlign: "center",
+              mb: 4
+            }}
+          >
+            Pineapple Island Offers
+          </Typography>
+          <Image
+            alt="home about"
+            src={garden1}
+            priority={true}
+            style={{
+              width: "100%",
+              height: "387px"
+            }}
+          />
+
+          <Box
+            sx={{
+              display: { xs: "flex", md: "none", lg: "none" },
+              justifyContent: "center",
+              mt: -4,
+              mb: 4
+            }}
+          >
+            <Box
+              bgcolor="#0E204E"
+              sx={{
+                width: "320px",
+                height: "247px"
+              }}
+            >
+              <FrramLogo2 />
+            </Box>
+          </Box>
         </Box>
       </Box>
     </>
