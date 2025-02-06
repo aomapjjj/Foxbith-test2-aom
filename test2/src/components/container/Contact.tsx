@@ -175,7 +175,7 @@ const Contact = () => {
       </Box>
 
       {/* mobile */}
-      {/* <Box>
+      <Box>
         <Box
           sx={{
             display: { xs: "flex", md: "none", lg: "none" },
@@ -397,7 +397,7 @@ const Contact = () => {
             </Box>
           </Grid2>
         </Box>
-      </Box> */}
+      </Box>
     </>
   )
 }
