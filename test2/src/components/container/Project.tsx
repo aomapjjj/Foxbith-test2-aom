@@ -15,7 +15,6 @@ const Project = () => {
           display: { xs: "none", md: "flex", lg: "flex" },
           py: "250px",
           px: "250px",
-
           justifyContent: "center"
         }}
       >
@@ -212,126 +211,7 @@ const Project = () => {
         </Grid2>
       </Grid2>
 
-      {/* <Box
-        sx={{
-          display: { xs: "none", md: "flex", lg: "flex" },
-          ml: 10,
-          mb: 30
-        }}
-      >
-        <Grid2
-          sx={{
-            display: { sm: "none", md: "flex", lg: "flex" },
-            mb: 10
-          }}
-        >
-          <Grid2
-            size={6}
-            sx={{
-              justifyContent: "end",
-              alignContent: "center"
-            }}
-          >
-            <Box
-              sx={{
-                ml: 20,
-                width: "512px",
-                height: "258px",
-                position: "relative",
-              }}
-            >
-              <Typography
-                variant="h2"
-                noWrap
-                component="a"
-                fontWeight={700}
-                sx={{
-                  mb: 3,
-                  display: { xs: "none", md: "flex", lg: "flex" },
-                  fontFamily: "Playfair Display",
-                  color: "#0E204E",
-                  textDecoration: "none",
-                  textWrap: "wrap"
-                }}
-              >
-                Become an
-                <br /> Agent
-              </Typography>
-              <Typography
-                noWrap
-                component="a"
-                sx={{
-                  fontFamily: "Manrope",
-                  color: "#0E204E",
-                  textDecoration: "none",
-                  textWrap: "pretty",
-                  justifyContent: "center"
-                }}
-              >
-                a community that gives you a taste of <br /> happiness, a place
-                you’ll love to live and an
-                <br /> opportunity to build a home.
-              </Typography>
-              <Button
-                variant="contained"
-                sx={{
-                  fontFamily: "Manrope",
-                  textTransform: "none",
-                  fontSize: "17px",
-                  borderRadius: 0,
-                  backgroundColor: "#0E204E",
-                  mt: 4,
-                  display: {
-                    xs: "none",
-                    md: "flex",
-                    lg: "flex",
-                   
-                    width: "239px",
-                    height: "62px"
-                  }
-                }}
-              >
-                Join Now
-              </Button>
-            </Box>
-          </Grid2>
-          <Grid2
-            size={6}
-            sx={{
-              display: { sm: "none", md: "flex", lg: "flex" },
-              m: 10
-            }}
-          >
-            <Box>
-
-              <Box
-                sx={{
-                  
-                  width: "412px",
-                  height: "358px",
-                  bgcolor: "#0E204E",
-                  py: 10,
-                  mt: 20,
-                 
-                }}
-              ></Box>
-              <Image
-                alt="home about"
-                src={Women}
-                priority={true}
-                style={{
-                  margin: 50,
-                  marginLeft: "200px",
-                  width: "552px",
-                  height: "725px",
-                  marginTop: "-500px",
-                  position: "absolute"
-                }}
-              />
-            </Box>
-          </Grid2>
-        </Grid2>
-      </Box> */}
+      
     </>
   )
 }

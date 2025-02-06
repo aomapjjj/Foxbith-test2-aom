@@ -16,8 +16,8 @@ const index = () => {
       <Galleries />
       {/* <Galleries1 /> */}
       <Project />
-      {/* <Contact />
-      <Footer /> */}
+      <Contact />
+      {/* <Footer /> */}
     </>
   )
 }
