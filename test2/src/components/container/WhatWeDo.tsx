@@ -204,7 +204,7 @@ const WhatWeDo = () => {
         gap={12}
         sx={{
           display: { xs: "none", md: "flex", lg: "flex" },
-          p: "50px",
+          p: "30px",
           justifyContent: "center"
         }}
       >
@@ -263,7 +263,7 @@ const WhatWeDo = () => {
 
       {/* ส่วน mobile */}
 
-      <Box
+      {/* <Box
         sx={{
           display: { xs: "flex", md: "none", lg: "none" },
           justifyContent: "center",
@@ -385,7 +385,7 @@ const WhatWeDo = () => {
             </Box>
           </Box>
         </Box>
-      </Box>
+      </Box> */}
     </>
   )
 }
