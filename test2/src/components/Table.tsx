@@ -8,8 +8,8 @@ const Table = () => {
           bgcolor: "#0E3F3333",
           width: "500px",
           height: "45px",
-          ml: 20,
-          mt:5,
+
+          mt: 5,
           pt: 0.5
         }}
       >
@@ -41,9 +41,9 @@ const Table = () => {
         sx={{
           width: "500px",
           height: "45px",
-          ml: 20,
+
           mt: 2,
-          mb:1,
+          mb: 1
         }}
       >
         <Typography
@@ -75,7 +75,7 @@ const Table = () => {
           bgcolor: "#0E3F3333",
           width: "500px",
           height: "45px",
-          ml: 20,
+
           pt: 0.5
         }}
       >
@@ -107,9 +107,9 @@ const Table = () => {
         sx={{
           width: "500px",
           height: "45px",
-          ml: 20,
+
           mt: 2,
-          mb:1,
+          mb: 1
         }}
       >
         <Typography
@@ -135,12 +135,13 @@ const Table = () => {
           }}
           defaultChecked
         />
-      </Box> <Box
+      </Box>{" "}
+      <Box
         sx={{
           bgcolor: "#0E3F3333",
           width: "500px",
           height: "45px",
-          ml: 20,
+
           pt: 0.5
         }}
       >
@@ -172,9 +173,9 @@ const Table = () => {
         sx={{
           width: "500px",
           height: "45px",
-          ml: 20,
+
           mt: 2,
-          mb:1,
+          mb: 1
         }}
       >
         <Typography
@@ -200,12 +201,13 @@ const Table = () => {
           }}
           defaultChecked
         />
-      </Box> <Box
+      </Box>{" "}
+      <Box
         sx={{
           bgcolor: "#0E3F3333",
           width: "500px",
           height: "45px",
-          ml: 20,
+
           pt: 0.5
         }}
       >
@@ -237,9 +239,9 @@ const Table = () => {
         sx={{
           width: "500px",
           height: "45px",
-          ml: 20,
+
           mt: 2,
-          mb:1,
+          mb: 1
         }}
       >
         <Typography
@@ -265,12 +267,13 @@ const Table = () => {
           }}
           defaultChecked
         />
-      </Box> <Box
+      </Box>{" "}
+      <Box
         sx={{
           bgcolor: "#0E3F3333",
           width: "500px",
           height: "45px",
-          ml: 20,
+
           pt: 0.5
         }}
       >
@@ -302,9 +305,9 @@ const Table = () => {
         sx={{
           width: "500px",
           height: "45px",
-          ml: 20,
+
           mt: 2,
-          mb:1,
+          mb: 1
         }}
       >
         <Typography
