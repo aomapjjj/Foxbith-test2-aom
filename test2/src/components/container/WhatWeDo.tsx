@@ -41,15 +41,14 @@ const WhatWeDo = () => {
             }}
           >
             <Typography
-              variant="h3"
-              noWrap
               fontWeight={700}
               sx={{
                 fontFamily: "Playfair Display",
                 color: "white",
                 textDecoration: "none",
                 textWrap: "wrap",
-                alignContent:"center"
+                alignContent: "center",
+                fontSize: "60px"
               }}
             >
               Why
@@ -100,6 +99,7 @@ const WhatWeDo = () => {
         <Grid2
           size={4}
           sx={{
+            display: { sm: "none", md: "flex", lg: "flex" },
             pr: "50px"
           }}
         >
@@ -116,136 +116,150 @@ const WhatWeDo = () => {
         </Grid2>
       </Grid2>
 
+      {/* What Pineapple Land Offers */}
       <Typography
-        variant="h3"
-        noWrap
-        component="a"
         fontWeight={700}
         sx={{
           mr: 2,
           mt: 20,
+          mb: "122px",
           display: { xs: "none", md: "flex", lg: "flex" },
           justifyContent: "center",
           fontFamily: "Playfair Display",
           fontWeight: 700,
           color: "#0E204E",
-          textDecoration: "none"
+          textDecoration: "none",
+          fontSize: "60px"
         }}
       >
         What Pineapple Land Offers
       </Typography>
-      <Box
+
+      <Grid2
+        container
+        columnSpacing={{ xs: 1, sm: 3, md: 3 }}
+        gap={12}
         sx={{
           display: { xs: "none", md: "flex", lg: "flex" },
-          ml: 10
+          p: "50px",
+          justifyContent: "center"
         }}
       >
-        <Grid2
-          sx={{
-            display: { sm: "none", md: "flex", lg: "flex" },
-            mb: 10
-          }}
-        >
-          <Grid2
-            size={6}
+        <Grid2 size={6}>
+          <Box
             sx={{
-              display: { sm: "none", md: "flex", lg: "flex" },
-              m: 10
+              display: {
+                xs: "none",
+                md: "flex",
+                lg: "flex",
+                width: "100%",
+                justifyContent: "flex-end"
+              }
             }}
           >
-            <Box>
-              <Box
-                sx={{
-                  width: "412px",
-                  height: "358px",
-                  bgcolor: "#0E204E",
-                  position: "relative",
-                  py: 10,
-                  ml: 50,
-                  mt: 20
-                }}
-              ></Box>
-              <Image
-                alt="home about"
-                src={garden1}
-                priority={true}
-                style={{
-                  margin: 50,
-                  width: "567px",
-                  height: "582px",
-                  marginTop: "-500px",
-                  position: "absolute"
-                }}
-              />
-            </Box>
-          </Grid2>
-          <Grid2
-            size={6}
-            sx={{
-              justifyContent: "end",
-              alignContent: "center"
+            <Box
+              sx={{
+                width: "412px",
+                height: "358px",
+                bgcolor: "#0E204E"
+              }}
+            ></Box>
+          </Box>
+
+          <Image
+            alt="home about"
+            src={garden1}
+            priority={true}
+            style={{
+              marginTop: "-450px",
+              width: "80%",
+              height: "582px",
+              objectFit: "cover"
             }}
-          >
-            <FrameLogo />
-          </Grid2>
+          />
         </Grid2>
-      </Box>
-      <Box
+
+        <Grid2 size={4}>
+          <Box
+            sx={{
+              display: { xs: "none", md: "flex", lg: "flex" },
+
+              height: "350px"
+            }}
+          >
+            <Box
+              sx={{
+                alignContent: "center"
+              }}
+            >
+              <FrameLogo />
+            </Box>
+          </Box>
+        </Grid2>
+      </Grid2>
+
+      <Grid2
+        container
+        columnSpacing={{ xs: 1, sm: 3, md: 3 }}
+        gap={12}
         sx={{
           display: { xs: "none", md: "flex", lg: "flex" },
-          ml: 10
+          p: "50px",
+          justifyContent: "center"
         }}
       >
-        <Grid2
-          sx={{
-            display: { sm: "none", md: "flex", lg: "flex" },
-            mb: 10
-          }}
-        >
-          <Grid2
-            size={6}
+        <Grid2 size={4}>
+          <Box
             sx={{
-              justifyContent: "end",
-              alignContent: "center"
+              display: { xs: "none", md: "flex", lg: "flex" },
+              height: "582px"
             }}
           >
-            <FrameLogo1 />
-          </Grid2>
-          <Grid2
-            size={6}
-            sx={{
-              display: { sm: "none", md: "flex", lg: "flex" },
-              m: 10
-            }}
-          >
-            <Box>
-              <Box
-                sx={{
-                  width: "412px",
-                  height: "358px",
-                  bgcolor: "#0E204E",
-                  py: 10,
-                  position: "relative",
-                  mt: 20
-                }}
-              ></Box>
-              <Image
-                alt="home about"
-                src={garden2}
-                priority={true}
-                style={{
-                  margin: 50,
-                  marginLeft: "200px",
-                  width: "568px",
-                  height: "582px",
-                  marginTop: "-500px",
-                  position: "absolute"
-                }}
-              />
+            <Box
+              sx={{
+                pt: "20px",
+                alignContent: "center"
+              }}
+            >
+              <FrameLogo1 />
             </Box>
-          </Grid2>
+          </Box>
         </Grid2>
-      </Box>
+        <Grid2 size={6}>
+          <Box
+            sx={{
+              display: {
+                xs: "none",
+                md: "flex",
+                lg: "flex",
+                width: "100%",
+                justifyContent: "flex-end"
+              }
+            }}
+          >
+            <Image
+              alt="home about"
+              src={garden2}
+              priority={true}
+              style={{
+                width: "80%",
+                height: "582px",
+                objectFit: "cover"
+              }}
+            />
+          </Box>
+          <Box
+            sx={{
+              mt: "-450px",
+              width: "412px",
+              height: "358px",
+              bgcolor: "#0E204E"
+            }}
+          ></Box>
+        </Grid2>
+      </Grid2>
+
+      
 
       {/* ส่วน mobile */}
 
