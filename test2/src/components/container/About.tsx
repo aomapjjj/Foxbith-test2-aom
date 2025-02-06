@@ -7,10 +7,17 @@ import left from "../../../public/imgs/left.png"
 import rigth from "../../../public/imgs/rigth.png"
 import homes from "../../../public/imgs/homes.png"
 
+
 const About = () => {
   return (
     <>
-      <Grid2 container columnSpacing={{ xs: 1, sm: 1, md: 2 }}>
+      <Grid2
+        container
+        columnSpacing={{ xs: 1, sm: 1, md: 2 }}
+        sx={{
+          mb: "250px"
+        }}
+      >
         <Grid2 size={12}>
           <Box
             sx={{
@@ -26,8 +33,7 @@ const About = () => {
               style={{
                 width: "100%",
                 height: "720px",
-                objectFit: "cover",
-               
+                objectFit: "cover"
               }}
             />
           </Box>
@@ -85,101 +91,89 @@ const About = () => {
         </Grid2>
       </Grid2>
 
-      <Box
+      {/* ส่วน About */}
+      <Grid2
+        container
+        columnSpacing={{ xs: 1, sm: 1, md: 2 }}
+        gap={0}
         sx={{
+          pb: "250px",
           display: { xs: "none", md: "flex", lg: "flex" },
-          justifyContent: "center",
-          mb: 12
+          px: "40px"
         }}
       >
-        <Box>
-          <Typography
-            variant="h2"
-            fontWeight={700}
+        <Grid2 size={4}>
+          <Box
             sx={{
-              mt: 15,
-              p: 5,
               display: { xs: "none", md: "flex", lg: "flex" },
-              fontFamily: "Playfair Display",
-              color: "#0E204E",
-              textDecoration: "none",
-              textWrap: "wrap"
+              justifyContent: "center",
+              width: "100%",
+              height: "620px"
             }}
           >
-            About
-            <br /> Pineapple <br />
-            Island
-          </Typography>
-        </Box>
-
-        <Box>
-          <Image
-            alt="home about"
-            src={left}
-            priority={true}
-            style={{
-              width: "40px",
-              height: "40px",
-              position: "absolute",
-              marginTop: "300px"
-            }}
-          />
+            <Typography
+              variant="h2"
+              fontWeight={700}
+              sx={{
+                fontFamily: "Playfair Display",
+                color: "#0E204E",
+                textDecoration: "none",
+                textWrap: "wrap",
+                alignContent: "center"
+              }}
+            >
+              About
+              <br /> Pineapple <br />
+              Island
+            </Typography>
+          </Box>
+        </Grid2>
+        <Grid2 size={4}>
           <Image
             alt="home about"
             src={home2}
             priority={true}
             style={{
-              width: "728px",
-              height: "620px"
+              width: "100%",
+              height: "620px",
+              objectFit: "cover"
             }}
           />
-          <Image
-            alt="home about"
-            src={rigth}
-            priority={true}
-            style={{
-              width: "40px",
-              height: "40px",
-              marginTop: "300px",
-              marginLeft: "-40px",
-              position: "absolute"
-            }}
-          />
-        </Box>
-
-        <Box
-          sx={{
-            width: "433px",
-            height: "620px",
-            bgcolor: "#0E204E"
-          }}
-        >
-          <Typography
-            variant="h6"
-            noWrap
+        </Grid2>
+        <Grid2 size={4}>
+          <Box
             sx={{
-              ml: 6,
-              mt: 8,
-              p: 5,
               display: { xs: "none", md: "flex", lg: "flex" },
-              fontFamily: "Manrope",
-              color: "white",
-              textDecoration: "none",
-              textWrap: "wrap"
+              width: "100%",
+              height: "620px",
+              bgcolor: "#0E204E"
             }}
           >
-            Pineapple Island is the most sought-after community in Ibadan that
-            values and puts the needs of their clients first. It is a territory
-            with loft complexes that creates a country life and homely feeling
-            that is integrated with industrial development. A perfect,
-            professional built abode that gives you the true taste of beauty and
-            happiness.
-          </Typography>
-        </Box>
-      </Box>
+            <Typography
+              noWrap
+              sx={{
+                fontFamily: "Manrope",
+                color: "white",
+                textDecoration: "none",
+                textWrap: "wrap",
+                p: "2rem",
+                alignContent: "center",
+                fontSize: "20px"
+              }}
+            >
+              Pineapple Island is the most sought-after community in Ibadan that
+              values and puts the needs of their clients first. It is a
+              territory with loft complexes that creates a country life and
+              homely feeling that is integrated with industrial development. A
+              perfect, professional built abode that gives you the true taste of
+              beauty and happiness.
+            </Typography>
+          </Box>
+        </Grid2>
+      </Grid2>
 
       {/* ส่วน mobile */}
-      <Box
+      {/* <Box
         sx={{
           display: { xs: "flex", md: "none", lg: "none" }
         }}
@@ -330,7 +324,7 @@ const About = () => {
           professional built abode that gives you the true taste of beauty and
           happiness.
         </Typography>
-      </Box>
+      </Box> */}
     </>
   )
 }
