@@ -75,7 +75,7 @@ const Galleries = () => {
           display: { sm: "none", md: "flex", lg: "flex", gap: 30 },
           justifyContent: "center",
           pt: 4,
-          px: "20px"
+          px:"20px"
         }}
       >
         <Grid2
@@ -115,7 +115,8 @@ const Galleries = () => {
         <Grid2
           size={4}
           sx={{
-            display: { xs: "none", md: "flex", lg: "flex" }
+            display: { xs: "none", md: "flex", lg: "flex" },
+            px:"20px"
           }}
         >
           <Image
@@ -135,7 +136,7 @@ const Galleries = () => {
           display: { sm: "none", md: "flex", lg: "flex", gap: 30 },
           justifyContent: "center",
           mt: 4,
-          px: "20px"
+          px:"20px"
         }}
       >
         <Grid2
@@ -175,7 +176,8 @@ const Galleries = () => {
         <Grid2
           size={4}
           sx={{
-            display: { xs: "none", md: "flex", lg: "flex" }
+            display: { xs: "none", md: "flex", lg: "flex" },
+            px:"20px"
           }}
         >
           <Image
@@ -195,7 +197,7 @@ const Galleries = () => {
           display: { sm: "none", md: "flex", lg: "flex", gap: 30 },
           justifyContent: "center",
           mt: 4,
-          px: "20px"
+          px:"20px"
         }}
       >
         <Grid2
@@ -218,7 +220,8 @@ const Galleries = () => {
         <Grid2
           size={4}
           sx={{
-            display: { xs: "none", md: "flex", lg: "flex" }
+            display: { xs: "none", md: "flex", lg: "flex" },
+            
           }}
         >
           <Image
@@ -235,7 +238,8 @@ const Galleries = () => {
         <Grid2
           size={4}
           sx={{
-            display: { xs: "none", md: "flex", lg: "flex" }
+            display: { xs: "none", md: "flex", lg: "flex" },
+            pb:"200px"
           }}
         >
           <Image

@@ -43,6 +43,7 @@ const WhatWeDo = () => {
             <Typography
               fontWeight={700}
               sx={{
+                pl:4,
                 fontFamily: "Playfair Display",
                 color: "white",
                 textDecoration: "none",
