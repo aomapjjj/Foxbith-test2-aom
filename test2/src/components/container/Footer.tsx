@@ -1,4 +1,4 @@
-import { Box, Button, TextField, Typography } from "@mui/material"
+import { Box, Button, Grid2, TextField, Typography } from "@mui/material"
 import { red } from "@mui/material/colors"
 import Group from "../../../public/imgs/FrameLogo/Group.svg"
 import Image from "next/image"
@@ -9,118 +9,233 @@ const Footer = () => {
         sx={{
           display: { xs: "none", md: "flex", lg: "flex" },
           width: "100%",
-          height: "396px",
+          height: "450px",
           bgcolor: "#0E204E",
-          mt: 10,
           clipPath:
             "polygon(100% 42%, 100% 100%, 96% 100%, 84% 100%, 0 100%, 0 32%, 11% 12%)"
         }}
       >
-        <Box
+        <Grid2
+          container
+          gap={0}
           sx={{
-            ml: 70,
-            mt: 15,
-            width: "270px"
+            display: { xs: "none", md: "flex", lg: "flex" },
+            justifyContent: "center",
+            width: "100%"
           }}
         >
-          <Typography
-            variant="h4"
-            noWrap
-            component="a"
-            fontWeight={500}
+          <Grid2 size={6}>
+            <Typography
+              fontWeight={500}
+              sx={{
+                display: { xs: "none", md: "flex", lg: "flex" },
+                justifyContent: "center",
+                pt: 15,
+                pb: 2,
+                fontFamily: "Manrope",
+                color: "white",
+                textDecoration: "none",
+                fontSize: "40px"
+              }}
+            >
+              Banana <br />
+              Island
+            </Typography>
+            <Box
+              sx={{
+                display: { xs: "none", md: "flex", lg: "flex" },
+                justifyContent: "center",
+                pl: 15
+              }}
+            >
+              <Box
+                sx={{
+                  width: "250px"
+                }}
+              >
+                <Typography
+                  fontWeight={100}
+                  sx={{
+                    fontFamily: "Manrope",
+                    color: "white",
+                    textDecoration: "none",
+                    textWrap: "pretty",
+                    fontSize: "20px",
+                    lineHeight: "36px"
+                  }}
+                >
+                  a community that gives you a taste of happiness, a place
+                  you’ll love to live and an opportunity to build a home.
+                </Typography>
+              </Box>
+            </Box>
+          </Grid2>
+          <Grid2
+            size={6}
             sx={{
-              display: { xs: "none", md: "flex", lg: "flex" },
-              mb: 2,
-              fontFamily: "Manrope",
-              color: "white",
-              textDecoration: "none"
+              pt: 25
             }}
           >
-            Banana <br />
-            Island
-          </Typography>
-          <Typography
-            component="a"
-            sx={{
-              fontFamily: "Manrope",
-              color: "white",
-              textDecoration: "none",
-              textWrap: "pretty"
-            }}
-          >
-            a community that gives you a taste of happiness, a place you’ll love
-            to live and an opportunity to build a home.
-          </Typography>
-        </Box>
-        <Box
-          sx={{
-            ml: 20,
-            mt: 20,
-            width: "270px"
-          }}
-        >
-          <Typography
-            variant="h4"
-            noWrap
-            component="a"
-            fontWeight={500}
-            sx={{
-              display: { xs: "none", md: "flex", lg: "flex" },
-              mb: 2,
-              fontFamily: "Playfair Display",
-              color: "white",
-              textDecoration: "none"
-            }}
-          >
-            Follow up
-          </Typography>
-          <Typography
-            component="a"
-            sx={{
-              fontFamily: "Manrope",
-              color: "white",
-              textDecoration: "none",
-              textWrap: "pretty"
-            }}
-          >
-            Keep up with our newsletter to get updates about projects and offers
-          </Typography>
-          <TextField
-            name="Email"
-            id="outlined-basic"
-            label="Email"
-            variant="outlined"
-            sx={{
-              mt: 2,
-              bgcolor: "white",
-              width: "419px",
-              position: "relative",
-              [`& fieldset`]: {
-                borderRadius: 0
-              },
+            <Box sx={{}}>
+              <Typography
+                variant="h4"
+                fontWeight={500}
+                sx={{
+                  fontFamily: "Playfair Display",
+                  color: "white",
+                  textDecoration: "none",
+                  pb: 3
+                }}
+              >
+                Follow up
+              </Typography>
+              <Typography
+                fontWeight={100}
+                sx={{
+                  fontFamily: "Manrope",
+                  color: "white",
+                  textDecoration: "none",
+                  textWrap: "pretty",
+                  fontSize: "20px",
+                  pb: 3
+                }}
+              >
+                Keep up with our newsletter to get updates about projects and
+                offers
+              </Typography>
+              <TextField
+              disabled
+                name="Email"
+                id="outlined-basic"
+                label="Email"
+                variant="outlined"
+                sx={{
+                  bgcolor: "white",
+                  width: "419px",
+                  position: "absolute",
 
-              [`& label`]: {
-                fontFamily: "Manrope"
-              }
-            }}
-          />
-          <Button
-            variant="text"
-            sx={{
-              mt: -6,
-              ml: 39,
-              position: "absolute",
-              fontFamily: "Manrope",
-              textTransform: "none",
-              borderRadius: 0,
-              color: "grey"
-            }}
-          >
-            Subscribe
-          </Button>
-        </Box>
+                  [`& fieldset`]: {
+                    borderRadius: 0
+                  },
+
+                  [`& label`]: {
+                    fontFamily: "Manrope"
+                  }
+                }}
+              />
+              <Button
+                variant="text"
+                sx={{
+                  pl:"320px",
+                  pt:"16px",
+                  position: "relative",
+                  fontFamily: "Manrope",
+                  textTransform: "none",
+                  borderRadius: 0,
+                  color: "grey"
+                }}
+              >
+                Subscribe
+              </Button>
+            </Box>
+          </Grid2>
+        </Grid2>
+      </Box>
+
+      {/* <Typography
+          variant="h4"
+         
+          fontWeight={500}
+          sx={{
+            display: { xs: "none", md: "flex", lg: "flex" },
+            mb: 2,
+            fontFamily: "Manrope",
+            color: "white",
+            textDecoration: "none"
+          }}
+        >
+          Banana <br />
+          Island
+        </Typography>
+        <Typography
+          component="a"
+          sx={{
+            fontFamily: "Manrope",
+            color: "white",
+            textDecoration: "none",
+            textWrap: "pretty"
+          }}
+        >
+          a community that gives you a taste of happiness, a place you’ll love
+          to live and an opportunity to build a home.
+        </Typography>
       </Box>
       <Box
+        sx={{
+          display: { xs: "none", md: "flex", lg: "flex" },
+         
+          width: "270px"
+        }}
+      >
+        <Typography
+          variant="h4"
+         
+          fontWeight={500}
+          sx={{
+            display: { xs: "none", md: "flex", lg: "flex" },
+            
+            fontFamily: "Playfair Display",
+            color: "white",
+            textDecoration: "none"
+          }}
+        >
+          Follow up
+        </Typography>
+        <Typography
+          
+          sx={{
+            fontFamily: "Manrope",
+            color: "white",
+            textDecoration: "none",
+            textWrap: "pretty"
+          }}
+        >
+          Keep up with our newsletter to get updates about projects and offers
+        </Typography>
+        <TextField
+          name="Email"
+          id="outlined-basic"
+          label="Email"
+          variant="outlined"
+          sx={{
+            mt: 2,
+            bgcolor: "white",
+            width: "419px",
+            position: "relative",
+            [`& fieldset`]: {
+              borderRadius: 0
+            },
+
+            [`& label`]: {
+              fontFamily: "Manrope"
+            }
+          }}
+        />
+        <Button
+          variant="text"
+          sx={{
+            mt: -6,
+            ml: 39,
+            position: "absolute",
+            fontFamily: "Manrope",
+            textTransform: "none",
+            borderRadius: 0,
+            color: "grey"
+          }}
+        >
+          Subscribe
+        </Button> */}
+      {/* <Box
         sx={{
           display: { xs: "flex", md: "none", lg: "none" },
           justifyContent: "center",
@@ -183,7 +298,7 @@ const Footer = () => {
             Copyright 2021 Glowdsgn All Rights Reserved
           </Typography>
         </Box>
-      </Box>
+      </Box> */}
     </>
   )
 }
