@@ -38,11 +38,11 @@ function ResponsiveAppBar() {
   return (
     <AppBar
       sx={{
-        position:"static",
+        position: "static",
         bgcolor: "white",
         boxShadow: 0,
         py: 3,
-        width:"100%"
+        width: "100%"
       }}
     >
       <Container maxWidth="xl">
@@ -130,81 +130,54 @@ function ResponsiveAppBar() {
               </Button>
             ))}
           </Box>
-          <Box sx={{ }}>
-            <Tooltip title="Open settings">
-              <IconButton
-                size="large"
-                aria-label="account of current user"
-                aria-controls="menu-appbar"
-                aria-haspopup="true"
-                onClick={handleOpenNavMenu}
-                sx={{
-                  pt: 5,
-                  display: {
-                    xs: "flex",
-                    md: "flex",
-                    lg: "none",
-                    justifyContent: "flex-end"
-                  },
-                  mr: 1,
-                  color: "#0E204E"
-                }}
-              >
-                <MenuIcon />
-              </IconButton>
-            </Tooltip>
 
-            <Button
-              variant="contained"
+          <Tooltip title="Open settings">
+            <IconButton
+              size="large"
+              aria-label="account of current user"
+              aria-controls="menu-appbar"
+              aria-haspopup="true"
+              onClick={handleOpenNavMenu}
+              sx={{
+                display: {
+                  xs: "flex",
+                  md: "flex",
+                  lg: "none",
+                  justifyContent: "flex-end"
+                },
+              
+                color: "#0E204E"
+              }}
+            >
+              <MenuIcon />
+            </IconButton>
+          </Tooltip>
+
+          <Button
+            variant="contained"
+            sx={{
+              fontFamily: "Manrope",
+              textTransform: "none",
+              borderRadius: 0,
+              backgroundColor: "#0E204E",
+              width: "188px",
+              height: "50px",
+              display: {
+                xs: "none",
+                md: "none",
+                lg: "flex"
+              }
+            }}
+          >
+            <Typography
               sx={{
                 fontFamily: "Manrope",
-                textTransform: "none",
-                borderRadius: 0,
-                backgroundColor: "#0E204E",
-                width: "188px",
-                height: "50px",
-                display: {
-                  xs: "none",
-                  md: "none",
-                  lg: "flex"
-                }
+                textTransform: "none"
               }}
             >
-              <Typography
-                sx={{
-                  fontFamily: "Manrope",
-                  textTransform: "none"
-                }}
-              >
-                Get in Touch
-              </Typography>
-            </Button>
-
-            <Menu
-              sx={{ mt: "45px" }}
-              id="menu-appbar"
-              anchorEl={anchorElUser}
-              anchorOrigin={{
-                vertical: "top",
-                horizontal: "right"
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: "top",
-                horizontal: "right"
-              }}
-              open={Boolean(anchorElUser)}
-              onClose={handleCloseUserMenu}
-            >
-              {settings.map((setting) => (
-                <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                  <Typography sx={{ textAlign: "center" }}>
-                    {setting}
-                  </Typography>
-                </MenuItem>
-              ))}
-            </Menu>
-          </Box>
+              Get in Touch
+            </Typography>
+          </Button>
         </Toolbar>
       </Container>
     </AppBar>

@@ -12,18 +12,22 @@ const Contact = () => {
     <>
       <Box
         sx={{
-          display: { sm: "none", md: "flex", lg: "flex", width: "100%" }
+          display: {
+            xs: "none",
+            sm: "none",
+            md: "flex",
+            lg: "flex",
+            width: "100%"
+          }
         }}
       >
         <Grid2
           container
-          columnSpacing={{ xs: 1, sm: 3, md: 3 }}
           gap={"53px"}
           sx={{
             px: "100px",
             justifyContent: "center",
             py: "100px"
-
           }}
         >
           <Grid2
@@ -127,7 +131,7 @@ const Contact = () => {
           <Grid2
             size={8}
             sx={{
-              display: { sm: "none", md: "flex", lg: "flex" },
+              display: { sm: "none", md: "none", lg: "flex" },
               justifyContent: "center"
             }}
           >
@@ -153,9 +157,8 @@ const Contact = () => {
           <Grid2
             size={8}
             sx={{
-              display: { sm: "none", md: "flex", lg: "flex" },
+              display: { xs: "none", sm: "none", md: "flex", lg: "flex" },
               justifyContent: "center"
-
             }}
           >
             <Button

@@ -100,7 +100,7 @@ const WhatWeDo = () => {
         <Grid2
           size={4}
           sx={{
-            display: { sm: "none", md: "flex", lg: "flex" },
+            display: { xs:"none" ,sm: "none", md: "flex", lg: "flex" },
             pr: "50px"
           }}
         >
