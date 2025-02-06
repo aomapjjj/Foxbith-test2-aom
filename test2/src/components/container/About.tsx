@@ -2,7 +2,7 @@ import Image from "next/image"
 import home1 from "../../../public/imgs/home1.png"
 import home2 from "../../../public/imgs/home2.png"
 import homecrop from "../../../public/imgs/homecrop.png"
-import { Box, Button, Typography } from "@mui/material"
+import { Box, Button, Grid2, Typography } from "@mui/material"
 import left from "../../../public/imgs/left.png"
 import rigth from "../../../public/imgs/rigth.png"
 import homes from "../../../public/imgs/homes.png"
@@ -10,74 +10,80 @@ import homes from "../../../public/imgs/homes.png"
 const About = () => {
   return (
     <>
-      <Box
-        sx={{
-          display: { xs: "none", md: "flex", lg: "flex" },
-          justifyContent: "flex-end",
-
-          mb: 12
-        }}
-      >
-        <Image
-          alt="home about"
-          src={home1}
-          priority={true}
-          style={{
-            position: "relative",
-            width: "1368px",
-            height: "717px"
-          }}
-        />
-        <Box
-          sx={{
-            width: "650px",
-            height: "400px",
-            bgcolor: "#0E204E",
-            py: 10,
-            position: "absolute",
-            ml: 50,
-            mt: 20,
-            mr: 125
-          }}
-        >
-          <Typography
-            variant="h3"
-            noWrap
-            
-            fontWeight={700}
+      <Grid2 container columnSpacing={{ xs: 1, sm: 1, md: 2 }}>
+        <Grid2 size={12}>
+          <Box
             sx={{
-              mr: 2,
               display: { xs: "none", md: "flex", lg: "flex" },
-              fontFamily: "Playfair Display",
-              fontWeight: 700,
-              color: "white",
-              textDecoration: "none",
-              justifyContent: "center",
-              alignContent: "center",
-              letterSpacing: 2
+              justifyContent: "flex-end",
+              pl: "500px"
             }}
           >
-            Pineapple Island: <br /> GenZ and Millenial <br /> Abode
-          </Typography>
-          <Typography
-            noWrap
-            
+            <Image
+              alt="home about"
+              src={home1}
+              priority={true}
+              style={{
+                width: "100%",
+                height: "720px",
+                objectFit: "cover",
+               
+              }}
+            />
+          </Box>
+        </Grid2>
+        <Grid2 size={12}>
+          <Box
             sx={{
-              ml: 6,
-              mt: 2,
               display: { xs: "none", md: "flex", lg: "flex" },
-              fontFamily: "Manrope",
-              color: "white",
-              textDecoration: "none",
-              justifyContent: "center"
+              pl: "100px",
+              mt: -74
             }}
           >
-            a community that gives you a taste of happiness, a place you’ll love
-            to <br />
-            live and an opportunity to build a home.
-          </Typography>
-        </Box>
-      </Box>
+            <Box
+              sx={{
+                width: "786px",
+                height: "496px",
+                bgcolor: "#0E204E",
+                py: 10
+              }}
+            >
+              <Typography
+                variant="h2"
+                noWrap
+                fontWeight={700}
+                sx={{
+                  display: { xs: "none", md: "flex", lg: "flex" },
+                  pl: 10,
+                  fontFamily: "Playfair Display",
+                  color: "white",
+                  textDecoration: "none",
+                  letterSpacing: 2
+                }}
+              >
+                Pineapple Island: <br /> GenZ and Millenial <br /> Abode
+              </Typography>
+              <Typography
+                variant="h6"
+                noWrap
+                fontWeight={200}
+                sx={{
+                  mt: 2,
+                  display: { xs: "none", md: "flex", lg: "flex" },
+                  fontFamily: "Manrope",
+                  color: "white",
+                  textDecoration: "none",
+                  justifyContent: "center"
+                }}
+              >
+                a community that gives you a taste of happiness, a place you’ll
+                love to <br />
+                live and an opportunity to build a home.
+              </Typography>
+            </Box>
+          </Box>
+        </Grid2>
+      </Grid2>
 
       <Box
         sx={{
@@ -87,27 +93,25 @@ const About = () => {
         }}
       >
         <Box>
-        <Typography
-          variant="h2"
-         
-          
-          fontWeight={700}
-          sx={{
-            mt: 15,
-            p: 5,
-            display: { xs: "none", md: "flex", lg: "flex" },
-            fontFamily: "Playfair Display",
-            color: "#0E204E",
-            textDecoration: "none",
-            textWrap: "wrap"
-          }}
-        >
-          About
-          <br /> Pineapple <br />
-          Island
-        </Typography>
+          <Typography
+            variant="h2"
+            fontWeight={700}
+            sx={{
+              mt: 15,
+              p: 5,
+              display: { xs: "none", md: "flex", lg: "flex" },
+              fontFamily: "Playfair Display",
+              color: "#0E204E",
+              textDecoration: "none",
+              textWrap: "wrap"
+            }}
+          >
+            About
+            <br /> Pineapple <br />
+            Island
+          </Typography>
         </Box>
-        
+
         <Box>
           <Image
             alt="home about"
@@ -153,7 +157,6 @@ const About = () => {
           <Typography
             variant="h6"
             noWrap
-            
             sx={{
               ml: 6,
               mt: 8,
@@ -175,6 +178,7 @@ const About = () => {
         </Box>
       </Box>
 
+      {/* ส่วน mobile */}
       <Box
         sx={{
           display: { xs: "flex", md: "none", lg: "none" }
@@ -203,7 +207,6 @@ const About = () => {
       >
         <Typography
           variant="h5"
-          
           fontWeight={700}
           sx={{
             fontFamily: "Playfair Display",
@@ -218,7 +221,6 @@ const About = () => {
         </Typography>
         <Typography
           variant="h5"
-          
           fontWeight={700}
           sx={{
             fontFamily: "Playfair Display",
@@ -234,7 +236,6 @@ const About = () => {
         </Typography>
 
         <Typography
-          
           sx={{
             fontFamily: "Manrope",
             mt: 10,
@@ -269,7 +270,7 @@ const About = () => {
           display: { xs: "flex", md: "none", lg: "none" },
           justifyContent: "center",
           mt: 25,
-          mb:4
+          mb: 4
         }}
       >
         <Typography
@@ -278,7 +279,7 @@ const About = () => {
           sx={{
             fontFamily: "Playfair Display",
             position: "absolute",
-            
+
             textWrap: "wrap",
             color: "#0E204E",
             textDecoration: "none",
@@ -287,17 +288,16 @@ const About = () => {
         >
           About <br /> Pineapple Island
         </Typography>
-        
       </Box>
       <Box
         sx={{
           display: { xs: "flex", md: "none", lg: "none" },
           justifyContent: "center",
-          
-          mb:4,
+
+          mb: 4
         }}
       >
-       <Image
+        <Image
           alt="home about"
           src={homes}
           priority={true}
@@ -311,7 +311,6 @@ const About = () => {
           }}
         />
         <Typography
-          
           sx={{
             fontFamily: "Lato",
             mt: 17,
@@ -331,7 +330,6 @@ const About = () => {
           professional built abode that gives you the true taste of beauty and
           happiness.
         </Typography>
-        
       </Box>
     </>
   )

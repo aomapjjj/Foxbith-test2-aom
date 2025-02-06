@@ -7,11 +7,9 @@ import Typography from "@mui/material/Typography"
 import Menu from "@mui/material/Menu"
 import MenuIcon from "@mui/icons-material/Menu"
 import Container from "@mui/material/Container"
-import Avatar from "@mui/material/Avatar"
 import { Button } from "@mui/material"
 import Tooltip from "@mui/material/Tooltip"
 import MenuItem from "@mui/material/MenuItem"
-import AdbIcon from "@mui/icons-material/Adb"
 
 const pages = ["About Us", "What we do", "Project"]
 const settings = ["Profile", "Account", "Dashboard", "Logout"]
@@ -39,29 +37,23 @@ function ResponsiveAppBar() {
 
   return (
     <AppBar
-      position="static"
       sx={{
+        position:"static",
         bgcolor: "white",
         boxShadow: 0,
         py: 3,
-       
+        width:"100%"
       }}
     >
       <Container maxWidth="xl">
-        <Toolbar disableGutters
-     
-        > 
+        <Toolbar disableGutters>
           <Typography
             variant="h4"
             noWrap
             component="a"
             fontWeight={700}
             sx={{
-              
-              mr: 2,
-              pt:5,
-              display: { xs: "flex" 
-                , md:"flex" , lg: "flex" },
+              display: { xs: "flex", md: "flex", lg: "flex" },
               fontFamily: "Playfair Display",
               fontWeight: 700,
               color: "#0E204E",
@@ -72,7 +64,12 @@ function ResponsiveAppBar() {
             Island
           </Typography>
 
-          <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "flex", lg: "none" } }}>
+          <Box
+            sx={{
+              flexGrow: 1,
+              display: { xs: "flex", md: "flex", lg: "none" }
+            }}
+          >
             <Menu
               id="menu-appbar"
               anchorEl={anchorElNav}
@@ -87,7 +84,14 @@ function ResponsiveAppBar() {
               }}
               open={Boolean(anchorElNav)}
               onClose={handleCloseNavMenu}
-              sx={{ display: { xs: "block",md: "block" , lg: "none", color: "#0E204E" } }}
+              sx={{
+                display: {
+                  xs: "block",
+                  md: "block",
+                  lg: "none",
+                  color: "#0E204E"
+                }
+              }}
             >
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
@@ -100,14 +104,20 @@ function ResponsiveAppBar() {
           <Box
             sx={{
               flexGrow: 1,
-              display: { xs: "none", md:"none" , lg: "flex", justifyContent: "center" }
+              display: {
+                xs: "none",
+                md: "none",
+                lg: "flex",
+                justifyContent: "center",
+                gap: "87px"
+              }
             }}
           >
             {pages.map((page) => (
               <Button
                 key={page}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: "#0E204E", display: "block", ml: 4 }}
+                sx={{ color: "#0E204E", display: "block" }}
               >
                 <Typography
                   sx={{
@@ -120,7 +130,7 @@ function ResponsiveAppBar() {
               </Button>
             ))}
           </Box>
-          <Box sx={{ flexGrow: 0 }}>
+          <Box sx={{ }}>
             <Tooltip title="Open settings">
               <IconButton
                 size="large"
@@ -129,12 +139,11 @@ function ResponsiveAppBar() {
                 aria-haspopup="true"
                 onClick={handleOpenNavMenu}
                 sx={{
-                  pt:5,
+                  pt: 5,
                   display: {
                     xs: "flex",
                     md: "flex",
                     lg: "none",
-
                     justifyContent: "flex-end"
                   },
                   mr: 1,
@@ -152,14 +161,23 @@ function ResponsiveAppBar() {
                 textTransform: "none",
                 borderRadius: 0,
                 backgroundColor: "#0E204E",
+                width: "188px",
+                height: "50px",
                 display: {
                   xs: "none",
-                  md:"none" , lg: "flex",
-                  justifyContent: "flex-end"
+                  md: "none",
+                  lg: "flex"
                 }
               }}
             >
-              Get in Touch
+              <Typography
+                sx={{
+                  fontFamily: "Manrope",
+                  textTransform: "none"
+                }}
+              >
+                Get in Touch
+              </Typography>
             </Button>
 
             <Menu
