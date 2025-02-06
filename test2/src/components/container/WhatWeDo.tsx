@@ -14,85 +14,108 @@ const WhatWeDo = () => {
       <Box
         sx={{
           display: { xs: "none", md: "flex", lg: "flex" },
-          width: "1920px",
+          width: "100%",
           height: "708px",
           bgcolor: "#0E204E",
-
           clipPath:
-            "polygon(50% 0%, 100% 0, 100% 100%, 84% 93%, 60% 80%, 0 100%, 0 0)"
+            "polygon(50% 0%, 100% 0, 100% 100%, 84% 93%, 60% 80%, 0 100%, 0 0)",
+          position: "relative"
         }}
-      >
-        <Typography
-          variant="h3"
-          noWrap
-          component="a"
-          fontWeight={700}
-          sx={{
-            mt: 30,
-            p: 6,
-            ml: 20,
-            display: { xs: "none", md: "flex", lg: "flex" },
-            fontFamily: "Playfair Display",
-            color: "white",
-            textDecoration: "none",
-            textWrap: "wrap"
-          }}
-        >
-          Why
-          <br /> Choose
-          <br /> Pineapple <br />
-          Island
-        </Typography>
-      </Box>
-      <Box
+      ></Box>
+      <Grid2
+        container
+        columnSpacing={{ xs: 1, sm: 1, md: 2 }}
+        gap={0}
         sx={{
-          display: { xs: "none", md: "flex", lg: "flex" },
-          ml: 70,
-          mt: -75,
-          position: "absolute"
+          position: "absolute",
+          mt: -70
         }}
       >
-        <Box
-          sx={{
-            boxShadow: 2,
-            width: "477px",
-            bgcolor: "white",
-            display: { xs: "none", md: "flex", lg: "flex" },
-            alignItems: "center",
-            px: 10
-          }}
-        >
-          <Box>
+        <Grid2 size={4}>
+          <Box
+            sx={{
+              display: { xs: "none", md: "flex", lg: "flex" },
+              justifyContent: "center",
+              width: "100%",
+              height: "634px"
+            }}
+          >
             <Typography
-              variant="h6"
+              variant="h3"
               noWrap
-              component="a"
+              fontWeight={700}
               sx={{
-                fontFamily: "Manrope",
-                color: "#0E204E",
+                fontFamily: "Playfair Display",
+                color: "white",
                 textDecoration: "none",
-                textWrap: "wrap"
+                textWrap: "wrap",
+                alignContent:"center"
               }}
             >
-              Pineapple Island is the most sought-after community in Ibadan that
-              values and puts the needs of their clients first. It is a
-              territory with loft complexes that creates a country life and
-              homely feeling that is integrated with industrial development. A
-              perfect, professional built abode that gives you the true taste of
-              beauty and happiness.
+              Why
+              <br /> Choose
+              <br /> Pineapple <br />
+              Island
             </Typography>
           </Box>
-        </Box>
-        <Image
-          alt="home about"
-          src={room}
-          priority={true}
-          style={{
-            width: "80%",
-            height: "634px"
+        </Grid2>
+        <Grid2 size={4}>
+          <Box
+            sx={{
+              display: { xs: "none", md: "flex", lg: "flex" }
+            }}
+          >
+            <Box
+              sx={{
+                boxShadow: 2,
+                width: "100%",
+                height: "634px",
+                bgcolor: "white",
+                display: { xs: "none", md: "flex", lg: "flex" },
+                alignItems: "center"
+              }}
+            >
+              <Box>
+                <Typography
+                  sx={{
+                    fontFamily: "Manrope",
+                    color: "#0E204E",
+                    textDecoration: "none",
+                    textWrap: "wrap",
+                    fontSize: "18px",
+                    p: "50px"
+                  }}
+                >
+                  Pineapple Island is the most sought-after community in Ibadan
+                  that values and puts the needs of their clients first. It is a
+                  territory with loft complexes that creates a country life and
+                  homely feeling that is integrated with industrial development.
+                  A perfect, professional built abode that gives you the true
+                  taste of beauty and happiness.
+                </Typography>
+              </Box>
+            </Box>
+          </Box>
+        </Grid2>
+        <Grid2
+          size={4}
+          sx={{
+            pr: "50px"
           }}
-        />
-      </Box>
+        >
+          <Image
+            alt="home about"
+            src={room}
+            priority={true}
+            style={{
+              width: "100%",
+              height: "634px",
+              objectFit: "cover"
+            }}
+          />
+        </Grid2>
+      </Grid2>
+
       <Typography
         variant="h3"
         noWrap
@@ -223,6 +246,9 @@ const WhatWeDo = () => {
           </Grid2>
         </Grid2>
       </Box>
+
+      {/* ส่วน mobile */}
+
       <Box
         sx={{
           display: { xs: "flex", md: "none", lg: "none" },

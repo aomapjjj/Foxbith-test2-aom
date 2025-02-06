@@ -12,12 +12,12 @@ const index = () => {
     <>
       <Navbar />
       <About />
-      {/* <WhatWeDo />
+      <WhatWeDo />
       <Galleries />
       <Galleries1 />
       <Project />
       <Contact />
-      <Footer /> */}
+      <Footer />
     </>
   )
 }
