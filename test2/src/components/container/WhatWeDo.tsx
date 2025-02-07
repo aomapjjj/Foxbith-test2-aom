@@ -318,7 +318,7 @@ const WhatWeDo = () => {
         sx={{
           display: { xs: "flex", md: "none", lg: "none" },
           justifyContent: "center",
-          px:"20px"
+          px: "20px"
         }}
       >
         <Image
@@ -335,26 +335,30 @@ const WhatWeDo = () => {
 
       <Box
         sx={{
-          display: { xs: "flex", md: "none", lg: "none" },
-          justifyContent: "center",
-          mt: 5
+          display: { xs: "flex-row", md: "none", lg: "none" },
+          width: "100%",
+          py: 5
         }}
       >
-        <Box sx={{}}>
-          <Typography
-            variant="h4"
-            fontWeight={700}
-            sx={{
-              fontFamily: "Playfair Display",
-              textWrap: "wrap",
-              color: "#0E204E",
-              textDecoration: "none",
-              textAlign: "center",
-              mb: 4
-            }}
-          >
-            Pineapple Island Offers
-          </Typography>
+        <Typography
+          variant="h4"
+          fontWeight={700}
+          sx={{
+            fontFamily: "Playfair Display",
+            textWrap: "wrap",
+            color: "#0E204E",
+            textDecoration: "none",
+            textAlign: "center",
+            mb: 4
+          }}
+        >
+          Pineapple Island Offers
+        </Typography>
+        <Box
+          sx={{
+            px: "20px"
+          }}
+        >
           <Image
             alt="home about"
             src={garden1}
@@ -365,24 +369,24 @@ const WhatWeDo = () => {
               objectFit: "cover"
             }}
           />
+        </Box>
 
+        <Box
+          sx={{
+            display: { xs: "flex", md: "none", lg: "none" },
+            justifyContent: "center",
+            mt: -4,
+            mb: 4
+          }}
+        >
           <Box
+            bgcolor="#0E204E"
             sx={{
-              display: { xs: "flex", md: "none", lg: "none" },
-              justifyContent: "center",
-              mt: -4,
-              mb: 4
+              width: "80%",
+              height: "247px"
             }}
           >
-            <Box
-              bgcolor="#0E204E"
-              sx={{
-                width: "320px",
-                height: "247px"
-              }}
-            >
-              <FrramLogo2 />
-            </Box>
+            <FrramLogo2 />
           </Box>
         </Box>
       </Box>
