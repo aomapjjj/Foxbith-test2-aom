@@ -316,72 +316,86 @@ const About = () => {
           </Box>
         </Grid2>
       </Grid2>
-      {/* <Box
-        sx={{
-          display: { xs: "flex", md: "none", lg: "none" },
-          justifyContent: "center",
-          mt: 25,
-          mb: 4
-        }}
-      >
-        <Typography
-          variant="h4"
-          fontWeight={700}
-          sx={{
-            fontFamily: "Playfair Display",
-            position: "absolute",
 
-            textWrap: "wrap",
-            color: "#0E204E",
-            textDecoration: "none",
-            textAlign: "center"
-          }}
-        >
-          About <br /> Pineapple Island
-        </Typography>
-      </Box>
       <Box
         sx={{
-          display: { xs: "flex", md: "none", lg: "none" },
-          justifyContent: "center",
-
-          mb: 4
+          display: { xs: "flex-row", md: "none", lg: "none" },
+          justifyContent: "center"
         }}
       >
-        <Image
-          alt="home about"
-          src={homes}
-          priority={true}
-          style={{
-            marginTop: "100px",
-            paddingLeft: "40px",
-            paddingRight: "40px",
-            width: "100%",
-            height: "80%",
-            filter: "brightness(0.60)"
-          }}
-        />
-        <Typography
+        <Box
           sx={{
-            fontFamily: "Lato",
-            mt: 17,
-            position: "absolute",
-            ml: 12,
-            pr: 10,
-            textWrap: "pretty",
-            color: "white",
-            textDecoration: "none",
-            textAlign: "center"
+            py: "24px"
           }}
         >
-          Pineapple Island is the most sought-after community in Ibadan that
-          values and puts the needs of their clients first. It is a territory
-          with loft complexes that creates a country life and homely feeling
-          that is integrated with industrial development. A perfect,
-          professional built abode that gives you the true taste of beauty and
-          happiness.
-        </Typography>
-      </Box> */}
+          <Typography
+            variant="h4"
+            fontWeight={700}
+            sx={{
+              fontFamily: "Playfair Display",
+              textWrap: "wrap",
+              color: "#0E204E",
+              textDecoration: "none",
+              textAlign: "center"
+            }}
+          >
+            About <br /> Pineapple Island
+          </Typography>
+        </Box>
+        <Box
+          sx={{
+            position:"relative",
+            px: "20px"
+          }}
+        >
+          <Image
+            alt="home about"
+            src={homes}
+            priority={true}
+            style={{
+              width: "100%",
+              height: "392px",
+              filter: "brightness(0.60)",
+              objectFit: "cover"
+            }}
+          />
+        </Box>
+        <Box
+          sx={{
+            position:"absolute",
+            display: { xs: "flex", md: "none", lg: "none" },
+            justifyContent: "center",
+            width: "100%",
+            height: "392px",
+            mt:-50
+          }}
+        >
+          <Box
+            sx={{
+              px: "40px",
+              alignContent: "center"
+            }}
+          >
+            <Typography
+            fontWeight={300}
+              sx={{
+                fontFamily: "Lato",
+                textWrap: "pretty",
+                color: "white",
+                textAlign: "center",
+                fontSize:"16px"
+              }}
+            >
+              Pineapple Island is the most sought-after community in Ibadan that
+              values and puts the needs of their clients first. It is a
+              territory with loft complexes that creates a country life and
+              homely feeling that is integrated with industrial development. A
+              perfect, professional built abode that gives you the true taste of
+              beauty and happiness.
+            </Typography>
+          </Box>
+        </Box>
+      </Box>
     </>
   )
 }
