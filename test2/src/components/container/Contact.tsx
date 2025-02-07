@@ -178,73 +178,78 @@ const Contact = () => {
       </Box>
 
       {/* mobile */}
-      {/* <Box>
+      <Box
+        sx={{
+          pt: 3
+        }}
+      >
         <Box
           sx={{
-            display: { xs: "flex", md: "none", lg: "none" },
+            display: { xs: "flex-row", md: "none", lg: "none" },
             width: "100%",
             height: "262px",
             bgcolor: "#0E204E",
             justifyContent: "center"
           }}
         >
-          <Typography
-            variant="h5"
-            fontWeight={700}
+          <Box
             sx={{
-              mt: 4,
-              fontFamily: "Playfair Display",
-              color: "white",
-              textDecoration: "none"
+              py: 2,
+              justifyItems: "center"
             }}
           >
-            Become an Agent
-          </Typography>
-        </Box>
-        <Box
-          sx={{
-            display: { xs: "flex", md: "none", lg: "none" },
-            justifyContent: "center"
-          }}
-        >
-          <Typography
-            fontWeight={300}
+            <Typography
+              variant="h5"
+              fontWeight={700}
+              sx={{
+                fontFamily: "Playfair Display",
+                color: "white",
+                textDecoration: "none"
+              }}
+            >
+              Become an Agent
+            </Typography>
+          </Box>
+          <Box
             sx={{
-              mt: -22,
-              fontFamily: "Lato",
-              color: "white",
-              textDecoration: "none",
-
-              textAlign: "center",
-              ml: 10,
-              pr: 8
+              py: 2
             }}
           >
-            A community that gives you a taste of happiness, a place you’ll love
-            to <br />
-            live and an opportunity to build a home.
-          </Typography>
-        </Box>
-        <Box
-          sx={{
-            display: { xs: "flex", md: "none", lg: "none" },
-            justifyContent: "center"
-          }}
-        >
-          <Button
-            variant="contained"
+            <Typography
+              fontWeight={300}
+              sx={{
+                fontFamily: "Lato",
+                color: "white",
+                textDecoration: "none",
+                textAlign: "center",
+                px: 8
+              }}
+            >
+              A community that gives you a taste of happiness, a place you’ll
+              love to live and an opportunity to build a home.
+            </Typography>
+          </Box>
+          <Box
             sx={{
-              fontFamily: "Lato",
-              textTransform: "none",
-              width: "103px",
-              height: "40px",
-              mt: -10,
-              backgroundColor: "white",
-              color: "#0E204E"
+              justifyItems: "center"
             }}
           >
-            Join Now
-          </Button>
+            <Box>
+              <Button
+                variant="contained"
+                sx={{
+                  fontFamily: "Lato",
+                  textTransform: "none",
+                  width: "103px",
+                  height: "40px",
+                  backgroundColor: "white",
+                  color: "#0E204E"
+                }}
+              >
+                Join Now
+              </Button>
+            </Box>
+          </Box>
         </Box>
 
         <Box
@@ -293,9 +298,9 @@ const Contact = () => {
             sx={{
               display: { sm: "flex", md: "none", lg: "none" },
               justifyContent: "center",
-              mt: 5
+              pt: "20px"
             }}
-            rowSpacing={2}
+            rowSpacing={"56px"}
           >
             <Box>
               <Grid2 size={12} sx={{}}>
@@ -382,25 +387,31 @@ const Contact = () => {
                   mt: 2
                 }}
               >
-                <Button
-                  variant="contained"
-                  sx={{
-                    fontFamily: "Lato",
-                    textTransform: "none",
-                    width: "82px",
-                    height: "40px",
-                    ml: 10,
-                    backgroundColor: "#0E204E",
-                    color: "white"
-                  }}
-                >
-                  Send
-                </Button>
+                <Box sx={{
+                  justifyItems:"center"
+                }}>
+                  <Box>
+                    <Button
+                      variant="contained"
+                      sx={{
+                        fontFamily: "Lato",
+                        textTransform: "none",
+                        width: "82px",
+                        height: "40px",
+
+                        backgroundColor: "#0E204E",
+                        color: "white"
+                      }}
+                    >
+                      Send
+                    </Button>
+                  </Box>
+                </Box>
               </Grid2>
             </Box>
           </Grid2>
         </Box>
-      </Box> */}
+      </Box>
     </>
   )
 }
