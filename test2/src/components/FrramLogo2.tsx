@@ -18,10 +18,13 @@ const FrramLogo2 = () => {
           height: "100%"
         }}
       >
-        <Grid2 size={4} sx={{
-          justifyItems:"center",
-          alignContent:"center"
-        }}>
+        <Grid2
+          size={4}
+          sx={{
+            justifyItems: "center",
+            alignContent: "center"
+          }}
+        >
           <Image
             alt="Tree"
             src={Tree}
@@ -43,10 +46,13 @@ const FrramLogo2 = () => {
           </Typography>
         </Grid2>
 
-        <Grid2 size={4} sx={{
-          justifyItems:"center",
-          alignContent:"center"
-        }}>
+        <Grid2
+          size={4}
+          sx={{
+            justifyItems: "center",
+            alignContent: "center"
+          }}
+        >
           <Image
             alt="Network"
             src={Network}
@@ -69,10 +75,13 @@ const FrramLogo2 = () => {
           </Typography>
         </Grid2>
 
-        <Grid2 size={4} sx={{
-          justifyItems:"center",
-          alignContent:"center"
-        }}>
+        <Grid2
+          size={4}
+          sx={{
+            justifyItems: "center",
+            alignContent: "center"
+          }}
+        >
           <Image
             alt="Money"
             src={Money}
@@ -94,10 +103,13 @@ const FrramLogo2 = () => {
             Good Rates
           </Typography>
         </Grid2>
-        <Grid2 size={4} sx={{
-          justifyItems:"center",
-          alignContent:"center"
-        }}>
+        <Grid2
+          size={4}
+          sx={{
+            justifyItems: "center",
+            alignContent: "center"
+          }}
+        >
           <Image
             alt="System"
             src={System}
@@ -121,10 +133,13 @@ const FrramLogo2 = () => {
           </Typography>
         </Grid2>
 
-        <Grid2 size={4} sx={{
-          justifyItems:"center",
-          alignContent:"center"
-        }}>
+        <Grid2
+          size={4}
+          sx={{
+            justifyItems: "center",
+            alignContent: "center"
+          }}
+        >
           <Image
             alt="Lock"
             src={Lock}
@@ -148,10 +163,13 @@ const FrramLogo2 = () => {
             Security
           </Typography>
         </Grid2>
-        <Grid2 size={4} sx={{
-          justifyItems:"center",
-          alignContent:"center"
-        }}>
+        <Grid2
+          size={4}
+          sx={{
+            justifyItems: "center",
+            alignContent: "center"
+          }}
+        >
           <Image
             alt="Light"
             src={Light}

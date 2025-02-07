@@ -376,7 +376,6 @@ const WhatWeDo = () => {
             display: { xs: "flex", md: "none", lg: "none" },
             justifyContent: "center",
             mt: -4,
-            mb: 4
           }}
         >
           <Box
