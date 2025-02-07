@@ -43,7 +43,7 @@ const WhatWeDo = () => {
             <Typography
               fontWeight={700}
               sx={{
-                pl:4,
+                pl: 4,
                 fontFamily: "Playfair Display",
                 color: "white",
                 textDecoration: "none",
@@ -100,7 +100,7 @@ const WhatWeDo = () => {
         <Grid2
           size={4}
           sx={{
-            display: { xs:"none" ,sm: "none", md: "flex", lg: "flex" },
+            display: { xs: "none", sm: "none", md: "flex", lg: "flex" },
             pr: "50px"
           }}
         >
@@ -260,28 +260,24 @@ const WhatWeDo = () => {
         </Grid2>
       </Grid2>
 
-      
-
       {/* ส่วน mobile */}
 
-      {/* <Box
+      <Box
         sx={{
           display: { xs: "flex", md: "none", lg: "none" },
           justifyContent: "center",
-          mt: 5
+          pt: "56px"
         }}
       >
         <Box>
           <Typography
-            variant="h4"
             fontWeight={700}
             sx={{
               fontFamily: "Playfair Display",
               textWrap: "wrap",
               color: "#0E204E",
-              textDecoration: "none",
-              letterSpacing: 2,
-              textAlign: "center"
+              textAlign: "center",
+              fontSize: "24px"
             }}
           >
             Why Choose <br /> Pineapple Island
@@ -291,21 +287,22 @@ const WhatWeDo = () => {
       <Box
         sx={{
           display: { xs: "flex", md: "none", lg: "none" },
-          justifyContent: "center",
-          mt: 5
+          justifyContent: "center"
         }}
       >
-        <Box>
+        <Box
+          sx={{
+            px: "20px",
+            py: "16px"
+          }}
+        >
           <Typography
+            fontWeight={300}
             sx={{
               fontFamily: "Lato",
-              ml: 6,
-              pr: 6,
               textWrap: "wrap",
               color: "#0E204E",
-              textDecoration: "none",
-              textAlign: "center",
-              pb: 3
+              textAlign: "center"
             }}
           >
             Pineapple Island is the most sought-after community in Ibadan that
@@ -321,20 +318,21 @@ const WhatWeDo = () => {
         sx={{
           display: { xs: "flex", md: "none", lg: "none" },
           justifyContent: "center",
-          
+          px:"20px"
         }}
       >
-        <Box>
-          <Image
-            alt="home about"
-            src={livingroom}
-            priority={true}
-            style={{
-              width: "100%"
-            }}
-          />
-        </Box>
+        <Image
+          alt="home about"
+          src={livingroom}
+          priority={true}
+          style={{
+            width: "100%",
+            height: "207px",
+            objectFit: "cover"
+          }}
+        />
       </Box>
+
       <Box
         sx={{
           display: { xs: "flex", md: "none", lg: "none" },
@@ -363,7 +361,8 @@ const WhatWeDo = () => {
             priority={true}
             style={{
               width: "100%",
-              height: "387px"
+              height: "387px",
+              objectFit: "cover"
             }}
           />
 
@@ -386,7 +385,7 @@ const WhatWeDo = () => {
             </Box>
           </Box>
         </Box>
-      </Box> */}
+      </Box>
     </>
   )
 }
