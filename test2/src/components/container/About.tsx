@@ -7,14 +7,13 @@ import left from "../../../public/imgs/left.png"
 import rigth from "../../../public/imgs/rigth.png"
 import homes from "../../../public/imgs/homes.png"
 
-
 const About = () => {
   return (
     <>
       <Grid2
         container
-        columnSpacing={{ xs: 1, sm: 1, md: 2 }}
         sx={{
+          display: { xs: "none", sm: "none", md: "flex", lg: "flex" },
           mb: "250px"
         }}
       >
@@ -173,93 +172,151 @@ const About = () => {
       </Grid2>
 
       {/* ส่วน mobile */}
-      {/* <Box
+
+      <Grid2
+        container
+        columnSpacing={{ xs: 1, sm: 1, md: 2 }}
+        gap={0}
         sx={{
           display: { xs: "flex", md: "none", lg: "none" }
         }}
       >
-        <Image
-          alt="home about"
-          src={homecrop}
-          priority={true}
-          style={{
-            paddingLeft: "40px",
-            paddingRight: "40px",
-            position: "relative",
-            width: "100%",
-            height: "50%",
-            filter: "brightness(0.60)"
-          }}
-        />
-      </Box>
-      <Box
-        sx={{
-          display: { xs: "flex", md: "none", lg: "none" },
-          justifyContent: "center",
-          mt: -55
-        }}
-      >
-        <Typography
-          variant="h5"
-          fontWeight={700}
+        <Grid2
+          size={12}
           sx={{
-            fontFamily: "Playfair Display",
-            position: "absolute",
-            fontWeight: 700,
-            textWrap: "wrap",
-            color: "white",
-            textDecoration: "none"
+            justifyContent: "center",
+            position: "relative"
           }}
         >
-          Pineapple Island:
-        </Typography>
-        <Typography
-          variant="h5"
-          fontWeight={700}
-          sx={{
-            fontFamily: "Playfair Display",
-            mt: 4,
-            position: "absolute",
-            fontWeight: 700,
-            textWrap: "wrap",
-            color: "white",
-            textDecoration: "none"
-          }}
-        >
-          GenZ and Millenial Abode
-        </Typography>
+          <Box
+            sx={{
+              display: { xs: "flex-row", md: "none", lg: "none" },
+              px: "20px"
+            }}
+          >
+            <Image
+              alt="home about"
+              src={homecrop}
+              priority={true}
+              style={{
+                width: "100%",
+                height: "720px",
+                filter: "brightness(0.60)",
+                objectFit: "cover"
+              }}
+            />
+          </Box>
+        </Grid2>
 
-        <Typography
+        <Grid2
+          size={12}
           sx={{
-            fontFamily: "Manrope",
-            mt: 10,
-            position: "absolute",
-            ml: 6,
-            pr: 5,
-            textWrap: "pretty",
-            color: "white",
-            textDecoration: "none",
-
-            textAlign: "center"
+            position: "absolute"
           }}
         >
-          a community that gives you a taste of happiness, a place you’ll love
-          to live and an opportunity to build a home.
-        </Typography>
-        <Button
-          variant="contained"
-          sx={{
-            fontFamily: "Manrope",
-            textTransform: "none",
-            color: "black",
-            bgcolor: "white",
-            mt: 25
-          }}
-        >
-          Get in Touch
-        </Button>
-      </Box>
-      <Box
+          <Box
+            sx={{
+              display: { xs: "flex-row", md: "none", lg: "none" },
+              py: "150px",
+              px: "40px"
+            }}
+          >
+            <Box
+              sx={{
+                justifyItems: "center",
+                pb: "10px"
+              }}
+            >
+              <Typography
+                fontWeight={700}
+                sx={{
+                  fontFamily: "Playfair Display",
+                  fontWeight: 700,
+                  textWrap: "wrap",
+                  color: "white",
+                  textAlign: "center",
+                  fontSize: "26px"
+                }}
+              >
+                Pineapple Island:
+              </Typography>
+            </Box>
+            <Box
+              sx={{
+                justifyItems: "center",
+                pb: "24px"
+              }}
+            >
+              <Typography
+                fontWeight={700}
+                sx={{
+                  fontFamily: "Playfair Display",
+                  fontWeight: 700,
+                  textWrap: "wrap",
+                  color: "white",
+                  textAlign: "center",
+                  fontSize: "26px"
+                }}
+              >
+                GenZ and Millenial Abode
+              </Typography>
+            </Box>
+            <Box
+              sx={{
+                justifyItems: "center",
+                pb: "10px"
+              }}
+            >
+              <Typography
+                fontWeight={300}
+                sx={{
+                  fontFamily: "Manrope",
+                  textWrap: "pretty",
+                  color: "white",
+                  textDecoration: "none",
+                  textAlign: "center",
+                  fontSize: "14px"
+                }}
+              >
+                a community that gives you a taste of happiness, a place you’ll
+                love to live and an opportunity to build a home.
+              </Typography>
+            </Box>
+            <Box
+              sx={{
+                justifyItems: "center",
+                pb: "24px"
+              }}
+            >
+              <Box>
+                <Button
+                  variant="contained"
+                  sx={{
+                    fontFamily: "Manrope",
+                    textTransform: "none",
+                    color: "black",
+                    bgcolor: "white"
+                  }}
+                >
+                  <Typography
+                    sx={{
+                      fontFamily: "Manrope",
+                      textWrap: "pretty",
+                      color: "black",
+                      textDecoration: "none",
+                      textAlign: "center",
+                      fontSize: "14px"
+                    }}
+                  >
+                    Get in Touch
+                  </Typography>
+                </Button>
+              </Box>
+            </Box>
+          </Box>
+        </Grid2>
+      </Grid2>
+      {/* <Box
         sx={{
           display: { xs: "flex", md: "none", lg: "none" },
           justifyContent: "center",
