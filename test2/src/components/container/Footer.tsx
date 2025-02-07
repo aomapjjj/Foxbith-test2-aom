@@ -76,7 +76,7 @@ const Footer = () => {
               pt: 25
             }}
           >
-            <Box sx={{}}>
+            <Box>
               <Typography
                 variant="h4"
                 fontWeight={500}
@@ -104,7 +104,7 @@ const Footer = () => {
                 offers
               </Typography>
               <TextField
-              disabled
+                disabled
                 name="Email"
                 id="outlined-basic"
                 label="Email"
@@ -126,8 +126,8 @@ const Footer = () => {
               <Button
                 variant="text"
                 sx={{
-                  pl:"320px",
-                  pt:"16px",
+                  pl: "320px",
+                  pt: "16px",
                   position: "relative",
                   fontFamily: "Manrope",
                   textTransform: "none",
@@ -142,102 +142,9 @@ const Footer = () => {
         </Grid2>
       </Box>
 
-      {/* <Typography
-          variant="h4"
-         
-          fontWeight={500}
-          sx={{
-            display: { xs: "none", md: "flex", lg: "flex" },
-            mb: 2,
-            fontFamily: "Manrope",
-            color: "white",
-            textDecoration: "none"
-          }}
-        >
-          Banana <br />
-          Island
-        </Typography>
-        <Typography
-          component="a"
-          sx={{
-            fontFamily: "Manrope",
-            color: "white",
-            textDecoration: "none",
-            textWrap: "pretty"
-          }}
-        >
-          a community that gives you a taste of happiness, a place you’ll love
-          to live and an opportunity to build a home.
-        </Typography>
-      </Box>
       <Box
         sx={{
-          display: { xs: "none", md: "flex", lg: "flex" },
-         
-          width: "270px"
-        }}
-      >
-        <Typography
-          variant="h4"
-         
-          fontWeight={500}
-          sx={{
-            display: { xs: "none", md: "flex", lg: "flex" },
-            
-            fontFamily: "Playfair Display",
-            color: "white",
-            textDecoration: "none"
-          }}
-        >
-          Follow up
-        </Typography>
-        <Typography
-          
-          sx={{
-            fontFamily: "Manrope",
-            color: "white",
-            textDecoration: "none",
-            textWrap: "pretty"
-          }}
-        >
-          Keep up with our newsletter to get updates about projects and offers
-        </Typography>
-        <TextField
-          name="Email"
-          id="outlined-basic"
-          label="Email"
-          variant="outlined"
-          sx={{
-            mt: 2,
-            bgcolor: "white",
-            width: "419px",
-            position: "relative",
-            [`& fieldset`]: {
-              borderRadius: 0
-            },
-
-            [`& label`]: {
-              fontFamily: "Manrope"
-            }
-          }}
-        />
-        <Button
-          variant="text"
-          sx={{
-            mt: -6,
-            ml: 39,
-            position: "absolute",
-            fontFamily: "Manrope",
-            textTransform: "none",
-            borderRadius: 0,
-            color: "grey"
-          }}
-        >
-          Subscribe
-        </Button> */}
-      {/* <Box
-        sx={{
-          display: { xs: "flex", md: "none", lg: "none" },
+          display: { xs: "flex-row", md: "none", lg: "none" },
           justifyContent: "center",
           width: "100%",
           height: "100px",
@@ -245,60 +152,56 @@ const Footer = () => {
           mt: 5
         }}
       >
-        <Box sx={{
-          mt:2
-        }} >
+        <Box
+          sx={{
+            pt: 2
+          }}
+        >
           <Typography
-            variant="h6"
-            component="a"
-            sx={{
-              
-              fontFamily: "Lato",
-              color: "white",
-              textDecoration: "none",
-              textWrap: "pretty",
-              textAlign: "center"
-            }}
-          >
-            Pineapple Island
-          </Typography>
-        </Box>
-      </Box>
-      <Box
-        sx={{
-          display: { xs: "flex", md: "none", lg: "none" },
-          justifyContent: "center",
-          mt: -6
-        }}
-      >
-        <Box>
-          <Image
-            alt="copy rigth"
-            src={Group}
-            priority={true}
-            style={{
-              marginLeft: 35,
-              
-              width: "16px",
-              height: "16px"
-            }}
-          />
-          <Typography
-            component="a"
             sx={{
               fontFamily: "Lato",
               color: "white",
               textDecoration: "none",
               textWrap: "pretty",
               textAlign: "center",
-              ml: 1,
-              mt: 1
+              fontSize: "18px"
+            }}
+          >
+            Pineapple Island
+          </Typography>
+        </Box>
+        <Box
+          sx={{
+            display: { xs: "flex", md: "none", lg: "none" },
+            py: 2,
+            justifyContent: "center"
+          }}
+        >
+          <Image
+            alt="copy rigth"
+            src={Group}
+            priority={true}
+            style={{
+              width: "16px",
+              height: "16px"
+            }}
+          />
+          <Typography
+            fontWeight={300}
+            sx={{
+              fontFamily: "Lato",
+              color: "white",
+              textWrap: "pretty",
+              textAlign: "center",
+              alignItems: "center",
+              mt: "-4.5px",
+              px: 1
             }}
           >
             Copyright 2021 Glowdsgn All Rights Reserved
           </Typography>
         </Box>
-      </Box> */}
+      </Box>
     </>
   )
 }
