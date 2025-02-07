@@ -6,6 +6,7 @@ import { Box, Button, Grid2, Typography } from "@mui/material"
 import left from "../../../public/imgs/left.png"
 import rigth from "../../../public/imgs/rigth.png"
 import homes from "../../../public/imgs/homes.png"
+import Paginate from "./Paginate"
 
 const About = () => {
   return (
@@ -127,17 +128,9 @@ const About = () => {
             </Typography>
           </Box>
         </Grid2>
+        {/* ส่วน pagination */}
         <Grid2 size={4}>
-          <Image
-            alt="home about"
-            src={home2}
-            priority={true}
-            style={{
-              width: "100%",
-              height: "620px",
-              objectFit: "cover"
-            }}
-          />
+          <Paginate />
         </Grid2>
         <Grid2 size={4}>
           <Box
