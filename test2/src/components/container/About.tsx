@@ -12,9 +12,8 @@ const About = () => {
     <>
       <Box
         sx={{
-          display: { xs: "none", md: "flex", lg: "flex" },
+          display: { xs: "none", md: "flex"},
           justifyContent: "flex-end",
-
           mb: 12
         }}
       >
@@ -40,32 +39,33 @@ const About = () => {
             mr: 125
           }}
         >
+          ฺ
+          <Box>
+            <Typography
+              variant="h3"
+              noWrap
+              fontWeight={700}
+              sx={{
+                mr: 2,
+                display: { xs: "none", md: "flex"},
+                fontFamily: "Playfair Display",
+                fontWeight: 700,
+                color: "white",
+                textDecoration: "none",
+                justifyContent: "center",
+                alignContent: "center",
+                letterSpacing: 2
+              }}
+            >
+              Pineapple Island: <br /> GenZ and Millenial <br /> Abode
+            </Typography>
+          </Box>
           <Typography
-            variant="h3"
             noWrap
-            
-            fontWeight={700}
-            sx={{
-              mr: 2,
-              display: { xs: "none", md: "flex", lg: "flex" },
-              fontFamily: "Playfair Display",
-              fontWeight: 700,
-              color: "white",
-              textDecoration: "none",
-              justifyContent: "center",
-              alignContent: "center",
-              letterSpacing: 2
-            }}
-          >
-            Pineapple Island: <br /> GenZ and Millenial <br /> Abode
-          </Typography>
-          <Typography
-            noWrap
-            
             sx={{
               ml: 6,
               mt: 2,
-              display: { xs: "none", md: "flex", lg: "flex" },
+              display: { xs: "none", md: "flex"},
               fontFamily: "Manrope",
               color: "white",
               textDecoration: "none",
@@ -81,33 +81,31 @@ const About = () => {
 
       <Box
         sx={{
-          display: { xs: "none", md: "flex", lg: "flex" },
+          display: { xs: "none", md: "flex"},
           justifyContent: "center",
           mb: 12
         }}
       >
         <Box>
-        <Typography
-          variant="h2"
-         
-          
-          fontWeight={700}
-          sx={{
-            mt: 15,
-            p: 5,
-            display: { xs: "none", md: "flex", lg: "flex" },
-            fontFamily: "Playfair Display",
-            color: "#0E204E",
-            textDecoration: "none",
-            textWrap: "wrap"
-          }}
-        >
-          About
-          <br /> Pineapple <br />
-          Island
-        </Typography>
+          <Typography
+            variant="h2"
+            fontWeight={700}
+            sx={{
+              mt: 15,
+              p: 5,
+              display: { xs: "none", md: "flex"},
+              fontFamily: "Playfair Display",
+              color: "#0E204E",
+              textDecoration: "none",
+              textWrap: "wrap"
+            }}
+          >
+            About
+            <br /> Pineapple <br />
+            Island
+          </Typography>
         </Box>
-        
+
         <Box>
           <Image
             alt="home about"
@@ -153,12 +151,11 @@ const About = () => {
           <Typography
             variant="h6"
             noWrap
-            
             sx={{
               ml: 6,
               mt: 8,
               p: 5,
-              display: { xs: "none", md: "flex", lg: "flex" },
+              display: { xs: "none", md: "flex"},
               fontFamily: "Manrope",
               color: "white",
               textDecoration: "none",
@@ -177,7 +174,7 @@ const About = () => {
 
       <Box
         sx={{
-          display: { xs: "flex", md: "none", lg: "none" }
+          display: { xs: "flex", md: "none"}
         }}
       >
         <Image
@@ -196,14 +193,13 @@ const About = () => {
       </Box>
       <Box
         sx={{
-          display: { xs: "flex", md: "none", lg: "none" },
+          display: { xs: "flex", md: "none"},
           justifyContent: "center",
           mt: -55
         }}
       >
         <Typography
           variant="h5"
-          
           fontWeight={700}
           sx={{
             fontFamily: "Playfair Display",
@@ -218,7 +214,6 @@ const About = () => {
         </Typography>
         <Typography
           variant="h5"
-          
           fontWeight={700}
           sx={{
             fontFamily: "Playfair Display",
@@ -234,7 +229,6 @@ const About = () => {
         </Typography>
 
         <Typography
-          
           sx={{
             fontFamily: "Manrope",
             mt: 10,
@@ -244,7 +238,6 @@ const About = () => {
             textWrap: "pretty",
             color: "white",
             textDecoration: "none",
-
             textAlign: "center"
           }}
         >
@@ -266,10 +259,10 @@ const About = () => {
       </Box>
       <Box
         sx={{
-          display: { xs: "flex", md: "none", lg: "none" },
+          display: { xs: "flex", md: "none"},
           justifyContent: "center",
           mt: 25,
-          mb:4
+          mb: 4
         }}
       >
         <Typography
@@ -278,7 +271,7 @@ const About = () => {
           sx={{
             fontFamily: "Playfair Display",
             position: "absolute",
-            
+
             textWrap: "wrap",
             color: "#0E204E",
             textDecoration: "none",
@@ -287,17 +280,16 @@ const About = () => {
         >
           About <br /> Pineapple Island
         </Typography>
-        
       </Box>
       <Box
         sx={{
-          display: { xs: "flex", md: "none", lg: "none" },
+          display: { xs: "flex", md: "none"},
           justifyContent: "center",
-          
-          mb:4,
+
+          mb: 4
         }}
       >
-       <Image
+        <Image
           alt="home about"
           src={homes}
           priority={true}
@@ -311,7 +303,6 @@ const About = () => {
           }}
         />
         <Typography
-          
           sx={{
             fontFamily: "Lato",
             mt: 17,
@@ -331,7 +322,6 @@ const About = () => {
           professional built abode that gives you the true taste of beauty and
           happiness.
         </Typography>
-        
       </Box>
     </>
   )
