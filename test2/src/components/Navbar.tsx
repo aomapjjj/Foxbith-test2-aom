@@ -53,7 +53,7 @@ function ResponsiveAppBar() {
             component="a"
             fontWeight={700}
             sx={{
-              display: { xs: "flex", md: "flex", lg: "flex" },
+              display: "flex",
               fontFamily: "Playfair Display",
               fontWeight: 700,
               color: "#0E204E",
@@ -67,7 +67,7 @@ function ResponsiveAppBar() {
           <Box
             sx={{
               flexGrow: 1,
-              display: { xs: "flex", md: "flex", lg: "none" }
+              display: { xs: "flex", lg: "none" }
             }}
           >
             <Menu
@@ -87,10 +87,9 @@ function ResponsiveAppBar() {
               sx={{
                 display: {
                   xs: "block",
-                  md: "block",
-                  lg: "none",
-                  color: "#0E204E"
-                }
+                  lg: "none"
+                },
+                color: "#0E204E"
               }}
             >
               {pages.map((page) => (
@@ -106,11 +105,10 @@ function ResponsiveAppBar() {
               flexGrow: 1,
               display: {
                 xs: "none",
-                md: "none",
-                lg: "flex",
-                justifyContent: "center",
-                gap: "87px"
-              }
+                lg: "flex"
+              },
+              justifyContent: "center",
+              gap: "87px"
             }}
           >
             {pages.map((page) => (
@@ -130,7 +128,6 @@ function ResponsiveAppBar() {
               </Button>
             ))}
           </Box>
-
           <Tooltip title="Open settings">
             <IconButton
               size="large"
@@ -141,11 +138,9 @@ function ResponsiveAppBar() {
               sx={{
                 display: {
                   xs: "flex",
-                  md: "flex",
-                  lg: "none",
-                  justifyContent: "flex-end"
+                  lg: "none"
                 },
-              
+                justifyContent: "flex-end",
                 color: "#0E204E"
               }}
             >
@@ -164,7 +159,6 @@ function ResponsiveAppBar() {
               height: "50px",
               display: {
                 xs: "none",
-                md: "none",
                 lg: "flex"
               }
             }}
