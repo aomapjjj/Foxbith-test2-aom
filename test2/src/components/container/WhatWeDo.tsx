@@ -12,10 +12,10 @@ const WhatWeDo = () => {
   return (
     <>
       <Box
+        width="100%"
+        height="708px"
         sx={{
-          display: { xs: "none", md: "flex", lg: "flex" },
-          width: "100%",
-          height: "708px",
+          display: { xs: "none", md: "flex" },
           bgcolor: "#0E204E",
           clipPath:
             "polygon(50% 0%, 100% 0, 100% 100%, 84% 93%, 60% 80%, 0 100%, 0 0)",
@@ -24,7 +24,7 @@ const WhatWeDo = () => {
       ></Box>
       <Grid2
         container
-        columnSpacing={{ xs: 1, sm: 1, md: 2 }}
+        columnSpacing={{ xs: 1, md: 2 }}
         gap={0}
         sx={{
           position: "absolute",
@@ -34,7 +34,7 @@ const WhatWeDo = () => {
         <Grid2 size={4}>
           <Box
             sx={{
-              display: { xs: "none", md: "flex", lg: "flex" },
+              display: { xs: "none", md: "flex" },
               justifyContent: "center",
               width: "100%",
               height: "634px"
@@ -62,16 +62,16 @@ const WhatWeDo = () => {
         <Grid2 size={4}>
           <Box
             sx={{
-              display: { xs: "none", md: "flex", lg: "flex" }
+              display: { xs: "none", md: "flex" }
             }}
           >
             <Box
+              width="100%"
+              height="634px"
               sx={{
                 boxShadow: 2,
-                width: "100%",
-                height: "634px",
                 bgcolor: "white",
-                display: { xs: "none", md: "flex", lg: "flex" },
+                display: { xs: "none", md: "flex" },
                 alignItems: "center"
               }}
             >
@@ -100,7 +100,7 @@ const WhatWeDo = () => {
         <Grid2
           size={4}
           sx={{
-            display: { xs: "none", sm: "none", md: "flex", lg: "flex" },
+            display: { xs: "none", md: "flex" },
             pr: "50px"
           }}
         >
@@ -124,7 +124,7 @@ const WhatWeDo = () => {
           mr: 2,
           mt: 20,
           mb: "122px",
-          display: { xs: "none", md: "flex", lg: "flex" },
+          display: { xs: "none", md: "flex" },
           justifyContent: "center",
           fontFamily: "Playfair Display",
           fontWeight: 700,
@@ -138,10 +138,10 @@ const WhatWeDo = () => {
 
       <Grid2
         container
-        columnSpacing={{ xs: 1, sm: 3, md: 3 }}
+        columnSpacing={{ xs: 1, sm: 3 }}
         gap={12}
         sx={{
-          display: { xs: "none", md: "flex", lg: "flex" },
+          display: { xs: "none", md: "flex" },
           p: "50px",
           justifyContent: "center"
         }}
@@ -151,17 +151,16 @@ const WhatWeDo = () => {
             sx={{
               display: {
                 xs: "none",
-                md: "flex",
-                lg: "flex",
-                width: "100%",
-                justifyContent: "flex-end"
-              }
+                md: "flex"
+              },
+              width: "100%",
+              justifyContent: "flex-end"
             }}
           >
             <Box
+              width="412px"
+              height="358px"
               sx={{
-                width: "412px",
-                height: "358px",
                 bgcolor: "#0E204E"
               }}
             ></Box>
@@ -183,8 +182,7 @@ const WhatWeDo = () => {
         <Grid2 size={4}>
           <Box
             sx={{
-              display: { xs: "none", md: "flex", lg: "flex" },
-
+              display: { xs: "none", md: "flex" },
               height: "350px"
             }}
           >
@@ -201,10 +199,10 @@ const WhatWeDo = () => {
 
       <Grid2
         container
-        columnSpacing={{ xs: 1, sm: 3, md: 3 }}
+        columnSpacing={{ xs: 1, sm: 3 }}
         gap={12}
         sx={{
-          display: { xs: "none", md: "flex", lg: "flex" },
+          display: { xs: "none", md: "flex" },
           p: "30px",
           justifyContent: "center"
         }}
@@ -212,7 +210,7 @@ const WhatWeDo = () => {
         <Grid2 size={4}>
           <Box
             sx={{
-              display: { xs: "none", md: "flex", lg: "flex" },
+              display: { xs: "none", md: "flex" },
               height: "582px"
             }}
           >
@@ -228,14 +226,13 @@ const WhatWeDo = () => {
         </Grid2>
         <Grid2 size={6}>
           <Box
+            width="100%"
             sx={{
               display: {
                 xs: "none",
-                md: "flex",
-                lg: "flex",
-                width: "100%",
-                justifyContent: "flex-end"
-              }
+                md: "flex"
+              },
+              justifyContent: "flex-end"
             }}
           >
             <Image
@@ -250,10 +247,10 @@ const WhatWeDo = () => {
             />
           </Box>
           <Box
+            width="412px"
+            height="358px"
             sx={{
               mt: "-450px",
-              width: "412px",
-              height: "358px",
               bgcolor: "#0E204E"
             }}
           ></Box>
@@ -264,7 +261,7 @@ const WhatWeDo = () => {
 
       <Box
         sx={{
-          display: { xs: "flex", md: "none", lg: "none" },
+          display: { xs: "flex", md: "none" },
           justifyContent: "center",
           pt: "56px"
         }}
@@ -286,7 +283,7 @@ const WhatWeDo = () => {
       </Box>
       <Box
         sx={{
-          display: { xs: "flex", md: "none", lg: "none" },
+          display: { xs: "flex", md: "none" },
           justifyContent: "center"
         }}
       >
@@ -316,7 +313,7 @@ const WhatWeDo = () => {
       </Box>
       <Box
         sx={{
-          display: { xs: "flex", md: "none", lg: "none" },
+          display: { xs: "flex", md: "none" },
           justifyContent: "center",
           px: "20px"
         }}
@@ -334,9 +331,9 @@ const WhatWeDo = () => {
       </Box>
 
       <Box
+        width="100%"
         sx={{
-          display: { xs: "flex-row", md: "none", lg: "none" },
-          width: "100%",
+          display: { xs: "flex-row", md: "none" },
           py: 5
         }}
       >
@@ -373,18 +370,12 @@ const WhatWeDo = () => {
 
         <Box
           sx={{
-            display: { xs: "flex", md: "none", lg: "none" },
+            display: { xs: "flex", md: "none" },
             justifyContent: "center",
-            mt: -4,
+            mt: -4
           }}
         >
-          <Box
-            bgcolor="#0E204E"
-            sx={{
-              width: "80%",
-              height: "247px"
-            }}
-          >
+          <Box bgcolor="#0E204E" width="80%" height="247px">
             <FrramLogo2 />
           </Box>
         </Box>

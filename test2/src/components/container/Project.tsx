@@ -9,10 +9,10 @@ const Project = () => {
     <>
       <Grid2
         container
-        columnSpacing={{ xs: 1, sm: 3, md: 3 }}
+        columnSpacing={{ xs: 1, md: 3 }}
         gap={24}
         sx={{
-          display: { xs: "none", md: "flex", lg: "flex" },
+          display: { xs: "none", md: "flex" },
           py: "250px",
           px: "250px",
           justifyContent: "center"
@@ -21,39 +21,37 @@ const Project = () => {
         <Grid2 size={6}>
           <Box
             sx={{
-              display: { xs: "none", md: "flex", lg: "flex" },
+              display: { xs: "none", md: "flex" },
               justifyContent: "center"
             }}
           >
             <Box>
               <Box
+                width="100%"
                 sx={{
                   display: {
                     xs: "none",
-                    md: "flex",
-                    lg: "flex",
-                    width: "100%",
-                    justifyContent: "flex-end"
-                  }
+                    md: "flex"
+                  },
+                  justifyContent: "flex-end"
                 }}
               >
                 <Box
+                  width="500px"
+                  height="445px"
                   sx={{
-                    width: "500px",
-                    height: "445px",
                     bgcolor: "#0E204E"
                   }}
                 ></Box>
               </Box>
               <Box
+                width="100%"
                 sx={{
                   display: {
                     xs: "none",
-                    md: "flex",
-                    lg: "flex",
-                    width: "100%",
-                    justifyContent: "flex-end"
-                  }
+                    md: "flex"
+                  },
+                  justifyContent: "flex-end"
                 }}
               >
                 <Image
@@ -75,14 +73,13 @@ const Project = () => {
 
         <Grid2 size={4}>
           <Box
+            width="100%"
             sx={{
               display: {
                 xs: "none",
-                md: "flex",
-                lg: "flex",
-                width: "100%",
-                justifyContent: "center"
-              }
+                md: "flex"
+              },
+              justifyContent: "center"
             }}
           >
             <Box>
@@ -107,24 +104,23 @@ const Project = () => {
       {/* women */}
       <Grid2
         container
-        columnSpacing={{ xs: 1, sm: 3, md: 3 }}
+        columnSpacing={{ xs: 1, md: 3 }}
         gap={4}
         sx={{
-          display: { xs: "none", md: "flex", lg: "flex" },
+          display: { xs: "none", md: "flex" },
           px: "100px",
           justifyContent: "center"
         }}
       >
         <Grid2 size={4}>
           <Box
+            width="100%"
             sx={{
               display: {
                 xs: "none",
-                md: "flex",
-                lg: "flex",
-                width: "100%",
-                justifyContent: "center"
-              }
+                md: "flex"
+              },
+              justifyContent: "center"
             }}
           >
             <Box>
@@ -132,7 +128,7 @@ const Project = () => {
                 fontWeight={700}
                 sx={{
                   mb: 3,
-                  display: { xs: "none", md: "flex", lg: "flex" },
+                  display: { xs: "none", md: "flex" },
                   fontFamily: "Playfair Display",
                   color: "#0E204E",
                   textDecoration: "none",
@@ -169,8 +165,6 @@ const Project = () => {
                   display: {
                     xs: "none",
                     md: "flex",
-                    lg: "flex",
-
                     width: "239px",
                     height: "62px"
                   }
@@ -184,13 +178,13 @@ const Project = () => {
         <Grid2 size={6}>
           <Box
             sx={{
-              display: { xs: "none", md: "flex", lg: "flex" }
+              display: { xs: "none", md: "flex" }
             }}
           >
             <Box
+              width="500px"
+              height="445px"
               sx={{
-                width: "500px",
-                height: "445px",
                 bgcolor: "#0E204E"
               }}
             ></Box>
@@ -210,8 +204,6 @@ const Project = () => {
           </Box>
         </Grid2>
       </Grid2>
-
-      
     </>
   )
 }

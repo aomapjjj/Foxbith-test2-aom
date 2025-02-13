@@ -19,18 +19,17 @@ const Galleries1 = () => {
     <>
       <Box
         sx={{
-          display: { xs: "flex", md: "none", lg: "none" },
+          display: { xs: "flex", md: "none" },
           justifyContent: "center"
         }}
       >
         <Box>
           <Typography
-            
             fontWeight={700}
             sx={{
               fontFamily: "Playfair Display",
               color: "#0E206E",
-              fontSize:"24px"
+              fontSize: "24px"
             }}
           >
             Available Homes
@@ -39,7 +38,7 @@ const Galleries1 = () => {
       </Box>
       <Box
         sx={{
-          display: { xs: "flex", md: "none", lg: "none" },
+          display: { xs: "flex", md: "none" },
           justifyContent: "center",
           pt: 2
         }}
@@ -65,7 +64,7 @@ const Galleries1 = () => {
         container
         spacing={2}
         sx={{
-          display: { xs: "flex", md: "none", lg: "none" },
+          display: { xs: "flex", md: "none" },
           pt: 2,
           px: "20px"
         }}
@@ -73,53 +72,53 @@ const Galleries1 = () => {
         <Grid2
           size={6}
           sx={{
-            display: { xs: "flex", md: "none", lg: "none" }
+            display: { xs: "flex", md: "none" }
           }}
         >
           <Image
             alt="home about"
             src={one}
             priority={true}
-            style={{ width: "100%", height: "150px" , objectFit: "cover" }}
+            style={{ width: "100%", height: "150px", objectFit: "cover" }}
           />
         </Grid2>
         <Grid2
           size={6}
           sx={{
-            display: { xs: "flex", md: "none", lg: "none" }
+            display: { xs: "flex", md: "none" }
           }}
         >
           <Image
             alt="home about"
             src={two}
             priority={true}
-            style={{ width: "100%", height: "150px" , objectFit: "cover" }}
+            style={{ width: "100%", height: "150px", objectFit: "cover" }}
           />
         </Grid2>
         <Grid2
           size={6}
           sx={{
-            display: { xs: "flex", md: "none", lg: "none" }
+            display: { xs: "flex", md: "none" }
           }}
         >
           <Image
             alt="home about"
             src={three}
             priority={true}
-            style={{ width: "100%", height: "150px" , objectFit: "cover" }}
+            style={{ width: "100%", height: "150px", objectFit: "cover" }}
           />
         </Grid2>
         <Grid2
           size={6}
           sx={{
-            display: { xs: "flex", md: "none", lg: "none" }
+            display: { xs: "flex", md: "none" }
           }}
         >
           <Image
             alt="home about"
             src={four}
             priority={true}
-            style={{ width: "100%", height: "150px" , objectFit: "cover" }}
+            style={{ width: "100%", height: "150px", objectFit: "cover" }}
           />
         </Grid2>
       </Grid2>
@@ -129,7 +128,7 @@ const Galleries1 = () => {
         spacing={2}
         flexWrap={"wrap"}
         sx={{
-          display: { xs: "flex", md: "none", lg: "none" },
+          display: { xs: "flex", md: "none" },
           pt: 2,
           px: "20px"
         }}
@@ -137,20 +136,20 @@ const Galleries1 = () => {
         <Grid2
           size={6}
           sx={{
-            display: { xs: "flex", md: "none", lg: "none" }
+            display: { xs: "flex", md: "none" }
           }}
         >
           <Image
             alt="home about"
             src={five}
             priority={true}
-            style={{ width: "100%", height: "150px" , objectFit: "cover" }}
+            style={{ width: "100%", height: "150px", objectFit: "cover" }}
           />
         </Grid2>
         <Grid2
           size={6}
           sx={{
-            display: { xs: "flex", md: "none", lg: "none" },
+            display: { xs: "flex", md: "none" },
             position: "relative"
           }}
         >
@@ -158,21 +157,26 @@ const Galleries1 = () => {
             alt="home about"
             src={six}
             priority={true}
-            style={{ width: "100%", height: "210%", position: "absolute" , objectFit: "cover"}}
+            style={{
+              width: "100%",
+              height: "210%",
+              position: "absolute",
+              objectFit: "cover"
+            }}
           />
         </Grid2>
 
         <Grid2
           size={6}
           sx={{
-            display: { xs: "flex", md: "none", lg: "none" }
+            display: { xs: "flex", md: "none" }
           }}
         >
           <Image
             alt="home about"
             src={seven}
             priority={true}
-            style={{ width: "100%", height: "150px" , objectFit: "cover" }}
+            style={{ width: "100%", height: "150px", objectFit: "cover" }}
           />
         </Grid2>
       </Grid2>
@@ -182,7 +186,7 @@ const Galleries1 = () => {
         flexWrap={"wrap"}
         flexDirection={"row-reverse"}
         sx={{
-          display: { xs: "flex", md: "none", lg: "none" },
+          display: { xs: "flex", md: "none" },
           pt: 2,
           px: "20px"
         }}
@@ -190,21 +194,21 @@ const Galleries1 = () => {
         <Grid2
           size={6}
           sx={{
-            display: { xs: "flex", md: "none", lg: "none" }
+            display: { xs: "flex", md: "none" }
           }}
         >
           <Image
             alt="home about"
             src={twe}
             priority={true}
-            style={{ width: "100%", height: "150px" , objectFit: "cover" }}
+            style={{ width: "100%", height: "150px", objectFit: "cover" }}
           />
         </Grid2>
 
         <Grid2
           size={6}
           sx={{
-            display: { xs: "flex", md: "none", lg: "none" },
+            display: { xs: "flex", md: "none" },
             position: "relative"
           }}
         >
@@ -212,20 +216,25 @@ const Galleries1 = () => {
             alt="home about"
             src={eight}
             priority={true}
-            style={{ width: "100%", height: "210%", position: "absolute", objectFit: "cover" }}
+            style={{
+              width: "100%",
+              height: "210%",
+              position: "absolute",
+              objectFit: "cover"
+            }}
           />
         </Grid2>
         <Grid2
           size={6}
           sx={{
-            display: { xs: "flex", md: "none", lg: "none" }
+            display: { xs: "flex", md: "none" }
           }}
         >
           <Image
             alt="home about"
             src={nine}
             priority={true}
-            style={{ width: "100%", height: "150px" , objectFit: "cover" }}
+            style={{ width: "100%", height: "150px", objectFit: "cover" }}
           />
         </Grid2>
       </Grid2>
@@ -233,7 +242,7 @@ const Galleries1 = () => {
         container
         spacing={2}
         sx={{
-          display: { xs: "flex", md: "none", lg: "none" },
+          display: { xs: "flex", md: "none" },
           py: 2,
           px: "20px"
         }}
@@ -241,96 +250,43 @@ const Galleries1 = () => {
         <Grid2
           size={6}
           sx={{
-            display: { xs: "flex", md: "none", lg: "none" }
+            display: { xs: "flex", md: "none" }
           }}
         >
           <Image
             alt="home about"
             src={ten}
             priority={true}
-            style={{ width: "100%", height: "150px" , objectFit: "cover" }}
+            style={{ width: "100%", height: "150px", objectFit: "cover" }}
           />
         </Grid2>
         <Grid2
           size={6}
           sx={{
-            display: { xs: "flex", md: "none", lg: "none" }
+            display: { xs: "flex", md: "none" }
           }}
         >
           <Image
             alt="home about"
             src={ele}
             priority={true}
-            style={{ width: "100%", height: "150px" , objectFit: "cover" }}
+            style={{ width: "100%", height: "150px", objectFit: "cover" }}
           />
         </Grid2>
         <Grid2
           size={12}
           sx={{
-            display: { xs: "flex", md: "none", lg: "none" }
+            display: { xs: "flex", md: "none" }
           }}
         >
           <Image
             alt="home about"
             src={third}
             priority={true}
-            style={{ width: "100%", height: "150px" , objectFit: "cover" }}
+            style={{ width: "100%", height: "150px", objectFit: "cover" }}
           />
         </Grid2>
       </Grid2>
-      {/* <Grid2
-        container
-        spacing={2}
-        sx={{
-          display: { xs: "flex", md: "none", lg: "none" }
-        }}
-      >
-        <Grid2
-          container
-          spacing={2}
-          sx={{
-            display: { xs: "flex", md: "none", lg: "none" },
-            mt: 15,
-            px:4
-          }}
-        >
-          <Image
-            alt="home about"
-            src={ten}
-            priority={true}
-            style={{ width: "100%", height: "100%" , objectFit: "cover" }}
-          />
-        </Grid2>
-        <Grid2
-          size={6}
-          sx={{
-            display: { xs: "flex", md: "none", lg: "none" },
-            justifyContent: "center"
-          }}
-        >
-          <Image
-            alt="home about"
-            src={ele}
-            priority={true}
-            style={{ width: "100%", height: "100%" }}
-          />
-        </Grid2>
-        <Grid2
-          size={12}
-          sx={{
-            display: { xs: "flex", md: "none", lg: "none" },
-            justifyContent: "center",
-            mb: 3
-          }}
-        >
-          <Image
-            alt="home about"
-            src={third}
-            priority={true}
-            style={{ width: "100%", height: "100%" }}
-          />
-        </Grid2>
-      </Grid2> */}
     </>
   )
 }

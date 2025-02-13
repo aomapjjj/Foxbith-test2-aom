@@ -1,10 +1,7 @@
 import Image from "next/image"
 import home1 from "../../../public/imgs/home1.png"
-import home2 from "../../../public/imgs/home2.png"
 import homecrop from "../../../public/imgs/homecrop.png"
 import { Box, Button, Grid2, Typography } from "@mui/material"
-import left from "../../../public/imgs/left.png"
-import rigth from "../../../public/imgs/rigth.png"
 import homes from "../../../public/imgs/homes.png"
 import Paginate from "./Paginate"
 
@@ -14,14 +11,13 @@ const About = () => {
       <Grid2
         container
         sx={{
-          display: { xs: "none", sm: "none", md: "flex", lg: "flex" },
+          display: { xs: "none", md: "flex" },
           mb: "250px"
         }}
       >
         <Grid2 size={12}>
           <Box
             sx={{
-              display: { xs: "none", md: "flex", lg: "flex" },
               justifyContent: "flex-end",
               pl: "500px"
             }}
@@ -41,15 +37,14 @@ const About = () => {
         <Grid2 size={12}>
           <Box
             sx={{
-              display: { xs: "none", md: "flex", lg: "flex" },
               pl: "100px",
               mt: -74
             }}
           >
             <Box
+              width="786px"
+              height="496px"
               sx={{
-                width: "786px",
-                height: "496px",
                 bgcolor: "#0E204E",
                 py: 10
               }}
@@ -59,7 +54,6 @@ const About = () => {
                 noWrap
                 fontWeight={700}
                 sx={{
-                  display: { xs: "none", md: "flex", lg: "flex" },
                   pl: 10,
                   fontFamily: "Playfair Display",
                   color: "white",
@@ -74,12 +68,12 @@ const About = () => {
                 noWrap
                 fontWeight={200}
                 sx={{
+                  display: { xs: "none", md: "flex" },
                   mt: 2,
-                  display: { xs: "none", md: "flex", lg: "flex" },
                   fontFamily: "Manrope",
                   color: "white",
                   textDecoration: "none",
-                  justifyContent: "center"
+                  justifyContent: "center",
                 }}
               >
                 a community that gives you a taste of happiness, a place you’ll
@@ -98,14 +92,14 @@ const About = () => {
         gap={0}
         sx={{
           pb: "250px",
-          display: { xs: "none", md: "flex", lg: "flex" },
+          display: { xs: "none", md: "flex" },
           px: "40px"
         }}
       >
         <Grid2 size={4}>
           <Box
             sx={{
-              display: { xs: "none", md: "flex", lg: "flex" },
+              display: { xs: "none", md: "flex" },
               justifyContent: "center",
               width: "100%",
               height: "620px"
@@ -135,7 +129,7 @@ const About = () => {
         <Grid2 size={4}>
           <Box
             sx={{
-              display: { xs: "none", md: "flex", lg: "flex" },
+              display: { xs: "none", md: "flex" },
               width: "100%",
               height: "620px",
               bgcolor: "#0E204E"
@@ -144,6 +138,7 @@ const About = () => {
             <Typography
               noWrap
               sx={{
+               
                 fontFamily: "Manrope",
                 color: "white",
                 textDecoration: "none",
@@ -171,7 +166,7 @@ const About = () => {
         columnSpacing={{ xs: 1, sm: 1, md: 2 }}
         gap={0}
         sx={{
-          display: { xs: "flex", md: "none", lg: "none" }
+          display: { xs: "flex", md: "none" }
         }}
       >
         <Grid2
@@ -183,7 +178,7 @@ const About = () => {
         >
           <Box
             sx={{
-              display: { xs: "flex-row", md: "none", lg: "none" },
+              display: { xs: "flex-row", md: "none"},
               px: "20px"
             }}
           >
@@ -209,7 +204,7 @@ const About = () => {
         >
           <Box
             sx={{
-              display: { xs: "flex-row", md: "none", lg: "none" },
+              display: { xs: "flex-row", md: "none" },
               py: "150px",
               px: "40px"
             }}
@@ -312,7 +307,7 @@ const About = () => {
 
       <Box
         sx={{
-          display: { xs: "flex-row", md: "none", lg: "none" },
+          display: { xs: "flex-row", md: "none"},
           justifyContent: "center"
         }}
       >
@@ -337,7 +332,7 @@ const About = () => {
         </Box>
         <Box
           sx={{
-            position:"relative",
+            position: "relative",
             px: "20px"
           }}
         >
@@ -355,12 +350,12 @@ const About = () => {
         </Box>
         <Box
           sx={{
-            position:"absolute",
-            display: { xs: "flex", md: "none", lg: "none" },
+            position: "absolute",
+            display: { xs: "flex", md: "none"},
             justifyContent: "center",
             width: "100%",
             height: "392px",
-            mt:-50
+            mt: -50
           }}
         >
           <Box
@@ -370,13 +365,13 @@ const About = () => {
             }}
           >
             <Typography
-            fontWeight={300}
+              fontWeight={300}
               sx={{
                 fontFamily: "Lato",
                 textWrap: "pretty",
                 color: "white",
                 textAlign: "center",
-                fontSize:"16px"
+                fontSize: "16px"
               }}
             >
               Pineapple Island is the most sought-after community in Ibadan that

@@ -131,7 +131,7 @@ const Contact = () => {
           <Grid2
             size={8}
             sx={{
-              display: { sm: "none", md: "none", lg: "flex" },
+              display: { sm: "none", md: "flex", lg: "flex" },
               justifyContent: "center"
             }}
           >

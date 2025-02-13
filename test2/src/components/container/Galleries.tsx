@@ -1,9 +1,5 @@
 import {
-  Box,
   Grid2,
-  ImageList,
-  ImageListItem,
-  ImageListItemBar,
   Typography
 } from "@mui/material"
 import one from "../../../public/imgs/galleries/1.png"
@@ -16,7 +12,7 @@ import seven from "../../../public/imgs/galleries/7.png"
 import eight from "../../../public/imgs/galleries/8.png"
 import nine from "../../../public/imgs/galleries/9.png"
 import Image from "next/image"
-import Galleries1 from "./Galleries1"
+
 
 const Galleries = () => {
   return (
@@ -26,7 +22,7 @@ const Galleries = () => {
         sx={{
           mr: 2,
           mt: 20,
-          display: { xs: "none", md: "flex", lg: "flex" },
+          display: { xs: "none", md: "flex" },
           justifyContent: "center",
           fontFamily: "Playfair Display",
           fontWeight: 700,
@@ -42,7 +38,7 @@ const Galleries = () => {
         sx={{
           ml: 6,
           mt: 4,
-          display: { xs: "none", md: "flex", lg: "flex" },
+          display: { xs: "none", md: "flex" },
           fontFamily: "Manrope",
           color: "#0E204E",
           textDecoration: "none",
@@ -58,7 +54,7 @@ const Galleries = () => {
         noWrap
         sx={{
           ml: 6,
-          display: { xs: "none", md: "flex", lg: "flex" },
+          display: { xs: "none", md: "flex" },
           fontFamily: "Manrope",
           color: "#0E204E",
           textDecoration: "none",
@@ -72,16 +68,17 @@ const Galleries = () => {
 
       <Grid2
         sx={{
-          display: { sm: "none", md: "flex", lg: "flex", gap: 30 },
+          display: { sm: "none", md: "flex" },
           justifyContent: "center",
+          gap: 4,
           pt: 4,
-          px:"20px"
+          px: "20px"
         }}
       >
         <Grid2
           size={4}
           sx={{
-            display: { xs: "none", md: "flex", lg: "flex" }
+            display: { xs: "none", md: "flex" }
           }}
         >
           <Image
@@ -98,7 +95,7 @@ const Galleries = () => {
         <Grid2
           size={4}
           sx={{
-            display: { xs: "none", md: "flex", lg: "flex" }
+            display: { xs: "none", md: "flex" }
           }}
         >
           <Image
@@ -115,8 +112,7 @@ const Galleries = () => {
         <Grid2
           size={4}
           sx={{
-            display: { xs: "none", md: "flex", lg: "flex" },
-            px:"20px"
+            display: { xs: "none", md: "flex" }
           }}
         >
           <Image
@@ -133,16 +129,17 @@ const Galleries = () => {
       </Grid2>
       <Grid2
         sx={{
-          display: { sm: "none", md: "flex", lg: "flex", gap: 30 },
+          display: { sm: "none", md: "flex" },
           justifyContent: "center",
+          gap: 4,
           mt: 4,
-          px:"20px"
+          px: "20px"
         }}
       >
         <Grid2
           size={4}
           sx={{
-            display: { xs: "none", md: "flex", lg: "flex" }
+            display: { xs: "none", md: "flex" }
           }}
         >
           <Image
@@ -159,7 +156,7 @@ const Galleries = () => {
         <Grid2
           size={4}
           sx={{
-            display: { xs: "none", md: "flex", lg: "flex" }
+            display: { xs: "none", md: "flex" }
           }}
         >
           <Image
@@ -176,8 +173,7 @@ const Galleries = () => {
         <Grid2
           size={4}
           sx={{
-            display: { xs: "none", md: "flex", lg: "flex" },
-            px:"20px"
+            display: { xs: "none", md: "flex" }
           }}
         >
           <Image
@@ -194,16 +190,17 @@ const Galleries = () => {
       </Grid2>
       <Grid2
         sx={{
-          display: { sm: "none", md: "flex", lg: "flex", gap: 30 },
+          display: { sm: "none", md: "flex" },
           justifyContent: "center",
+          gap:4,
           mt: 4,
-          px:"20px"
+          px: "20px"
         }}
       >
         <Grid2
           size={4}
           sx={{
-            display: { xs: "none", md: "flex", lg: "flex" }
+            display: { xs: "none", md: "flex" }
           }}
         >
           <Image
@@ -220,8 +217,7 @@ const Galleries = () => {
         <Grid2
           size={4}
           sx={{
-            display: { xs: "none", md: "flex", lg: "flex" },
-            
+            display: { xs: "none", md: "flex" }
           }}
         >
           <Image
@@ -238,8 +234,8 @@ const Galleries = () => {
         <Grid2
           size={4}
           sx={{
-            display: { xs: "none", md: "flex", lg: "flex" },
-            pb:"200px"
+            display: { xs: "none", md: "flex" },
+            pb: "200px"
           }}
         >
           <Image
