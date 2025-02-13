@@ -12,7 +12,7 @@ const About = () => {
     <>
       <Box
         sx={{
-          display: { xs: "none", md: "flex", lg: "flex" },
+          display: { xs: "none", md: "flex"},
           justifyContent: "flex-end",
           mb: 12
         }}
@@ -47,7 +47,7 @@ const About = () => {
               fontWeight={700}
               sx={{
                 mr: 2,
-                display: { xs: "none", md: "flex", lg: "flex" },
+                display: { xs: "none", md: "flex"},
                 fontFamily: "Playfair Display",
                 fontWeight: 700,
                 color: "white",
@@ -65,7 +65,7 @@ const About = () => {
             sx={{
               ml: 6,
               mt: 2,
-              display: { xs: "none", md: "flex", lg: "flex" },
+              display: { xs: "none", md: "flex"},
               fontFamily: "Manrope",
               color: "white",
               textDecoration: "none",
@@ -81,7 +81,7 @@ const About = () => {
 
       <Box
         sx={{
-          display: { xs: "none", md: "flex", lg: "flex" },
+          display: { xs: "none", md: "flex"},
           justifyContent: "center",
           mb: 12
         }}
@@ -93,7 +93,7 @@ const About = () => {
             sx={{
               mt: 15,
               p: 5,
-              display: { xs: "none", md: "flex", lg: "flex" },
+              display: { xs: "none", md: "flex"},
               fontFamily: "Playfair Display",
               color: "#0E204E",
               textDecoration: "none",
@@ -155,7 +155,7 @@ const About = () => {
               ml: 6,
               mt: 8,
               p: 5,
-              display: { xs: "none", md: "flex", lg: "flex" },
+              display: { xs: "none", md: "flex"},
               fontFamily: "Manrope",
               color: "white",
               textDecoration: "none",
@@ -174,7 +174,7 @@ const About = () => {
 
       <Box
         sx={{
-          display: { xs: "flex", md: "none", lg: "none" }
+          display: { xs: "flex", md: "none"}
         }}
       >
         <Image
@@ -193,7 +193,7 @@ const About = () => {
       </Box>
       <Box
         sx={{
-          display: { xs: "flex", md: "none", lg: "none" },
+          display: { xs: "flex", md: "none"},
           justifyContent: "center",
           mt: -55
         }}
@@ -238,7 +238,6 @@ const About = () => {
             textWrap: "pretty",
             color: "white",
             textDecoration: "none",
-
             textAlign: "center"
           }}
         >
@@ -260,7 +259,7 @@ const About = () => {
       </Box>
       <Box
         sx={{
-          display: { xs: "flex", md: "none", lg: "none" },
+          display: { xs: "flex", md: "none"},
           justifyContent: "center",
           mt: 25,
           mb: 4
@@ -284,7 +283,7 @@ const About = () => {
       </Box>
       <Box
         sx={{
-          display: { xs: "flex", md: "none", lg: "none" },
+          display: { xs: "flex", md: "none"},
           justifyContent: "center",
 
           mb: 4

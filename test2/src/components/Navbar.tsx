@@ -54,7 +54,7 @@ function ResponsiveAppBar() {
             component="a"
             fontWeight={700}
             sx={{
-              display: { xs: "flex", md: "flex", lg: "flex" },
+              display: "flex",
               fontFamily: "Playfair Display",
               fontWeight: 700,
               color: "#0E204E",
@@ -68,7 +68,7 @@ function ResponsiveAppBar() {
           <Box
             sx={{
               flexGrow: 1,
-              display: { xs: "flex", md: "flex", lg: "none" }
+              display: { xs: "flex", lg: "none" }
             }}
           >
             <Menu
@@ -89,9 +89,9 @@ function ResponsiveAppBar() {
                 display: {
                   xs: "block",
                   md: "block",
-                  lg: "none",
-                  color: "#0E204E"
-                }
+                  lg: "none"
+                },
+                color: "#0E204E"
               }}
             >
               {pages.map((page) => (
@@ -166,7 +166,6 @@ function ResponsiveAppBar() {
                 height: "50px",
                 display: {
                   xs: "none",
-                  md: "none",
                   lg: "flex"
                 }
               }}
