@@ -7,60 +7,86 @@ import Table from "../Table"
 const Project = () => {
   return (
     <>
-      <Box
+      <Grid2
+        container
+        columnSpacing={{ xs: 1, md: 3 }}
+        gap={24}
         sx={{
-          display: { xs: "none", md: "flex", lg: "flex" },
-          ml: 10
+          display: { xs: "none", md: "flex" },
+          py: "250px",
+          px: "250px",
+          justifyContent: "center"
         }}
       >
-        <Grid2
-          sx={{
-            display: { sm: "none", md: "flex", lg: "flex" },
-            mb: 10
-          }}
-        >
-          <Grid2
-            size={6}
+        <Grid2 size={6}>
+          <Box
             sx={{
-              display: { sm: "none", md: "flex", lg: "flex" },
-              mt: 20
+              display: { xs: "none", md: "flex" },
+              justifyContent: "center"
             }}
           >
             <Box>
               <Box
+                width="100%"
                 sx={{
-                  width: "412px",
-                  height: "358px",
-                  bgcolor: "#0E204E",
-                  py: 10,
-                  ml: 50,
-                  mt: 20
+                  display: {
+                    xs: "none",
+                    md: "flex"
+                  },
+                  justifyContent: "flex-end"
                 }}
-              ></Box>
-              <Image
-                alt="home about"
-                src={Chair}
-                priority={true}
-                style={{
-                  margin: 50,
-                  marginLeft: "200px",
-                  width: "484px",
-                  height: "725px",
-                  marginTop: "-500px",
-                  position: "absolute"
+              >
+                <Box
+                  width="500px"
+                  height="445px"
+                  sx={{
+                    bgcolor: "#0E204E"
+                  }}
+                ></Box>
+              </Box>
+              <Box
+                width="100%"
+                sx={{
+                  display: {
+                    xs: "none",
+                    md: "flex"
+                  },
+                  justifyContent: "flex-end"
                 }}
-              />
+              >
+                <Image
+                  alt="home about"
+                  src={Chair}
+                  priority={true}
+                  style={{
+                    marginTop: "-650px",
+                    marginRight: "100px",
+                    width: "484px",
+                    height: "1000px",
+                    objectFit: "cover"
+                  }}
+                />
+              </Box>
             </Box>
-            <Grid2 size={6}>
+          </Box>
+        </Grid2>
+
+        <Grid2 size={4}>
+          <Box
+            width="100%"
+            sx={{
+              display: {
+                xs: "none",
+                md: "flex"
+              },
+              justifyContent: "center"
+            }}
+          >
+            <Box>
               <Typography
                 variant="h2"
-                noWrap
-                component="a"
                 fontWeight={700}
                 sx={{
-                  mb: 3,
-                  ml: 20,
-                  display: { xs: "none", md: "flex", lg: "flex" },
                   fontFamily: "Playfair Display",
                   color: "#0E204E",
                   textDecoration: "none",
@@ -70,64 +96,57 @@ const Project = () => {
                 Amazing Features
               </Typography>
               <Table />
-            </Grid2>
-          </Grid2>
+            </Box>
+          </Box>
         </Grid2>
-      </Box>
-      <Box
+      </Grid2>
+
+      {/* women */}
+      <Grid2
+        container
+        columnSpacing={{ xs: 1, md: 3 }}
+        gap={4}
         sx={{
-          display: { xs: "none", md: "flex", lg: "flex" },
-          ml: 10,
-          mb: 30
+          display: { xs: "none", md: "flex" },
+          px: "100px",
+          justifyContent: "center"
         }}
       >
-        <Grid2
-          sx={{
-            display: { sm: "none", md: "flex", lg: "flex" },
-            mb: 10
-          }}
-        >
-          <Grid2
-            size={6}
+        <Grid2 size={4}>
+          <Box
+            width="100%"
             sx={{
-              justifyContent: "end",
-              alignContent: "center"
+              display: {
+                xs: "none",
+                md: "flex"
+              },
+              justifyContent: "center"
             }}
           >
-            <Box
-              sx={{
-                ml: 20,
-                width: "512px",
-                height: "258px",
-                position: "relative",
-              }}
-            >
+            <Box>
               <Typography
-                variant="h2"
-                noWrap
-                component="a"
                 fontWeight={700}
                 sx={{
                   mb: 3,
-                  display: { xs: "none", md: "flex", lg: "flex" },
+                  display: { xs: "none", md: "flex" },
                   fontFamily: "Playfair Display",
                   color: "#0E204E",
                   textDecoration: "none",
-                  textWrap: "wrap"
+                  textWrap: "wrap",
+                  fontSize: "60px"
                 }}
               >
                 Become an
                 <br /> Agent
               </Typography>
               <Typography
-                noWrap
-                component="a"
                 sx={{
                   fontFamily: "Manrope",
                   color: "#0E204E",
                   textDecoration: "none",
                   textWrap: "pretty",
-                  justifyContent: "center"
+                  justifyContent: "center",
+                  fontSize: "20px"
                 }}
               >
                 a community that gives you a taste of <br /> happiness, a place
@@ -145,55 +164,46 @@ const Project = () => {
                   mt: 4,
                   display: {
                     xs: "none",
-                    md: "flex",
-                    lg: "flex",
-                   
-                    width: "239px",
-                    height: "62px"
-                  }
+                    md: "flex"
+                  },
+                  width: "239px",
+                  height: "62px"
                 }}
               >
                 Join Now
               </Button>
             </Box>
-          </Grid2>
-          <Grid2
-            size={6}
+          </Box>
+        </Grid2>
+        <Grid2 size={6}>
+          <Box
             sx={{
-              display: { sm: "none", md: "flex", lg: "flex" },
-              m: 10
+              display: { xs: "none", md: "flex" }
             }}
           >
-            <Box>
+            <Box
+              width="500px"
+              height="445px"
+              sx={{
+                bgcolor: "#0E204E"
+              }}
+            ></Box>
 
-              <Box
-                sx={{
-                  
-                  width: "412px",
-                  height: "358px",
-                  bgcolor: "#0E204E",
-                  py: 10,
-                  mt: 20,
-                 
-                }}
-              ></Box>
-              <Image
-                alt="home about"
-                src={Women}
-                priority={true}
-                style={{
-                  margin: 50,
-                  marginLeft: "200px",
-                  width: "552px",
-                  height: "725px",
-                  marginTop: "-500px",
-                  position: "absolute"
-                }}
-              />
-            </Box>
-          </Grid2>
+            <Image
+              alt="home about"
+              src={Women}
+              priority={true}
+              style={{
+                marginTop: "-150px",
+                marginRight: "100px",
+                width: "484px",
+                height: "725px",
+                objectFit: "cover"
+              }}
+            />
+          </Box>
         </Grid2>
-      </Box>
+      </Grid2>
     </>
   )
 }

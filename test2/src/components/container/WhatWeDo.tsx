@@ -12,235 +12,269 @@ const WhatWeDo = () => {
   return (
     <>
       <Box
+        width="100%"
+        height="708px"
         sx={{
-          display: { xs: "none", md: "flex", lg: "flex" },
-          width: "1920px",
-          height: "708px",
+          display: { xs: "none", md: "flex" },
           bgcolor: "#0E204E",
-
           clipPath:
-            "polygon(50% 0%, 100% 0, 100% 100%, 84% 93%, 60% 80%, 0 100%, 0 0)"
+            "polygon(50% 0%, 100% 0, 100% 100%, 84% 93%, 60% 80%, 0 100%, 0 0)",
+          position: "relative"
         }}
-      >
-        <Typography
-          variant="h3"
-          noWrap
-          component="a"
-          fontWeight={700}
-          sx={{
-            mt: 30,
-            p: 6,
-            ml: 20,
-            display: { xs: "none", md: "flex", lg: "flex" },
-            fontFamily: "Playfair Display",
-            color: "white",
-            textDecoration: "none",
-            textWrap: "wrap"
-          }}
-        >
-          Why
-          <br /> Choose
-          <br /> Pineapple <br />
-          Island
-        </Typography>
-      </Box>
-      <Box
+      ></Box>
+      <Grid2
+        container
+        columnSpacing={{ xs: 1, md: 2 }}
+        gap={0}
         sx={{
-          display: { xs: "none", md: "flex", lg: "flex" },
-          ml: 70,
-          mt: -75,
-          position: "absolute"
+          position: "absolute",
+          mt: -70
         }}
       >
-        <Box
-          sx={{
-            boxShadow: 2,
-            width: "477px",
-            bgcolor: "white",
-            display: { xs: "none", md: "flex", lg: "flex" },
-            alignItems: "center",
-            px: 10
-          }}
-        >
-          <Box>
+        <Grid2 size={4}>
+          <Box
+            sx={{
+              display: { xs: "none", md: "flex" },
+              justifyContent: "center",
+              width: "100%",
+              height: "634px"
+            }}
+          >
             <Typography
-              variant="h6"
-              noWrap
-              component="a"
+              fontWeight={700}
               sx={{
-                fontFamily: "Manrope",
-                color: "#0E204E",
+                pl: 4,
+                fontFamily: "Playfair Display",
+                color: "white",
                 textDecoration: "none",
-                textWrap: "wrap"
+                textWrap: "wrap",
+                alignContent: "center",
+                fontSize: "60px"
               }}
             >
-              Pineapple Island is the most sought-after community in Ibadan that
-              values and puts the needs of their clients first. It is a
-              territory with loft complexes that creates a country life and
-              homely feeling that is integrated with industrial development. A
-              perfect, professional built abode that gives you the true taste of
-              beauty and happiness.
+              Why
+              <br /> Choose
+              <br /> Pineapple <br />
+              Island
             </Typography>
           </Box>
-        </Box>
-        <Image
-          alt="home about"
-          src={room}
-          priority={true}
-          style={{
-            width: "80%",
-            height: "634px"
+        </Grid2>
+        <Grid2 size={4}>
+          <Box
+            sx={{
+              display: { xs: "none", md: "flex" }
+            }}
+          >
+            <Box
+              width="100%"
+              height="634px"
+              sx={{
+                boxShadow: 2,
+                bgcolor: "white",
+                display: { xs: "none", md: "flex" },
+                alignItems: "center"
+              }}
+            >
+              <Box>
+                <Typography
+                  sx={{
+                    fontFamily: "Manrope",
+                    color: "#0E204E",
+                    textDecoration: "none",
+                    textWrap: "wrap",
+                    fontSize: "18px",
+                    p: "50px"
+                  }}
+                >
+                  Pineapple Island is the most sought-after community in Ibadan
+                  that values and puts the needs of their clients first. It is a
+                  territory with loft complexes that creates a country life and
+                  homely feeling that is integrated with industrial development.
+                  A perfect, professional built abode that gives you the true
+                  taste of beauty and happiness.
+                </Typography>
+              </Box>
+            </Box>
+          </Box>
+        </Grid2>
+        <Grid2
+          size={4}
+          sx={{
+            display: { xs: "none", md: "flex" },
+            pr: "50px"
           }}
-        />
-      </Box>
+        >
+          <Image
+            alt="home about"
+            src={room}
+            priority={true}
+            style={{
+              width: "100%",
+              height: "634px",
+              objectFit: "cover"
+            }}
+          />
+        </Grid2>
+      </Grid2>
+
+      {/* What Pineapple Land Offers */}
       <Typography
-        variant="h3"
-        noWrap
-        component="a"
         fontWeight={700}
         sx={{
           mr: 2,
           mt: 20,
-          display: { xs: "none", md: "flex", lg: "flex" },
+          mb: "122px",
+          display: { xs: "none", md: "flex" },
           justifyContent: "center",
           fontFamily: "Playfair Display",
           fontWeight: 700,
           color: "#0E204E",
-          textDecoration: "none"
+          textDecoration: "none",
+          fontSize: "60px"
         }}
       >
         What Pineapple Land Offers
       </Typography>
-      <Box
+
+      <Grid2
+        container
+        columnSpacing={{ xs: 1, sm: 3 }}
+        gap={12}
         sx={{
-          display: { xs: "none", md: "flex", lg: "flex" },
-          ml: 10
+          display: { xs: "none", md: "flex" },
+          p: "50px",
+          justifyContent: "center"
         }}
       >
-        <Grid2
-          sx={{
-            display: { sm: "none", md: "flex", lg: "flex" },
-            mb: 10
-          }}
-        >
-          <Grid2
-            size={6}
+        <Grid2 size={6}>
+          <Box
             sx={{
-              display: { sm: "none", md: "flex", lg: "flex" },
-              m: 10
+              display: {
+                xs: "none",
+                md: "flex"
+              },
+              width: "100%",
+              justifyContent: "flex-end"
             }}
           >
-            <Box>
-              <Box
-                sx={{
-                  width: "412px",
-                  height: "358px",
-                  bgcolor: "#0E204E",
-                  position: "relative",
-                  py: 10,
-                  ml: 50,
-                  mt: 20
-                }}
-              ></Box>
-              <Image
-                alt="home about"
-                src={garden1}
-                priority={true}
-                style={{
-                  margin: 50,
-                  width: "567px",
-                  height: "582px",
-                  marginTop: "-500px",
-                  position: "absolute"
-                }}
-              />
-            </Box>
-          </Grid2>
-          <Grid2
-            size={6}
-            sx={{
-              justifyContent: "end",
-              alignContent: "center"
+            <Box
+              width="412px"
+              height="358px"
+              sx={{
+                bgcolor: "#0E204E"
+              }}
+            ></Box>
+          </Box>
+
+          <Image
+            alt="home about"
+            src={garden1}
+            priority={true}
+            style={{
+              marginTop: "-450px",
+              width: "80%",
+              height: "582px",
+              objectFit: "cover"
             }}
-          >
-            <FrameLogo />
-          </Grid2>
+          />
         </Grid2>
-      </Box>
-      <Box
+
+        <Grid2 size={4}>
+          <Box
+            sx={{
+              display: { xs: "none", md: "flex" },
+              height: "350px"
+            }}
+          >
+            <Box
+              sx={{
+                alignContent: "center"
+              }}
+            >
+              <FrameLogo />
+            </Box>
+          </Box>
+        </Grid2>
+      </Grid2>
+
+      <Grid2
+        container
+        columnSpacing={{ xs: 1, sm: 3 }}
+        gap={12}
         sx={{
-          display: { xs: "none", md: "flex", lg: "flex" },
-          ml: 10
+          display: { xs: "none", md: "flex" },
+          p: "30px",
+          justifyContent: "center"
         }}
       >
-        <Grid2
-          sx={{
-            display: { sm: "none", md: "flex", lg: "flex" },
-            mb: 10
-          }}
-        >
-          <Grid2
-            size={6}
+        <Grid2 size={4}>
+          <Box
             sx={{
-              justifyContent: "end",
-              alignContent: "center"
+              display: { xs: "none", md: "flex" },
+              height: "582px"
             }}
           >
-            <FrameLogo1 />
-          </Grid2>
-          <Grid2
-            size={6}
-            sx={{
-              display: { sm: "none", md: "flex", lg: "flex" },
-              m: 10
-            }}
-          >
-            <Box>
-              <Box
-                sx={{
-                  width: "412px",
-                  height: "358px",
-                  bgcolor: "#0E204E",
-                  py: 10,
-                  position: "relative",
-                  mt: 20
-                }}
-              ></Box>
-              <Image
-                alt="home about"
-                src={garden2}
-                priority={true}
-                style={{
-                  margin: 50,
-                  marginLeft: "200px",
-                  width: "568px",
-                  height: "582px",
-                  marginTop: "-500px",
-                  position: "absolute"
-                }}
-              />
+            <Box
+              sx={{
+                pt: "20px",
+                alignContent: "center"
+              }}
+            >
+              <FrameLogo1 />
             </Box>
-          </Grid2>
+          </Box>
         </Grid2>
-      </Box>
+        <Grid2 size={6}>
+          <Box
+            width="100%"
+            sx={{
+              display: {
+                xs: "none",
+                md: "flex"
+              },
+              justifyContent: "flex-end"
+            }}
+          >
+            <Image
+              alt="home about"
+              src={garden2}
+              priority={true}
+              style={{
+                width: "80%",
+                height: "582px",
+                objectFit: "cover"
+              }}
+            />
+          </Box>
+          <Box
+            width="412px"
+            height="358px"
+            sx={{
+              mt: "-450px",
+              bgcolor: "#0E204E"
+            }}
+          ></Box>
+        </Grid2>
+      </Grid2>
+
+      {/* ส่วน mobile */}
+
       <Box
         sx={{
-          display: { xs: "flex", md: "none", lg: "none" },
+          display: { xs: "flex", md: "none" },
           justifyContent: "center",
-          mt: 5
+          pt: "56px"
         }}
       >
         <Box>
           <Typography
-            variant="h4"
             fontWeight={700}
             sx={{
               fontFamily: "Playfair Display",
               textWrap: "wrap",
               color: "#0E204E",
-              textDecoration: "none",
-              letterSpacing: 2,
-              textAlign: "center"
+              textAlign: "center",
+              fontSize: "24px"
             }}
           >
             Why Choose <br /> Pineapple Island
@@ -249,22 +283,23 @@ const WhatWeDo = () => {
       </Box>
       <Box
         sx={{
-          display: { xs: "flex", md: "none", lg: "none" },
-          justifyContent: "center",
-          mt: 5
+          display: { xs: "flex", md: "none" },
+          justifyContent: "center"
         }}
       >
-        <Box>
+        <Box
+          sx={{
+            px: "20px",
+            py: "16px"
+          }}
+        >
           <Typography
+            fontWeight={300}
             sx={{
               fontFamily: "Lato",
-              ml: 6,
-              pr: 6,
               textWrap: "wrap",
               color: "#0E204E",
-              textDecoration: "none",
-              textAlign: "center",
-              pb: 3
+              textAlign: "center"
             }}
           >
             Pineapple Island is the most sought-after community in Ibadan that
@@ -278,71 +313,70 @@ const WhatWeDo = () => {
       </Box>
       <Box
         sx={{
-          display: { xs: "flex", md: "none", lg: "none" },
+          display: { xs: "flex", md: "none" },
           justifyContent: "center",
-          
+          px: "20px"
         }}
       >
-        <Box>
-          <Image
-            alt="home about"
-            src={livingroom}
-            priority={true}
-            style={{
-              width: "100%"
-            }}
-          />
-        </Box>
+        <Image
+          alt="home about"
+          src={livingroom}
+          priority={true}
+          style={{
+            width: "100%",
+            height: "207px",
+            objectFit: "cover"
+          }}
+        />
       </Box>
+
       <Box
+        width="100%"
         sx={{
-          display: { xs: "flex", md: "none", lg: "none" },
-          justifyContent: "center",
-          mt: 5
+          display: { xs: "flex-row", md: "none" },
+          py: 5
         }}
       >
-        <Box sx={{}}>
-          <Typography
-            variant="h4"
-            fontWeight={700}
-            sx={{
-              fontFamily: "Playfair Display",
-              textWrap: "wrap",
-              color: "#0E204E",
-              textDecoration: "none",
-              textAlign: "center",
-              mb: 4
-            }}
-          >
-            Pineapple Island Offers
-          </Typography>
+        <Typography
+          variant="h4"
+          fontWeight={700}
+          sx={{
+            fontFamily: "Playfair Display",
+            textWrap: "wrap",
+            color: "#0E204E",
+            textDecoration: "none",
+            textAlign: "center",
+            mb: 4
+          }}
+        >
+          Pineapple Island Offers
+        </Typography>
+        <Box
+          sx={{
+            px: "20px"
+          }}
+        >
           <Image
             alt="home about"
             src={garden1}
             priority={true}
             style={{
               width: "100%",
-              height: "387px"
+              height: "387px",
+              objectFit: "cover"
             }}
           />
+        </Box>
 
-          <Box
-            sx={{
-              display: { xs: "flex", md: "none", lg: "none" },
-              justifyContent: "center",
-              mt: -4,
-              mb: 4
-            }}
-          >
-            <Box
-              bgcolor="#0E204E"
-              sx={{
-                width: "320px",
-                height: "247px"
-              }}
-            >
-              <FrramLogo2 />
-            </Box>
+        <Box
+          sx={{
+            display: { xs: "flex", md: "none" },
+            justifyContent: "center",
+            mt: -4
+          }}
+        >
+          <Box bgcolor="#0E204E" width="80%" height="247px">
+            <FrramLogo2 />
           </Box>
         </Box>
       </Box>

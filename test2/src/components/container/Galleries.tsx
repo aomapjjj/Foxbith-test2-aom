@@ -1,9 +1,5 @@
 import {
-  Box,
   Grid2,
-  ImageList,
-  ImageListItem,
-  ImageListItemBar,
   Typography
 } from "@mui/material"
 import one from "../../../public/imgs/galleries/1.png"
@@ -16,43 +12,39 @@ import seven from "../../../public/imgs/galleries/7.png"
 import eight from "../../../public/imgs/galleries/8.png"
 import nine from "../../../public/imgs/galleries/9.png"
 import Image from "next/image"
-import Galleries1 from "./Galleries1"
+
 
 const Galleries = () => {
   return (
     <>
-
       <Typography
-        variant="h3"
-        noWrap
-        component="a"
-        href="#app-bar-with-responsive-menu"
         fontWeight={700}
         sx={{
           mr: 2,
           mt: 20,
-          display: { xs: "none", md: "flex", lg: "flex" },
+          display: { xs: "none", md: "flex" },
           justifyContent: "center",
           fontFamily: "Playfair Display",
           fontWeight: 700,
           color: "#0E204E",
-          textDecoration: "none"
+          textDecoration: "none",
+          fontSize: "60px"
         }}
       >
         Galleries
       </Typography>
       <Typography
         noWrap
-        component="a"
         sx={{
           ml: 6,
           mt: 4,
-          display: { xs: "none", md: "flex", lg: "flex" },
+          display: { xs: "none", md: "flex" },
           fontFamily: "Manrope",
           color: "#0E204E",
           textDecoration: "none",
-          textWrap: "stable",
-          justifyContent: "center"
+          lineHeight: "36px",
+          justifyContent: "center",
+          fontSize: "20px"
         }}
       >
         a community that gives you a taste of happiness, a place you’ll love to
@@ -60,15 +52,15 @@ const Galleries = () => {
       </Typography>
       <Typography
         noWrap
-        component="a"
         sx={{
           ml: 6,
-          display: { xs: "none", md: "flex", lg: "flex" },
+          display: { xs: "none", md: "flex" },
           fontFamily: "Manrope",
           color: "#0E204E",
           textDecoration: "none",
-          textWrap: "stable",
-          justifyContent: "center"
+          lineHeight: "36px",
+          justifyContent: "center",
+          fontSize: "20px"
         }}
       >
         an opportunity to build a home.
@@ -76,15 +68,17 @@ const Galleries = () => {
 
       <Grid2
         sx={{
-          display: { sm: "none", md: "flex", lg: "flex", gap: 30 },
+          display: { sm: "none", md: "flex" },
           justifyContent: "center",
-          mt: 4
+          gap: 4,
+          pt: 4,
+          px: "20px"
         }}
       >
         <Grid2
           size={4}
           sx={{
-            display: { xs: "none", md: "flex", lg: "flex" }
+            display: { xs: "none", md: "flex" }
           }}
         >
           <Image
@@ -92,15 +86,16 @@ const Galleries = () => {
             src={one}
             priority={true}
             style={{
-              width: "553px",
-              height: "469px"
+              width: "100%",
+              height: "469px",
+              objectFit: "cover"
             }}
           />
         </Grid2>
         <Grid2
           size={4}
           sx={{
-            display: { xs: "none", md: "flex", lg: "flex" }
+            display: { xs: "none", md: "flex" }
           }}
         >
           <Image
@@ -108,15 +103,16 @@ const Galleries = () => {
             src={two}
             priority={true}
             style={{
-              width: "553px",
-              height: "469px"
+              width: "100%",
+              height: "469px",
+              objectFit: "cover"
             }}
           />
         </Grid2>
         <Grid2
           size={4}
           sx={{
-            display: { xs: "none", md: "flex", lg: "flex" }
+            display: { xs: "none", md: "flex" }
           }}
         >
           <Image
@@ -124,23 +120,26 @@ const Galleries = () => {
             src={three}
             priority={true}
             style={{
-              width: "553px",
-              height: "469px"
+              width: "100%",
+              height: "469px",
+              objectFit: "cover"
             }}
           />
         </Grid2>
       </Grid2>
       <Grid2
         sx={{
-          display: { sm: "none", md: "flex", lg: "flex", gap: 30 },
+          display: { sm: "none", md: "flex" },
           justifyContent: "center",
-          mt: 4
+          gap: 4,
+          mt: 4,
+          px: "20px"
         }}
       >
         <Grid2
           size={4}
           sx={{
-            display: { xs: "none", md: "flex", lg: "flex" }
+            display: { xs: "none", md: "flex" }
           }}
         >
           <Image
@@ -148,15 +147,16 @@ const Galleries = () => {
             src={four}
             priority={true}
             style={{
-              width: "553px",
-              height: "469px"
+              width: "100%",
+              height: "469px",
+              objectFit: "cover"
             }}
           />
         </Grid2>
         <Grid2
           size={4}
           sx={{
-            display: { xs: "none", md: "flex", lg: "flex" }
+            display: { xs: "none", md: "flex" }
           }}
         >
           <Image
@@ -164,15 +164,16 @@ const Galleries = () => {
             src={five}
             priority={true}
             style={{
-              width: "553px",
-              height: "469px"
+              width: "100%",
+              height: "469px",
+              objectFit: "cover"
             }}
           />
         </Grid2>
         <Grid2
           size={4}
           sx={{
-            display: { xs: "none", md: "flex", lg: "flex" }
+            display: { xs: "none", md: "flex" }
           }}
         >
           <Image
@@ -180,23 +181,26 @@ const Galleries = () => {
             src={six}
             priority={true}
             style={{
-              width: "553px",
-              height: "469px"
+              width: "100%",
+              height: "469px",
+              objectFit: "cover"
             }}
           />
         </Grid2>
       </Grid2>
       <Grid2
         sx={{
-          display: { sm: "none", md: "flex", lg: "flex", gap: 30 },
+          display: { sm: "none", md: "flex" },
           justifyContent: "center",
-          mt: 4
+          gap:4,
+          mt: 4,
+          px: "20px"
         }}
       >
         <Grid2
           size={4}
           sx={{
-            display: { xs: "none", md: "flex", lg: "flex" }
+            display: { xs: "none", md: "flex" }
           }}
         >
           <Image
@@ -204,15 +208,16 @@ const Galleries = () => {
             src={seven}
             priority={true}
             style={{
-              width: "553px",
-              height: "469px"
+              width: "100%",
+              height: "469px",
+              objectFit: "cover"
             }}
           />
         </Grid2>
         <Grid2
           size={4}
           sx={{
-            display: { xs: "none", md: "flex", lg: "flex" }
+            display: { xs: "none", md: "flex" }
           }}
         >
           <Image
@@ -220,15 +225,17 @@ const Galleries = () => {
             src={eight}
             priority={true}
             style={{
-              width: "553px",
-              height: "469px"
+              width: "100%",
+              height: "469px",
+              objectFit: "cover"
             }}
           />
         </Grid2>
         <Grid2
           size={4}
           sx={{
-            display: { xs: "none", md: "flex", lg: "flex" }
+            display: { xs: "none", md: "flex" },
+            pb: "200px"
           }}
         >
           <Image
@@ -236,14 +243,13 @@ const Galleries = () => {
             src={nine}
             priority={true}
             style={{
-              width: "553px",
-              height: "469px"
+              width: "100%",
+              height: "469px",
+              objectFit: "cover"
             }}
           />
         </Grid2>
       </Grid2>
-
-  
     </>
   )
 }
