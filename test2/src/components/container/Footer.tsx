@@ -6,10 +6,10 @@ const Footer = () => {
   return (
     <>
       <Box
+        width="100%"
+        height="450px"
         sx={{
-          display: { xs: "none", md: "flex", lg: "flex" },
-          width: "100%",
-          height: "450px",
+          display: { xs: "none", md: "flex" },
           bgcolor: "#0E204E",
           clipPath:
             "polygon(100% 42%, 100% 100%, 96% 100%, 84% 100%, 0 100%, 0 32%, 11% 12%)"
@@ -19,7 +19,7 @@ const Footer = () => {
           container
           gap={0}
           sx={{
-            display: { xs: "none", md: "flex", lg: "flex" },
+            display: { xs: "none", md: "flex" },
             justifyContent: "center",
             width: "100%"
           }}
@@ -28,7 +28,7 @@ const Footer = () => {
             <Typography
               fontWeight={500}
               sx={{
-                display: { xs: "none", md: "flex", lg: "flex" },
+                display: { xs: "none", md: "flex" },
                 justifyContent: "center",
                 pt: 15,
                 pb: 2,
@@ -43,16 +43,12 @@ const Footer = () => {
             </Typography>
             <Box
               sx={{
-                display: { xs: "none", md: "flex", lg: "flex" },
+                display: { xs: "none", md: "flex" },
                 justifyContent: "center",
                 pl: 15
               }}
             >
-              <Box
-                sx={{
-                  width: "250px"
-                }}
-              >
+              <Box width="250px">
                 <Typography
                   fontWeight={100}
                   sx={{
@@ -143,11 +139,11 @@ const Footer = () => {
       </Box>
 
       <Box
+        width="100%"
+        height="100px"
         sx={{
-          display: { xs: "flex-row", md: "none", lg: "none" },
+          display: { xs: "flex-row", md: "none" },
           justifyContent: "center",
-          width: "100%",
-          height: "100px",
           bgcolor: "#0E204E",
           mt: 5
         }}
@@ -172,7 +168,7 @@ const Footer = () => {
         </Box>
         <Box
           sx={{
-            display: { xs: "flex", md: "none", lg: "none" },
+            display: { xs: "flex", md: "none" },
             py: 2,
             justifyContent: "center"
           }}

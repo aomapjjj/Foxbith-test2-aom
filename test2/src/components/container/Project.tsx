@@ -164,10 +164,10 @@ const Project = () => {
                   mt: 4,
                   display: {
                     xs: "none",
-                    md: "flex",
-                    width: "239px",
-                    height: "62px"
-                  }
+                    md: "flex"
+                  },
+                  width: "239px",
+                  height: "62px"
                 }}
               >
                 Join Now

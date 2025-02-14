@@ -13,7 +13,7 @@ const FrramLogo2 = () => {
       <Grid2
         container
         sx={{
-          display: { xs: "flex-row", md: "none", lg: "none" },
+          display: { xs: "flex-row", md: "none"},
           width: "100%",
           height: "100%"
         }}

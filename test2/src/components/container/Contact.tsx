@@ -11,13 +11,11 @@ const Contact = () => {
   return (
     <>
       <Box
+        width="100%"
         sx={{
           display: {
             xs: "none",
-            sm: "none",
-            md: "flex",
-            lg: "flex",
-            width: "100%"
+            md: "flex"
           }
         }}
       >
@@ -33,7 +31,7 @@ const Contact = () => {
           <Grid2
             size={8}
             sx={{
-              display: { sm: "none", md: "flex", lg: "flex" },
+              display: { sm: "none", md: "flex" },
               justifyContent: "center"
             }}
           >
@@ -71,7 +69,7 @@ const Contact = () => {
           <Grid2
             size={8}
             sx={{
-              display: { sm: "none", md: "flex", lg: "flex" },
+              display: { sm: "none", md: "flex" },
               justifyContent: "center"
             }}
           >
@@ -91,7 +89,7 @@ const Contact = () => {
           <Grid2
             size={8}
             sx={{
-              display: { sm: "none", md: "flex", lg: "flex" },
+              display: { sm: "none", md: "flex" },
               justifyContent: "center"
             }}
           >
@@ -111,7 +109,7 @@ const Contact = () => {
           <Grid2
             size={8}
             sx={{
-              display: { sm: "none", md: "flex", lg: "flex" },
+              display: { sm: "none", md: "flex" },
               justifyContent: "center"
             }}
           >
@@ -131,7 +129,7 @@ const Contact = () => {
           <Grid2
             size={8}
             sx={{
-              display: { sm: "none", md: "flex", lg: "flex" },
+              display: { sm: "none", md: "flex" },
               justifyContent: "center"
             }}
           >
@@ -157,7 +155,7 @@ const Contact = () => {
           <Grid2
             size={8}
             sx={{
-              display: { xs: "none", sm: "none", md: "flex", lg: "flex" },
+              display: { xs: "none", md: "flex" },
               justifyContent: "center"
             }}
           >
@@ -184,10 +182,10 @@ const Contact = () => {
         }}
       >
         <Box
+          width="100%"
+          height="262px"
           sx={{
-            display: { xs: "flex-row", md: "none", lg: "none" },
-            width: "100%",
-            height: "262px",
+            display: { xs: "flex-row", md: "none" },
             bgcolor: "#0E204E",
             justifyContent: "center"
           }}
@@ -254,7 +252,7 @@ const Contact = () => {
 
         <Box
           sx={{
-            display: { xs: "flex", md: "none", lg: "none" },
+            display: { xs: "flex", md: "none"},
             justifyContent: "center"
           }}
         >
@@ -273,7 +271,7 @@ const Contact = () => {
         </Box>
         <Box
           sx={{
-            display: { xs: "flex", md: "none", lg: "none" },
+            display: { xs: "flex", md: "none" },
             justifyContent: "center"
           }}
         >
@@ -296,14 +294,14 @@ const Contact = () => {
           <Grid2
             container
             sx={{
-              display: { sm: "flex", md: "none", lg: "none" },
+              display: { sm: "flex", md: "none"},
               justifyContent: "center",
               pt: "20px"
             }}
             rowSpacing={"56px"}
           >
             <Box>
-              <Grid2 size={12} sx={{}}>
+              <Grid2 size={12} >
                 <TextField
                   label="Name"
                   variant="standard"
@@ -362,7 +360,7 @@ const Contact = () => {
                   Message
                 </FormLabel>
               </Grid2>
-              <Grid2 size={12} sx={{}}>
+              <Grid2 size={12} >
                 <TextField
                   name="Message"
                   id="outlined-basic"
@@ -387,9 +385,11 @@ const Contact = () => {
                   mt: 2
                 }}
               >
-                <Box sx={{
-                  justifyItems:"center"
-                }}>
+                <Box
+                  sx={{
+                    justifyItems: "center"
+                  }}
+                >
                   <Box>
                     <Button
                       variant="contained"
@@ -398,7 +398,6 @@ const Contact = () => {
                         textTransform: "none",
                         width: "82px",
                         height: "40px",
-
                         backgroundColor: "#0E204E",
                         color: "white"
                       }}

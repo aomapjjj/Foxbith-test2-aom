@@ -4,11 +4,10 @@ const Table = () => {
   return (
     <>
       <Box
+        width="500px"
+        height="45px"
         sx={{
           bgcolor: "#0E3F3333",
-          width: "500px",
-          height: "45px",
-
           mt: 5,
           pt: 0.5
         }}
@@ -38,10 +37,9 @@ const Table = () => {
         />
       </Box>
       <Box
+        width="500px"
+        height="45px"
         sx={{
-          width: "500px",
-          height: "45px",
-
           mt: 2,
           mb: 1
         }}
@@ -71,11 +69,10 @@ const Table = () => {
         />
       </Box>
       <Box
+        width="500px"
+        height="45px"
         sx={{
           bgcolor: "#0E3F3333",
-          width: "500px",
-          height: "45px",
-
           pt: 0.5
         }}
       >
@@ -104,10 +101,9 @@ const Table = () => {
         />
       </Box>
       <Box
+        width="500px"
+        height="45px"
         sx={{
-          width: "500px",
-          height: "45px",
-
           mt: 2,
           mb: 1
         }}
@@ -135,13 +131,12 @@ const Table = () => {
           }}
           defaultChecked
         />
-      </Box>{" "}
+      </Box>
       <Box
+        width="500px"
+        height="45px"
         sx={{
           bgcolor: "#0E3F3333",
-          width: "500px",
-          height: "45px",
-
           pt: 0.5
         }}
       >
@@ -170,10 +165,9 @@ const Table = () => {
         />
       </Box>
       <Box
+        width="500px"
+        height="45px"
         sx={{
-          width: "500px",
-          height: "45px",
-
           mt: 2,
           mb: 1
         }}
@@ -201,13 +195,12 @@ const Table = () => {
           }}
           defaultChecked
         />
-      </Box>{" "}
+      </Box>
       <Box
+        width="500px"
+        height="45px"
         sx={{
           bgcolor: "#0E3F3333",
-          width: "500px",
-          height: "45px",
-
           pt: 0.5
         }}
       >
@@ -236,10 +229,9 @@ const Table = () => {
         />
       </Box>
       <Box
+        width="500px"
+        height="45px"
         sx={{
-          width: "500px",
-          height: "45px",
-
           mt: 2,
           mb: 1
         }}
@@ -267,13 +259,12 @@ const Table = () => {
           }}
           defaultChecked
         />
-      </Box>{" "}
+      </Box>
       <Box
+        width="500px"
+        height="45px"
         sx={{
           bgcolor: "#0E3F3333",
-          width: "500px",
-          height: "45px",
-
           pt: 0.5
         }}
       >
@@ -302,10 +293,9 @@ const Table = () => {
         />
       </Box>
       <Box
+        width="500px"
+        height="45px"
         sx={{
-          width: "500px",
-          height: "45px",
-
           mt: 2,
           mb: 1
         }}
